@@ -1,26 +1,21 @@
 # frozen_string_literal: true
 
 module JpAddress
-  class Prefecture
-    attr_reader :code, :name, :name_en, :name_kana, :name_hiragana, :type, :capital_code
-
-    ATTRIBUTES = %i[code name name_en name_kana name_hiragana type capital_code].freeze
-
-    def initialize(**attrs)
-      ATTRIBUTES.each { |key| instance_variable_set(:"@#{key}", attrs[key]) }
-      @region_name = attrs[:region]
+  Prefecture = ::Data.define(:code, :name, :name_en, :name_kana, :name_hiragana, :region_name, :type, :capital_code) do
+    def initialize(region: nil, region_name: nil, **attrs)
+      super(region_name: region || region_name, **attrs)
     end
 
     def region
-      Region.find(@region_name)
+      Region.find(region_name)
     end
 
     def cities
-      City.where(prefecture_code: @code)
+      City.where(prefecture_code: code)
     end
 
     def capital
-      City.find(@capital_code)
+      City.find(capital_code)
     end
 
     class << self
@@ -29,12 +24,13 @@ module JpAddress
       end
 
       def find(code_or_options = nil, **options)
-        if code_or_options.is_a?(Integer)
+        case code_or_options
+        when Integer
           all.find { |pref| pref.code == code_or_options }
-        elsif code_or_options.is_a?(Hash)
+        when Hash
           find_by_options(code_or_options)
-        elsif options.any?
-          find_by_options(options)
+        else
+          find_by_options(options) if options.any?
         end
       end
 
