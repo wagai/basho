@@ -4,52 +4,27 @@ module JpAddress
   module ActiveRecord
     module Base
       def jp_address(column)
-        column = column.to_s
-        define_jp_address_city_methods(column)
-        define_jp_address_full_address
-      end
+        column_name = column.to_s
 
-      private
-
-      def define_jp_address_city_methods(column)
-        define_method(:prefecture) do
-          code = send(column)
-          return nil if code.nil?
-
-          JpAddress::City.find(code)&.prefecture
-        end
-
-        define_method(:city) do
-          code = send(column)
-          return nil if code.nil?
-
-          JpAddress::City.find(code)
-        end
-      end
-
-      def define_jp_address_full_address
+        define_method(:city) { (c = send(column_name)) && JpAddress::City.find(c) }
+        define_method(:prefecture) { city&.prefecture }
         define_method(:full_address) do
           pref = prefecture
           cty = city
-          return nil if pref.nil? || cty.nil?
-
-          "#{pref.name}#{cty.name}"
+          "#{pref.name}#{cty.name}" if pref && cty
         end
       end
 
-      public
-
       def jp_address_postal(column)
-        column = column.to_s
+        column_name = column.to_s
 
         define_method(:postal_address) do
-          code = send(column)
-          return nil if code.nil?
+          code = send(column_name)
+          return nil unless code
 
-          results = JpAddress::PostalCode.find(code)
-          return nil if results.empty?
+          postal = JpAddress::PostalCode.find(code).first
+          return nil unless postal
 
-          postal = results.first
           "#{postal.prefecture_name}#{postal.city_name}#{postal.town}"
         end
       end
