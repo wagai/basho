@@ -1,18 +1,13 @@
 # frozen_string_literal: true
 
 module JpAddress
-  class PostalCode
-    attr_reader :code, :prefecture_code, :city_name, :town
-
-    def initialize(code:, prefecture_code:, city:, town:)
-      @code = code
-      @prefecture_code = prefecture_code
-      @city_name = city
-      @town = town
+  PostalCode = ::Data.define(:code, :prefecture_code, :city_name, :town) do
+    def initialize(city: nil, city_name: nil, **attrs)
+      super(city_name: city || city_name, **attrs)
     end
 
     def formatted_code
-      "#{@code[0..2]}-#{@code[3..]}"
+      "#{code[0..2]}-#{code[3..]}"
     end
 
     def prefecture_name
@@ -20,7 +15,7 @@ module JpAddress
     end
 
     def prefecture
-      Prefecture.find(@prefecture_code)
+      Prefecture.find(prefecture_code)
     end
 
     class << self
@@ -30,8 +25,7 @@ module JpAddress
 
         prefix = normalized[0..2]
         Data::Loader.postal_codes(prefix)
-                    .select { |data| data[:code] == normalized }
-                    .map { |data| new(**data) }
+                    .filter_map { |data| new(**data) if data[:code] == normalized }
       end
     end
   end
