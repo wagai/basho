@@ -8,6 +8,7 @@ require_relative "jp_address/code_validator"
 require_relative "jp_address/city"
 require_relative "jp_address/postal_code"
 require_relative "jp_address/active_record/base"
+require_relative "jp_address/engine" if defined?(Rails::Engine)
 
 module JpAddress
   class Error < StandardError; end
