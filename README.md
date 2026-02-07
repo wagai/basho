@@ -83,16 +83,75 @@ region.prefecture_codes # => [8, 9, 10, 11, 12, 13, 14]
 ### ActiveRecord統合
 
 ```ruby
-class Repairer < ApplicationRecord
+class Shop < ApplicationRecord
   include JpAddress
   jp_address :local_gov_code
   jp_address_postal :postal_code
 end
 
-repairer.prefecture   # => Prefecture
-repairer.city         # => City
-repairer.full_address # => "東京都千代田区"
-repairer.postal_address # => "東京都世田谷区上馬"
+shop.prefecture   # => Prefecture
+shop.city         # => City
+shop.full_address # => "東京都千代田区"
+shop.postal_address # => "東京都世田谷区上馬"
+```
+
+### 郵便番号自動入力（Hotwire）
+
+Rails 7+アプリでTurbo Frame + Stimulusによる住所自動入力を提供します。
+
+#### セットアップ
+
+```ruby
+# config/routes.rb
+mount JpAddress::Engine, at: "/jp_address"
+```
+
+#### フォームでの使い方
+
+```erb
+<%= form_with(model: @shop) do |f| %>
+  <div data-controller="jp-address--auto-fill"
+       data-jp-address--auto-fill-url-value="<%= jp_address.postal_code_lookup_path %>">
+
+    <%= f.text_field :postal_code,
+          data: { action: "input->jp-address--auto-fill#lookup",
+                  "jp-address--auto-fill-target": "input" } %>
+
+    <turbo-frame id="jp-address-result"
+                 data-jp-address--auto-fill-target="frame"></turbo-frame>
+
+    <%= f.text_field :prefecture,
+          data: { "jp-address--auto-fill-target": "prefecture" } %>
+    <%= f.text_field :city,
+          data: { "jp-address--auto-fill-target": "city" } %>
+    <%= f.text_field :town,
+          data: { "jp-address--auto-fill-target": "town" } %>
+  </div>
+<% end %>
+```
+
+`jp_address_autofill_frame_tag`ヘルパーでTurbo Frameタグを生成できます:
+
+```erb
+<%= jp_address_autofill_frame_tag %>
+<%# => <turbo-frame id="jp-address-result" data-jp-address--auto-fill-target="frame"></turbo-frame> %>
+```
+
+#### 動作の流れ
+
+1. ユーザーが郵便番号を入力（7桁）
+2. 300msデバウンス後、Turbo Frameでサーバーに問い合わせ
+3. サーバーが住所データ付きのTurbo Frameを返却
+4. Stimulusが都道府県・市区町村・町域フィールドを自動入力
+
+#### オプション
+
+デバウンス間隔の変更:
+
+```erb
+<div data-controller="jp-address--auto-fill"
+     data-jp-address--auto-fill-url-value="<%= jp_address.postal_code_lookup_path %>"
+     data-jp-address--auto-fill-delay-value="500">
 ```
 
 ## データソース
