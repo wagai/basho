@@ -1,0 +1,31 @@
+AllCops:
+  TargetRubyVersion: 3.2
+  NewCops: enable
+  SuggestExtensions: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+    - "tasks/**/*"
+
+Metrics/ParameterLists:
+  Exclude:
+    - "lib/jp_address/prefecture.rb"
+
+Metrics/AbcSize:
+  Exclude:
+    - "lib/jp_address/active_record/base.rb"
+    - "lib/jp_address/code_validator.rb"
+
+Metrics/MethodLength:
+  Exclude:
+    - "lib/jp_address/active_record/base.rb"
