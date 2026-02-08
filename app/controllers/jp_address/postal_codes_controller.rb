@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module JpAddress
+  # 郵便番号からTurbo Frame形式で住所を返すコントローラー
   class PostalCodesController < ActionController::Base
     def lookup
       code = params[:code].to_s.delete("-")

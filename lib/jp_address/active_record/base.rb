@@ -1,7 +1,10 @@
 # frozen_string_literal: true
 
+require_relative "postal_auto_resolve"
+
 module JpAddress
   module ActiveRecord
+    # ActiveRecordモデルにjp_address / jp_address_postalマクロを提供する
     module Base
       def jp_address(column)
         column_name = column.to_s
@@ -15,7 +18,7 @@ module JpAddress
         end
       end
 
-      def jp_address_postal(column)
+      def jp_address_postal(column, **mappings)
         column_name = column.to_s
 
         define_method(:postal_address) do
@@ -27,6 +30,8 @@ module JpAddress
 
           "#{postal.prefecture_name}#{postal.city_name}#{postal.town}"
         end
+
+        PostalAutoResolve.install(self, column_name, mappings) if mappings.any?
       end
     end
   end

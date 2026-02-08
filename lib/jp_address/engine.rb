@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module JpAddress
+  # Hotwire自動入力・カスケードセレクトを提供するRails Engine
   class Engine < ::Rails::Engine
     isolate_namespace JpAddress
 

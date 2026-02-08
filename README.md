@@ -1,6 +1,6 @@
 # JpAddress
 
-日本の住所データ（都道府県・市区町村・郵便番号・地方区分）を統一的に扱うRuby gem。
+日本の住所データ（都道府県・市区町村・郵便番号・地方区分）を統一的に扱うRuby gem。郵便番号からの住所自動保存、都道府県・市区町村カスケードセレクト、Hotwire自動入力をサポート。
 
 ## 対応バージョン
 
@@ -99,6 +99,30 @@ shop.full_address # => "東京都千代田区"
 shop.postal_address # => "東京都世田谷区上馬"
 ```
 
+### 郵便番号から住所を自動保存
+
+`jp_address_postal`にマッピングオプションを渡すと、`before_save`で郵便番号から住所カラムを自動入力します。
+
+```ruby
+class User < ApplicationRecord
+  include JpAddress
+  jp_address_postal :postal_code,
+    prefecture: :pref_name,
+    city: :city_name,
+    town: :town_name
+end
+
+user = User.new(postal_code: "154-0011")
+user.save
+user.pref_name  # => "東京都"
+user.city_name  # => "世田谷区"
+user.town_name  # => "上馬"
+```
+
+- `postal_code`が変更された時だけ解決を実行
+- マッピングは部分指定可能（`prefecture:`だけでもOK）
+- オプションなしの場合は従来通り`postal_address`メソッドのみ定義（後方互換）
+
 ### 郵便番号から住所検索（コントローラー例）
 
 `PostalCode.find`を使えば、フレームワークを問わず自由にエンドポイントを作れます。
@@ -186,6 +210,53 @@ mount JpAddress::Engine, at: "/jp_address"
 2. 300msデバウンス後、Turbo Frameでサーバーに問い合わせ
 3. サーバーが住所データ付きのTurbo Frameを返却
 4. Stimulusが都道府県・市区町村・町域フィールドを自動入力
+
+### 都道府県・市区町村カスケードセレクト（Hotwire Engine）
+
+都道府県を選択すると、対応する市区町村がJSON APIで動的に読み込まれるカスケードセレクトです。
+
+#### JSON APIエンドポイント
+
+Engine をマウントすると以下のエンドポイントが利用可能になります。
+
+```
+GET /jp_address/prefectures          # => [{"code":1,"name":"北海道"}, ...]
+GET /jp_address/prefectures/13/cities # => [{"code":"131016","name":"千代田区"}, ...]
+```
+
+#### フォームでの使い方
+
+```erb
+<%= form_with(model: @shop) do |f| %>
+  <div data-controller="jp-address--cascade-select"
+       data-jp-address--cascade-select-prefectures-url-value="<%= jp_address.prefectures_path %>"
+       data-jp-address--cascade-select-cities-url-template-value="<%= jp_address.cities_prefecture_path(':code') %>">
+
+    <select data-jp-address--cascade-select-target="prefecture"
+            data-action="change->jp-address--cascade-select#prefectureChanged">
+      <option value="">都道府県を選択</option>
+    </select>
+
+    <select data-jp-address--cascade-select-target="city">
+      <option value="">市区町村を選択</option>
+    </select>
+  </div>
+<% end %>
+```
+
+`jp_address_cascade_data`ヘルパーを使うとdata属性を簡潔に書けます。
+
+```erb
+<div <%= tag.attributes(data: jp_address_cascade_data) %>>
+  ...
+</div>
+```
+
+#### 動作の流れ
+
+1. ページ読み込み時、都道府県セレクトが空ならAPIから47件を取得
+2. 都道府県を選択すると、市区町村セレクトをAPIから再構築
+3. 都道府県を変更すると、市区町村セレクトがリセットされ再取得
 
 ## データソース
 

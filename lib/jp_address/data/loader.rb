@@ -4,6 +4,7 @@ require "json"
 
 module JpAddress
   module Data
+    # 組み込みJSONデータの遅延読み込みとキャッシュ
     class Loader
       DATA_DIR = File.expand_path("../../../data", __dir__)
 

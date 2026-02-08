@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module JpAddress
+  # JIS X 0401 チェックディジットによる自治体コード検証
   module CodeValidator
     CHECK_DIGITS_INDEX = 5
     CHECK_BASE = 11
