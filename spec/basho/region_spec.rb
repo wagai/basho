@@ -2,8 +2,8 @@
 
 RSpec.describe Basho::Region do
   describe ".all" do
-    it "8地方を返す" do
-      expect(described_class.all.size).to eq(8)
+    it "9地方を返す" do
+      expect(described_class.all.size).to eq(9)
     end
 
     it "各地方がname, name_en, prefecture_codesを持つ" do
