@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-02-08
+
+### Added
+
+- `City#district` - 郡名（例: `"島尻郡"`）。郡に属する町村のみ設定
+- `City#full_name` - 郡名付き正式名を返す（例: `"島尻郡八重瀬町"`）
+- `tasks/import/districts.rb` - PostalCodeデータから郡名を抽出するスクリプト
+
+### Fixed
+
+- KEN_ALL.CSVとの異体字不整合を修正（`梼原町` → `檮原町`、`須恵町` → `須惠町`）
+
 ## [0.1.2] - 2026-02-08
 
 ### Changed
@@ -26,5 +38,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Actions CI（Ruby 3.2/3.3/3.4）
 - 月次データ自動更新ワークフロー
 
+[0.2.0]: https://github.com/wagai/basho/releases/tag/v0.2.0
 [0.1.2]: https://github.com/wagai/basho/releases/tag/v0.1.2
 [0.1.0]: https://github.com/wagai/basho/releases/tag/v0.1.0
