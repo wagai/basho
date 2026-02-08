@@ -1,6 +1,22 @@
 # JpAddress
 
-日本の住所データ（都道府県・市区町村・郵便番号・地方区分）を統一的に扱うRuby gem。郵便番号からの住所自動保存、都道府県・市区町村カスケードセレクト、Hotwire自動入力をサポート。
+日本の住所データ（都道府県・市区町村・郵便番号・地方区分）を統一的に扱うRuby gem。
+
+## なぜ作ったか
+
+日本の住所まわりは扱いが面倒です。
+
+- 郵便番号から住所を引きたいだけなのに、CSVを自前でパースしてDBに入れる必要がある
+- 都道府県・市区町村のマスタデータを持つためにマイグレーションを書かされる
+- 郵便番号の自動入力、都道府県→市区町村の連動セレクトは毎回同じコードを書いている
+- 既存gemはRails依存が強い、データが古い、Hotwire非対応、など
+
+JpAddressはこれらをまとめて解決します。
+
+- **DBマイグレーション不要** — 全データをJSON同梱。`gem install`だけで使える
+- **ActiveRecord統合** — `include JpAddress` + 1行のマクロで郵便番号→住所の自動保存
+- **Hotwire対応** — 郵便番号自動入力・カスケードセレクトをビルトインEngine提供
+- **軽量** — `Data.define`によるイミュータブルモデル、遅延読み込み、外部依存なし
 
 ## 対応バージョン
 
@@ -17,6 +33,43 @@ gem "jp_address"
 bundle install
 ```
 
+## クイックスタート
+
+### 郵便番号から住所を引く
+
+```ruby
+postal = JpAddress::PostalCode.find("154-0011").first
+postal.prefecture_name  # => "東京都"
+postal.city_name        # => "世田谷区"
+postal.town             # => "上馬"
+```
+
+### モデルで郵便番号→住所を自動保存
+
+```ruby
+class User < ApplicationRecord
+  include JpAddress
+  jp_address_postal :postal_code,
+    prefecture: :pref_name,
+    city: :city_name,
+    town: :town_name
+end
+
+user = User.new(postal_code: "154-0011")
+user.save
+user.pref_name  # => "東京都"
+user.city_name  # => "世田谷区"
+user.town_name  # => "上馬"
+```
+
+### 都道府県・市区町村を検索
+
+```ruby
+JpAddress::Prefecture.find(13).name           # => "東京都"
+JpAddress::Prefecture.where(region: "関東")    # => 7件
+JpAddress::City.find("131016").name            # => "千代田区"
+```
+
 ## 使い方
 
 ### Prefecture（都道府県）
@@ -28,23 +81,23 @@ JpAddress::Prefecture.all                   # 全47件
 JpAddress::Prefecture.where(region: "関東") # 地方で絞り込み
 
 pref = JpAddress::Prefecture.find(13)
-pref.code       # => 13
-pref.name       # => "東京都"
+pref.code          # => 13
+pref.name          # => "東京都"
 pref.name_en       # => "Tokyo"
 pref.name_kana     # => "トウキョウト"
 pref.name_hiragana # => "とうきょうと"
-pref.type       # => "都"
-pref.region     # => Region
-pref.cities     # => Array<City>
-pref.capital    # => City（県庁所在地）
+pref.type          # => "都"
+pref.region        # => Region
+pref.cities        # => Array<City>
+pref.capital       # => City（県庁所在地）
 ```
 
 ### City（市区町村）
 
 ```ruby
-JpAddress::City.find("131016")                  # 自治体コードで検索
-JpAddress::City.where(prefecture_code: 13)      # 都道府県で絞り込み
-JpAddress::City.valid_code?("131016")           # チェックディジット検証
+JpAddress::City.find("131016")              # 自治体コードで検索
+JpAddress::City.where(prefecture_code: 13)  # 都道府県で絞り込み
+JpAddress::City.valid_code?("131016")       # チェックディジット検証
 
 city = JpAddress::City.find("131016")
 city.code             # => "131016"
@@ -84,22 +137,33 @@ region.prefectures      # => Array<Prefecture>
 region.prefecture_codes # => [8, 9, 10, 11, 12, 13, 14]
 ```
 
-### ActiveRecord統合
+## ActiveRecord統合
+
+### 自治体コードから都道府県・市区町村を引く
 
 ```ruby
 class Shop < ApplicationRecord
   include JpAddress
   jp_address :local_gov_code
-  jp_address_postal :postal_code
 end
 
 shop.prefecture   # => Prefecture
 shop.city         # => City
 shop.full_address # => "東京都千代田区"
+```
+
+### 郵便番号から住所文字列を取得
+
+```ruby
+class Shop < ApplicationRecord
+  include JpAddress
+  jp_address_postal :postal_code
+end
+
 shop.postal_address # => "東京都世田谷区上馬"
 ```
 
-### 郵便番号から住所を自動保存
+### 郵便番号から住所カラムを自動保存
 
 `jp_address_postal`にマッピングオプションを渡すと、`before_save`で郵便番号から住所カラムを自動入力します。
 
@@ -111,64 +175,17 @@ class User < ApplicationRecord
     city: :city_name,
     town: :town_name
 end
-
-user = User.new(postal_code: "154-0011")
-user.save
-user.pref_name  # => "東京都"
-user.city_name  # => "世田谷区"
-user.town_name  # => "上馬"
 ```
 
 - `postal_code`が変更された時だけ解決を実行
 - マッピングは部分指定可能（`prefecture:`だけでもOK）
-- オプションなしの場合は従来通り`postal_address`メソッドのみ定義（後方互換）
+- オプションなしの場合は`postal_address`メソッドのみ定義（後方互換）
 
-### 郵便番号から住所検索（コントローラー例）
+## Hotwire Engine
 
-`PostalCode.find`を使えば、フレームワークを問わず自由にエンドポイントを作れます。
+Turbo Frame + Stimulusによる住所自動入力・カスケードセレクトをビルトインで提供するRails Engineです。自前でコントローラーを書かずに使えます。
 
-#### JSON API
-
-```ruby
-# app/controllers/postal_codes_controller.rb
-class PostalCodesController < ApplicationController
-  def lookup
-    results = JpAddress::PostalCode.find(params[:code])
-
-    render json: results.map { |r|
-      { prefecture: r.prefecture_name, city: r.city_name, town: r.town }
-    }
-  end
-end
-```
-
-#### Turbo Frame
-
-```ruby
-# app/controllers/postal_codes_controller.rb
-class PostalCodesController < ApplicationController
-  def lookup
-    @postal = JpAddress::PostalCode.find(params[:code]).first
-  end
-end
-```
-
-```erb
-<%# app/views/postal_codes/lookup.html.erb %>
-<turbo-frame id="postal-result">
-  <% if @postal %>
-    <span data-prefecture="<%= @postal.prefecture_name %>"
-          data-city="<%= @postal.city_name %>"
-          data-town="<%= @postal.town %>"></span>
-  <% end %>
-</turbo-frame>
-```
-
-### 郵便番号自動入力（Hotwire Engine）
-
-Turbo Frame + Stimulusによる住所自動入力をビルトインで提供するRails Engineです。自前でコントローラーを書かずに使えます。
-
-#### セットアップ
+### セットアップ
 
 ```ruby
 # config/application.rb
@@ -180,7 +197,9 @@ require "jp_address/engine"
 mount JpAddress::Engine, at: "/jp_address"
 ```
 
-#### フォームでの使い方
+### 郵便番号自動入力
+
+郵便番号を入力すると都道府県・市区町村・町域フィールドを自動入力します。
 
 ```erb
 <%= form_with(model: @shop) do |f| %>
@@ -204,27 +223,13 @@ mount JpAddress::Engine, at: "/jp_address"
 <% end %>
 ```
 
-#### 動作の流れ
-
 1. ユーザーが郵便番号を入力（7桁）
 2. 300msデバウンス後、Turbo Frameでサーバーに問い合わせ
-3. サーバーが住所データ付きのTurbo Frameを返却
-4. Stimulusが都道府県・市区町村・町域フィールドを自動入力
+3. Stimulusが都道府県・市区町村・町域フィールドを自動入力
 
-### 都道府県・市区町村カスケードセレクト（Hotwire Engine）
+### 都道府県・市区町村カスケードセレクト
 
-都道府県を選択すると、対応する市区町村がJSON APIで動的に読み込まれるカスケードセレクトです。
-
-#### JSON APIエンドポイント
-
-Engine をマウントすると以下のエンドポイントが利用可能になります。
-
-```
-GET /jp_address/prefectures          # => [{"code":1,"name":"北海道"}, ...]
-GET /jp_address/prefectures/13/cities # => [{"code":"131016","name":"千代田区"}, ...]
-```
-
-#### フォームでの使い方
+都道府県を選択すると、対応する市区町村がJSON APIで動的に読み込まれます。
 
 ```erb
 <%= form_with(model: @shop) do |f| %>
@@ -244,7 +249,7 @@ GET /jp_address/prefectures/13/cities # => [{"code":"131016","name":"千代田�
 <% end %>
 ```
 
-`jp_address_cascade_data`ヘルパーを使うとdata属性を簡潔に書けます。
+`jp_address_cascade_data`ヘルパーでdata属性を簡潔に書けます。
 
 ```erb
 <div <%= tag.attributes(data: jp_address_cascade_data) %>>
@@ -252,11 +257,36 @@ GET /jp_address/prefectures/13/cities # => [{"code":"131016","name":"千代田�
 </div>
 ```
 
-#### 動作の流れ
-
 1. ページ読み込み時、都道府県セレクトが空ならAPIから47件を取得
 2. 都道府県を選択すると、市区町村セレクトをAPIから再構築
 3. 都道府県を変更すると、市区町村セレクトがリセットされ再取得
+
+### JSON APIエンドポイント
+
+Engineをマウントすると以下のエンドポイントが利用可能になります。
+
+```
+GET /jp_address/prefectures           # => [{"code":1,"name":"北海道"}, ...]
+GET /jp_address/prefectures/13/cities  # => [{"code":"131016","name":"千代田区"}, ...]
+GET /jp_address/postal_codes/lookup?code=1540011  # => Turbo Frame HTML
+```
+
+## Engine不要の場合
+
+Engineを使わず、`PostalCode.find`で自由にエンドポイントを作ることもできます。
+
+```ruby
+# JSON API
+class PostalCodesController < ApplicationController
+  def lookup
+    results = JpAddress::PostalCode.find(params[:code])
+
+    render json: results.map { |r|
+      { prefecture: r.prefecture_name, city: r.city_name, town: r.town }
+    }
+  end
+end
+```
 
 ## データソース
 
