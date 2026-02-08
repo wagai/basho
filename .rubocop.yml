@@ -9,6 +9,11 @@ Style/StringLiterals:
 Style/StringLiteralsInInterpolation:
   EnforcedStyle: double_quotes
 
+Metrics/MethodLength:
+  Exclude:
+    - "spec/**/*"
+    - "lib/basho/region.rb"
+
 Metrics/BlockLength:
   Exclude:
     - "spec/**/*"
