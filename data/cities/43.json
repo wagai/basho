@@ -123,8 +123,7 @@
     "prefecture_code": 43,
     "name": "天草市",
     "capital": false,
-    "name_kana": "アマクサシ",
-    "district": "上"
+    "name_kana": "アマクサシ"
   },
   {
     "code": "432164",
@@ -203,7 +202,7 @@
     "name": "小国町",
     "capital": false,
     "name_kana": "オグニマチ",
-    "district": "阿蘇郡南"
+    "district": "阿蘇郡"
   },
   {
     "code": "434256",

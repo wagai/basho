@@ -30,26 +30,27 @@ updated_count = 0
   postal_names = postal_city_names[pref_code]
 
   cities.each do |city|
-    # PostalCode側の city_name から、この City にマッチするものを探す
-    match = postal_names.find { |pn| pn.end_with?(city["name"]) && pn != city["name"] }
+    name = city["name"]
 
-    if match
-      district = match.sub(city["name"], "")
-      city["district"] = district
-      updated_count += 1
+    # PostalCode側で完全一致があればスキップ（郡なし）
+    next if postal_names.include?(name)
+
+    # end_with? でマッチするものを探す（複数候補がある場合、郡名が最短のものが正解）
+    candidates = postal_names.select { |pn| pn.end_with?(name) && pn != name }
+    next if candidates.empty?
+
+    # 最短の候補を選ぶ（"標津郡標津町" > "標津郡中標津町" にしない）
+    match = candidates.min_by(&:length)
+    district = match.delete_suffix(name)
+
+    # 郡名は「〜郡」で終わるはず。そうでなければ誤マッチ
+    unless district.end_with?("郡")
+      puts "  スキップ（郡名でない）: #{pref_code} #{match} → district=#{district}"
+      next
     end
 
-    # 異体字の不整合: PostalCode側の名前に完全一致も end_with? 一致もない場合、
-    # PostalCode側の名前を正とする
-    exact = postal_names.find { |pn| pn == city["name"] || pn.end_with?(city["name"]) }
-    unless exact
-      # カナで探す
-      alt = postal_names.find { |pn|
-        # 同じ都道府県内で、末尾が「町」「村」で終わり、カナが一致しそうなもの
-        pn.end_with?("町", "村") && city["name"].end_with?("町", "村")
-      }
-      puts "  異体字候補: #{pref_code} #{city['name']} → 手動確認が必要" unless exact
-    end
+    city["district"] = district
+    updated_count += 1
   end
 
   File.write(path, JSON.pretty_generate(cities))
