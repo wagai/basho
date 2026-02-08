@@ -1,4 +1,4 @@
-# JpAddress
+# Basho
 
 日本の住所データ（都道府県・市区町村・郵便番号・地方区分）を統一的に扱うRuby gem。
 
@@ -11,10 +11,10 @@
 - 郵便番号の自動入力、都道府県→市区町村の連動セレクトは毎回同じコードを書いている
 - 既存gemはRails依存が強い、データが古い、Hotwire非対応、など
 
-JpAddressはこれらをまとめて解決します。
+Bashoはこれらをまとめて解決します。
 
 - **DBマイグレーション不要** — 全データをJSON同梱。`gem install`だけで使える
-- **ActiveRecord統合** — `include JpAddress` + 1行のマクロで郵便番号→住所の自動保存
+- **ActiveRecord統合** — `include Basho` + 1行のマクロで郵便番号→住所の自動保存
 - **Hotwire対応** — 郵便番号自動入力・カスケードセレクトをビルトインEngine提供
 - **軽量** — `Data.define`によるイミュータブルモデル、遅延読み込み、外部依存なし
 
@@ -26,7 +26,7 @@ JpAddressはこれらをまとめて解決します。
 
 ```ruby
 # Gemfile
-gem "jp_address"
+gem "basho"
 ```
 
 ```bash
@@ -38,7 +38,7 @@ bundle install
 ### 郵便番号から住所を引く
 
 ```ruby
-postal = JpAddress::PostalCode.find("154-0011").first
+postal = Basho::PostalCode.find("154-0011").first
 postal.prefecture_name  # => "東京都"
 postal.city_name        # => "世田谷区"
 postal.town             # => "上馬"
@@ -48,8 +48,8 @@ postal.town             # => "上馬"
 
 ```ruby
 class User < ApplicationRecord
-  include JpAddress
-  jp_address_postal :postal_code,
+  include Basho
+  basho_postal :postal_code,
     prefecture: :pref_name,
     city: :city_name,
     town: :town_name
@@ -65,9 +65,9 @@ user.town_name  # => "上馬"
 ### 都道府県・市区町村を検索
 
 ```ruby
-JpAddress::Prefecture.find(13).name           # => "東京都"
-JpAddress::Prefecture.where(region: "関東")    # => 7件
-JpAddress::City.find("131016").name            # => "千代田区"
+Basho::Prefecture.find(13).name           # => "東京都"
+Basho::Prefecture.where(region: "関東")    # => 7件
+Basho::City.find("131016").name            # => "千代田区"
 ```
 
 ## 使い方
@@ -75,12 +75,12 @@ JpAddress::City.find("131016").name            # => "千代田区"
 ### Prefecture（都道府県）
 
 ```ruby
-JpAddress::Prefecture.find(13)             # コードで検索
-JpAddress::Prefecture.find(name: "東京都")  # 名前で検索
-JpAddress::Prefecture.all                   # 全47件
-JpAddress::Prefecture.where(region: "関東") # 地方で絞り込み
+Basho::Prefecture.find(13)             # コードで検索
+Basho::Prefecture.find(name: "東京都")  # 名前で検索
+Basho::Prefecture.all                   # 全47件
+Basho::Prefecture.where(region: "関東") # 地方で絞り込み
 
-pref = JpAddress::Prefecture.find(13)
+pref = Basho::Prefecture.find(13)
 pref.code          # => 13
 pref.name          # => "東京都"
 pref.name_en       # => "Tokyo"
@@ -95,11 +95,11 @@ pref.capital       # => City（県庁所在地）
 ### City（市区町村）
 
 ```ruby
-JpAddress::City.find("131016")              # 自治体コードで検索
-JpAddress::City.where(prefecture_code: 13)  # 都道府県で絞り込み
-JpAddress::City.valid_code?("131016")       # チェックディジット検証
+Basho::City.find("131016")              # 自治体コードで検索
+Basho::City.where(prefecture_code: 13)  # 都道府県で絞り込み
+Basho::City.valid_code?("131016")       # チェックディジット検証
 
-city = JpAddress::City.find("131016")
+city = Basho::City.find("131016")
 city.code             # => "131016"
 city.prefecture_code  # => 13
 city.name             # => "千代田区"
@@ -111,8 +111,8 @@ city.prefecture       # => Prefecture
 ### PostalCode（郵便番号）
 
 ```ruby
-results = JpAddress::PostalCode.find("154-0011")  # 常にArrayを返す
-results = JpAddress::PostalCode.find("1540011")    # ハイフンなしも可
+results = Basho::PostalCode.find("154-0011")  # 常にArrayを返す
+results = Basho::PostalCode.find("1540011")    # ハイフンなしも可
 
 postal = results.first
 postal.code              # => "1540011"
@@ -127,10 +127,10 @@ postal.prefecture        # => Prefecture
 ### Region（地方区分）
 
 ```ruby
-JpAddress::Region.all                # 8地方
-JpAddress::Region.find("関東")       # 名前で検索
+Basho::Region.all                # 8地方
+Basho::Region.find("関東")       # 名前で検索
 
-region = JpAddress::Region.find("関東")
+region = Basho::Region.find("関東")
 region.name             # => "関東"
 region.name_en          # => "Kanto"
 region.prefectures      # => Array<Prefecture>
@@ -143,8 +143,8 @@ region.prefecture_codes # => [8, 9, 10, 11, 12, 13, 14]
 
 ```ruby
 class Shop < ApplicationRecord
-  include JpAddress
-  jp_address :local_gov_code
+  include Basho
+  basho :local_gov_code
 end
 
 shop.prefecture   # => Prefecture
@@ -156,8 +156,8 @@ shop.full_address # => "東京都千代田区"
 
 ```ruby
 class Shop < ApplicationRecord
-  include JpAddress
-  jp_address_postal :postal_code
+  include Basho
+  basho_postal :postal_code
 end
 
 shop.postal_address # => "東京都世田谷区上馬"
@@ -165,12 +165,12 @@ shop.postal_address # => "東京都世田谷区上馬"
 
 ### 郵便番号から住所カラムを自動保存
 
-`jp_address_postal`にマッピングオプションを渡すと、`before_save`で郵便番号から住所カラムを自動入力します。
+`basho_postal`にマッピングオプションを渡すと、`before_save`で郵便番号から住所カラムを自動入力します。
 
 ```ruby
 class User < ApplicationRecord
-  include JpAddress
-  jp_address_postal :postal_code,
+  include Basho
+  basho_postal :postal_code,
     prefecture: :pref_name,
     city: :city_name,
     town: :town_name
@@ -189,12 +189,12 @@ Turbo Frame + Stimulusによる住所自動入力・カスケードセレクト�
 
 ```ruby
 # config/application.rb
-require "jp_address/engine"
+require "basho/engine"
 ```
 
 ```ruby
 # config/routes.rb
-mount JpAddress::Engine, at: "/jp_address"
+mount Basho::Engine, at: "/basho"
 ```
 
 ### 郵便番号自動入力
@@ -203,22 +203,22 @@ mount JpAddress::Engine, at: "/jp_address"
 
 ```erb
 <%= form_with(model: @shop) do |f| %>
-  <div data-controller="jp-address--auto-fill"
-       data-jp-address--auto-fill-url-value="<%= jp_address.postal_code_lookup_path %>">
+  <div data-controller="basho--auto-fill"
+       data-basho--auto-fill-url-value="<%= basho.postal_code_lookup_path %>">
 
     <%= f.text_field :postal_code,
-          data: { action: "input->jp-address--auto-fill#lookup",
-                  "jp-address--auto-fill-target": "input" } %>
+          data: { action: "input->basho--auto-fill#lookup",
+                  "basho--auto-fill-target": "input" } %>
 
-    <turbo-frame id="jp-address-result"
-                 data-jp-address--auto-fill-target="frame"></turbo-frame>
+    <turbo-frame id="basho-result"
+                 data-basho--auto-fill-target="frame"></turbo-frame>
 
     <%= f.text_field :prefecture,
-          data: { "jp-address--auto-fill-target": "prefecture" } %>
+          data: { "basho--auto-fill-target": "prefecture" } %>
     <%= f.text_field :city,
-          data: { "jp-address--auto-fill-target": "city" } %>
+          data: { "basho--auto-fill-target": "city" } %>
     <%= f.text_field :town,
-          data: { "jp-address--auto-fill-target": "town" } %>
+          data: { "basho--auto-fill-target": "town" } %>
   </div>
 <% end %>
 ```
@@ -233,26 +233,26 @@ mount JpAddress::Engine, at: "/jp_address"
 
 ```erb
 <%= form_with(model: @shop) do |f| %>
-  <div data-controller="jp-address--cascade-select"
-       data-jp-address--cascade-select-prefectures-url-value="<%= jp_address.prefectures_path %>"
-       data-jp-address--cascade-select-cities-url-template-value="<%= jp_address.cities_prefecture_path(':code') %>">
+  <div data-controller="basho--cascade-select"
+       data-basho--cascade-select-prefectures-url-value="<%= basho.prefectures_path %>"
+       data-basho--cascade-select-cities-url-template-value="<%= basho.cities_prefecture_path(':code') %>">
 
-    <select data-jp-address--cascade-select-target="prefecture"
-            data-action="change->jp-address--cascade-select#prefectureChanged">
+    <select data-basho--cascade-select-target="prefecture"
+            data-action="change->basho--cascade-select#prefectureChanged">
       <option value="">都道府県を選択</option>
     </select>
 
-    <select data-jp-address--cascade-select-target="city">
+    <select data-basho--cascade-select-target="city">
       <option value="">市区町村を選択</option>
     </select>
   </div>
 <% end %>
 ```
 
-`jp_address_cascade_data`ヘルパーでdata属性を簡潔に書けます。
+`basho_cascade_data`ヘルパーでdata属性を簡潔に書けます。
 
 ```erb
-<div <%= tag.attributes(data: jp_address_cascade_data) %>>
+<div <%= tag.attributes(data: basho_cascade_data) %>>
   ...
 </div>
 ```
@@ -266,9 +266,9 @@ mount JpAddress::Engine, at: "/jp_address"
 Engineをマウントすると以下のエンドポイントが利用可能になります。
 
 ```
-GET /jp_address/prefectures           # => [{"code":1,"name":"北海道"}, ...]
-GET /jp_address/prefectures/13/cities  # => [{"code":"131016","name":"千代田区"}, ...]
-GET /jp_address/postal_codes/lookup?code=1540011  # => Turbo Frame HTML
+GET /basho/prefectures           # => [{"code":1,"name":"北海道"}, ...]
+GET /basho/prefectures/13/cities  # => [{"code":"131016","name":"千代田区"}, ...]
+GET /basho/postal_codes/lookup?code=1540011  # => Turbo Frame HTML
 ```
 
 ## Engine不要の場合
@@ -279,7 +279,7 @@ Engineを使わず、`PostalCode.find`で自由にエンドポイントを作る
 # JSON API
 class PostalCodesController < ApplicationController
   def lookup
-    results = JpAddress::PostalCode.find(params[:code])
+    results = Basho::PostalCode.find(params[:code])
 
     render json: results.map { |r|
       { prefecture: r.prefecture_name, city: r.city_name, town: r.town }
@@ -300,8 +300,8 @@ end
 ## 開発
 
 ```bash
-git clone https://github.com/wagai/jp_address.git
-cd jp_address
+git clone https://github.com/wagai/basho.git
+cd basho
 bin/setup
 bundle exec rspec
 ```

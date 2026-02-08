@@ -1,9 +1,0 @@
-<turbo-frame id="jp-address-result">
-  <% if @postal %>
-    <span data-address
-          data-prefecture="<%= @postal.prefecture_name %>"
-          data-city="<%= @postal.city_name %>"
-          data-town="<%= @postal.town %>"
-          hidden></span>
-  <% end %>
-</turbo-frame>

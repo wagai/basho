@@ -2,8 +2,8 @@
 
 require "rails"
 require "action_controller/railtie"
-require "jp_address"
-require "jp_address/engine"
+require "basho"
+require "basho/engine"
 
 module Dummy
   class Application < Rails::Application

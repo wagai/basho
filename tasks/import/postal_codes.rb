@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# 日本郵便 KEN_ALL.csv を jp_address形式の postal_codes/*.json に変換
+# 日本郵便 KEN_ALL.csv を basho形式の postal_codes/*.json に変換
 # 使い方: ruby tasks/import/postal_codes.rb
 #
 # KEN_ALL.CSV のカラム:

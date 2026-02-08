@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in jp_address.gemspec
+# Specify your gem's dependencies in basho.gemspec
 gemspec
 
 gem "irb"

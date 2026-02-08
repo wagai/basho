@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# jp_local_gov gemのデータをjp_address形式に変換
+# jp_local_gov gemのデータをbasho形式に変換
 # 使い方: ruby tasks/import/cities.rb
 
 require "json"
