@@ -200,69 +200,79 @@
     "prefecture_code": 15,
     "name": "聖籠町",
     "capital": false,
-    "name_kana": "セイロウマチ"
+    "name_kana": "セイロウマチ",
+    "district": "北蒲原郡"
   },
   {
     "code": "153427",
     "prefecture_code": 15,
     "name": "弥彦村",
     "capital": false,
-    "name_kana": "ヤヒコムラ"
+    "name_kana": "ヤヒコムラ",
+    "district": "西蒲原郡"
   },
   {
     "code": "153613",
     "prefecture_code": 15,
     "name": "田上町",
     "capital": false,
-    "name_kana": "タガミマチ"
+    "name_kana": "タガミマチ",
+    "district": "南蒲原郡"
   },
   {
     "code": "153851",
     "prefecture_code": 15,
     "name": "阿賀町",
     "capital": false,
-    "name_kana": "アガマチ"
+    "name_kana": "アガマチ",
+    "district": "東蒲原郡"
   },
   {
     "code": "154059",
     "prefecture_code": 15,
     "name": "出雲崎町",
     "capital": false,
-    "name_kana": "イズモザキマチ"
+    "name_kana": "イズモザキマチ",
+    "district": "三島郡"
   },
   {
     "code": "154610",
     "prefecture_code": 15,
     "name": "湯沢町",
     "capital": false,
-    "name_kana": "ユザワマチ"
+    "name_kana": "ユザワマチ",
+    "district": "南魚沼郡"
   },
   {
     "code": "154822",
     "prefecture_code": 15,
     "name": "津南町",
     "capital": false,
-    "name_kana": "ツナンマチ"
+    "name_kana": "ツナンマチ",
+    "district": "中魚沼郡"
   },
   {
     "code": "155047",
     "prefecture_code": 15,
     "name": "刈羽村",
     "capital": false,
-    "name_kana": "カリワムラ"
+    "name_kana": "カリワムラ",
+    "district": "刈羽郡"
   },
   {
     "code": "155811",
     "prefecture_code": 15,
     "name": "関川村",
     "capital": false,
-    "name_kana": "セキカワムラ"
+    "name_kana": "セキカワムラ",
+    "district": "岩船郡"
   },
   {
     "code": "155861",
     "prefecture_code": 15,
     "name": "粟島浦村",
     "capital": false,
-    "name_kana": "アワシマウラムラ"
+    "name_kana": "アワシマウラムラ",
+    "district": "岩船郡"
   }
 ]

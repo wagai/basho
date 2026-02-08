@@ -270,83 +270,95 @@
     "prefecture_code": 28,
     "name": "猪名川町",
     "capital": false,
-    "name_kana": "イナガワチョウ"
+    "name_kana": "イナガワチョウ",
+    "district": "川辺郡"
   },
   {
     "code": "283657",
     "prefecture_code": 28,
     "name": "多可町",
     "capital": false,
-    "name_kana": "タカチョウ"
+    "name_kana": "タカチョウ",
+    "district": "多可郡"
   },
   {
     "code": "283819",
     "prefecture_code": 28,
     "name": "稲美町",
     "capital": false,
-    "name_kana": "イナミチョウ"
+    "name_kana": "イナミチョウ",
+    "district": "加古郡"
   },
   {
     "code": "283827",
     "prefecture_code": 28,
     "name": "播磨町",
     "capital": false,
-    "name_kana": "ハリマチョウ"
+    "name_kana": "ハリマチョウ",
+    "district": "加古郡"
   },
   {
     "code": "284424",
     "prefecture_code": 28,
     "name": "市川町",
     "capital": false,
-    "name_kana": "イチカワチョウ"
+    "name_kana": "イチカワチョウ",
+    "district": "神崎郡"
   },
   {
     "code": "284432",
     "prefecture_code": 28,
     "name": "福崎町",
     "capital": false,
-    "name_kana": "フクサキチョウ"
+    "name_kana": "フクサキチョウ",
+    "district": "神崎郡"
   },
   {
     "code": "284467",
     "prefecture_code": 28,
     "name": "神河町",
     "capital": false,
-    "name_kana": "カミカワチョウ"
+    "name_kana": "カミカワチョウ",
+    "district": "神崎郡"
   },
   {
     "code": "284645",
     "prefecture_code": 28,
     "name": "太子町",
     "capital": false,
-    "name_kana": "タイシチョウ"
+    "name_kana": "タイシチョウ",
+    "district": "揖保郡"
   },
   {
     "code": "284815",
     "prefecture_code": 28,
     "name": "上郡町",
     "capital": false,
-    "name_kana": "カミゴオリチョウ"
+    "name_kana": "カミゴオリチョウ",
+    "district": "赤穂郡"
   },
   {
     "code": "285013",
     "prefecture_code": 28,
     "name": "佐用町",
     "capital": false,
-    "name_kana": "サヨウチョウ"
+    "name_kana": "サヨウチョウ",
+    "district": "佐用郡"
   },
   {
     "code": "285854",
     "prefecture_code": 28,
     "name": "香美町",
     "capital": false,
-    "name_kana": "カミチョウ"
+    "name_kana": "カミチョウ",
+    "district": "美方郡"
   },
   {
     "code": "285862",
     "prefecture_code": 28,
     "name": "新温泉町",
     "capital": false,
-    "name_kana": "シンオンセンチョウ"
+    "name_kana": "シンオンセンチョウ",
+    "district": "美方郡"
   }
 ]

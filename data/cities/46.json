@@ -137,167 +137,191 @@
     "prefecture_code": 46,
     "name": "三島村",
     "capital": false,
-    "name_kana": "ミシマムラ"
+    "name_kana": "ミシマムラ",
+    "district": "鹿児島郡"
   },
   {
     "code": "463043",
     "prefecture_code": 46,
     "name": "十島村",
     "capital": false,
-    "name_kana": "トシマムラ"
+    "name_kana": "トシマムラ",
+    "district": "鹿児島郡"
   },
   {
     "code": "463922",
     "prefecture_code": 46,
     "name": "さつま町",
     "capital": false,
-    "name_kana": "サツマチョウ"
+    "name_kana": "サツマチョウ",
+    "district": "薩摩郡"
   },
   {
     "code": "464040",
     "prefecture_code": 46,
     "name": "長島町",
     "capital": false,
-    "name_kana": "ナガシマチョウ"
+    "name_kana": "ナガシマチョウ",
+    "district": "出水郡"
   },
   {
     "code": "464520",
     "prefecture_code": 46,
     "name": "湧水町",
     "capital": false,
-    "name_kana": "ユウスイチョウ"
+    "name_kana": "ユウスイチョウ",
+    "district": "姶良郡"
   },
   {
     "code": "464686",
     "prefecture_code": 46,
     "name": "大崎町",
     "capital": false,
-    "name_kana": "オオサキチョウ"
+    "name_kana": "オオサキチョウ",
+    "district": "曽於郡"
   },
   {
     "code": "464821",
     "prefecture_code": 46,
     "name": "東串良町",
     "capital": false,
-    "name_kana": "ヒガシクシラチョウ"
+    "name_kana": "ヒガシクシラチョウ",
+    "district": "肝属郡"
   },
   {
     "code": "464902",
     "prefecture_code": 46,
     "name": "錦江町",
     "capital": false,
-    "name_kana": "キンコウチョウ"
+    "name_kana": "キンコウチョウ",
+    "district": "肝属郡"
   },
   {
     "code": "464911",
     "prefecture_code": 46,
     "name": "南大隅町",
     "capital": false,
-    "name_kana": "ミナミオオスミチョウ"
+    "name_kana": "ミナミオオスミチョウ",
+    "district": "肝属郡"
   },
   {
     "code": "464929",
     "prefecture_code": 46,
     "name": "肝付町",
     "capital": false,
-    "name_kana": "キモツキチョウ"
+    "name_kana": "キモツキチョウ",
+    "district": "肝属郡"
   },
   {
     "code": "465011",
     "prefecture_code": 46,
     "name": "中種子町",
     "capital": false,
-    "name_kana": "ナカタネチョウ"
+    "name_kana": "ナカタネチョウ",
+    "district": "熊毛郡"
   },
   {
     "code": "465020",
     "prefecture_code": 46,
     "name": "南種子町",
     "capital": false,
-    "name_kana": "ミナミタネチョウ"
+    "name_kana": "ミナミタネチョウ",
+    "district": "熊毛郡"
   },
   {
     "code": "465054",
     "prefecture_code": 46,
     "name": "屋久島町",
     "capital": false,
-    "name_kana": "ヤクシマチョウ"
+    "name_kana": "ヤクシマチョウ",
+    "district": "熊毛郡"
   },
   {
     "code": "465232",
     "prefecture_code": 46,
     "name": "大和村",
     "capital": false,
-    "name_kana": "ヤマトソン"
+    "name_kana": "ヤマトソン",
+    "district": "大島郡"
   },
   {
     "code": "465241",
     "prefecture_code": 46,
     "name": "宇検村",
     "capital": false,
-    "name_kana": "ウケンソン"
+    "name_kana": "ウケンソン",
+    "district": "大島郡"
   },
   {
     "code": "465259",
     "prefecture_code": 46,
     "name": "瀬戸内町",
     "capital": false,
-    "name_kana": "セトウチチョウ"
+    "name_kana": "セトウチチョウ",
+    "district": "大島郡"
   },
   {
     "code": "465275",
     "prefecture_code": 46,
     "name": "龍郷町",
     "capital": false,
-    "name_kana": "タツゴウチョウ"
+    "name_kana": "タツゴウチョウ",
+    "district": "大島郡"
   },
   {
     "code": "465291",
     "prefecture_code": 46,
     "name": "喜界町",
     "capital": false,
-    "name_kana": "キカイチョウ"
+    "name_kana": "キカイチョウ",
+    "district": "大島郡"
   },
   {
     "code": "465305",
     "prefecture_code": 46,
     "name": "徳之島町",
     "capital": false,
-    "name_kana": "トクノシマチョウ"
+    "name_kana": "トクノシマチョウ",
+    "district": "大島郡"
   },
   {
     "code": "465313",
     "prefecture_code": 46,
     "name": "天城町",
     "capital": false,
-    "name_kana": "アマギチョウ"
+    "name_kana": "アマギチョウ",
+    "district": "大島郡"
   },
   {
     "code": "465321",
     "prefecture_code": 46,
     "name": "伊仙町",
     "capital": false,
-    "name_kana": "イセンチョウ"
+    "name_kana": "イセンチョウ",
+    "district": "大島郡"
   },
   {
     "code": "465330",
     "prefecture_code": 46,
     "name": "和泊町",
     "capital": false,
-    "name_kana": "ワドマリチョウ"
+    "name_kana": "ワドマリチョウ",
+    "district": "大島郡"
   },
   {
     "code": "465348",
     "prefecture_code": 46,
     "name": "知名町",
     "capital": false,
-    "name_kana": "チナチョウ"
+    "name_kana": "チナチョウ",
+    "district": "大島郡"
   },
   {
     "code": "465356",
     "prefecture_code": 46,
     "name": "与論町",
     "capital": false,
-    "name_kana": "ヨロンチョウ"
+    "name_kana": "ヨロンチョウ",
+    "district": "大島郡"
   }
 ]

@@ -95,55 +95,63 @@
     "prefecture_code": 42,
     "name": "長与町",
     "capital": false,
-    "name_kana": "ナガヨチョウ"
+    "name_kana": "ナガヨチョウ",
+    "district": "西彼杵郡"
   },
   {
     "code": "423084",
     "prefecture_code": 42,
     "name": "時津町",
     "capital": false,
-    "name_kana": "トギツチョウ"
+    "name_kana": "トギツチョウ",
+    "district": "西彼杵郡"
   },
   {
     "code": "423211",
     "prefecture_code": 42,
     "name": "東彼杵町",
     "capital": false,
-    "name_kana": "ヒガシソノギチョウ"
+    "name_kana": "ヒガシソノギチョウ",
+    "district": "東彼杵郡"
   },
   {
     "code": "423220",
     "prefecture_code": 42,
     "name": "川棚町",
     "capital": false,
-    "name_kana": "カワタナチョウ"
+    "name_kana": "カワタナチョウ",
+    "district": "東彼杵郡"
   },
   {
     "code": "423238",
     "prefecture_code": 42,
     "name": "波佐見町",
     "capital": false,
-    "name_kana": "ハサミチョウ"
+    "name_kana": "ハサミチョウ",
+    "district": "東彼杵郡"
   },
   {
     "code": "423831",
     "prefecture_code": 42,
     "name": "小値賀町",
     "capital": false,
-    "name_kana": "オヂカチョウ"
+    "name_kana": "オヂカチョウ",
+    "district": "北松浦郡"
   },
   {
     "code": "423912",
     "prefecture_code": 42,
     "name": "佐々町",
     "capital": false,
-    "name_kana": "サザチョウ"
+    "name_kana": "サザチョウ",
+    "district": "北松浦郡"
   },
   {
     "code": "424111",
     "prefecture_code": 42,
     "name": "新上五島町",
     "capital": false,
-    "name_kana": "シンカミゴトウチョウ"
+    "name_kana": "シンカミゴトウチョウ",
+    "district": "南松浦郡"
   }
 ]

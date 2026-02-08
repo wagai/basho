@@ -95,83 +95,95 @@
     "prefecture_code": 5,
     "name": "小坂町",
     "capital": false,
-    "name_kana": "コサカマチ"
+    "name_kana": "コサカマチ",
+    "district": "鹿角郡"
   },
   {
     "code": "053279",
     "prefecture_code": 5,
     "name": "上小阿仁村",
     "capital": false,
-    "name_kana": "カミコアニムラ"
+    "name_kana": "カミコアニムラ",
+    "district": "北秋田郡"
   },
   {
     "code": "053465",
     "prefecture_code": 5,
     "name": "藤里町",
     "capital": false,
-    "name_kana": "フジサトマチ"
+    "name_kana": "フジサトマチ",
+    "district": "山本郡"
   },
   {
     "code": "053481",
     "prefecture_code": 5,
     "name": "三種町",
     "capital": false,
-    "name_kana": "ミタネチョウ"
+    "name_kana": "ミタネチョウ",
+    "district": "山本郡"
   },
   {
     "code": "053490",
     "prefecture_code": 5,
     "name": "八峰町",
     "capital": false,
-    "name_kana": "ハッポウチョウ"
+    "name_kana": "ハッポウチョウ",
+    "district": "山本郡"
   },
   {
     "code": "053619",
     "prefecture_code": 5,
     "name": "五城目町",
     "capital": false,
-    "name_kana": "ゴジョウメマチ"
+    "name_kana": "ゴジョウメマチ",
+    "district": "南秋田郡"
   },
   {
     "code": "053635",
     "prefecture_code": 5,
     "name": "八郎潟町",
     "capital": false,
-    "name_kana": "ハチロウガタマチ"
+    "name_kana": "ハチロウガタマチ",
+    "district": "南秋田郡"
   },
   {
     "code": "053660",
     "prefecture_code": 5,
     "name": "井川町",
     "capital": false,
-    "name_kana": "イカワマチ"
+    "name_kana": "イカワマチ",
+    "district": "南秋田郡"
   },
   {
     "code": "053686",
     "prefecture_code": 5,
     "name": "大潟村",
     "capital": false,
-    "name_kana": "オオガタムラ"
+    "name_kana": "オオガタムラ",
+    "district": "南秋田郡"
   },
   {
     "code": "054348",
     "prefecture_code": 5,
     "name": "美郷町",
     "capital": false,
-    "name_kana": "ミサトチョウ"
+    "name_kana": "ミサトチョウ",
+    "district": "仙北郡"
   },
   {
     "code": "054631",
     "prefecture_code": 5,
     "name": "羽後町",
     "capital": false,
-    "name_kana": "ウゴマチ"
+    "name_kana": "ウゴマチ",
+    "district": "雄勝郡"
   },
   {
     "code": "054640",
     "prefecture_code": 5,
     "name": "東成瀬村",
     "capital": false,
-    "name_kana": "ヒガシナルセムラ"
+    "name_kana": "ヒガシナルセムラ",
+    "district": "雄勝郡"
   }
 ]

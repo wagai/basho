@@ -151,146 +151,167 @@
     "prefecture_code": 21,
     "name": "岐南町",
     "capital": false,
-    "name_kana": "ギナンチョウ"
+    "name_kana": "ギナンチョウ",
+    "district": "羽島郡"
   },
   {
     "code": "213039",
     "prefecture_code": 21,
     "name": "笠松町",
     "capital": false,
-    "name_kana": "カサマツチョウ"
+    "name_kana": "カサマツチョウ",
+    "district": "羽島郡"
   },
   {
     "code": "213411",
     "prefecture_code": 21,
     "name": "養老町",
     "capital": false,
-    "name_kana": "ヨウロウチョウ"
+    "name_kana": "ヨウロウチョウ",
+    "district": "養老郡"
   },
   {
     "code": "213616",
     "prefecture_code": 21,
     "name": "垂井町",
     "capital": false,
-    "name_kana": "タルイチョウ"
+    "name_kana": "タルイチョウ",
+    "district": "不破郡"
   },
   {
     "code": "213624",
     "prefecture_code": 21,
     "name": "関ケ原町",
     "capital": false,
-    "name_kana": "セキガハラチョウ"
+    "name_kana": "セキガハラチョウ",
+    "district": "不破郡"
   },
   {
     "code": "213811",
     "prefecture_code": 21,
     "name": "神戸町",
     "capital": false,
-    "name_kana": "ゴウドチョウ"
+    "name_kana": "ゴウドチョウ",
+    "district": "安八郡"
   },
   {
     "code": "213829",
     "prefecture_code": 21,
     "name": "輪之内町",
     "capital": false,
-    "name_kana": "ワノウチチョウ"
+    "name_kana": "ワノウチチョウ",
+    "district": "安八郡"
   },
   {
     "code": "213837",
     "prefecture_code": 21,
     "name": "安八町",
     "capital": false,
-    "name_kana": "アンパチチョウ"
+    "name_kana": "アンパチチョウ",
+    "district": "安八郡"
   },
   {
     "code": "214019",
     "prefecture_code": 21,
     "name": "揖斐川町",
     "capital": false,
-    "name_kana": "イビガワチョウ"
+    "name_kana": "イビガワチョウ",
+    "district": "揖斐郡"
   },
   {
     "code": "214035",
     "prefecture_code": 21,
     "name": "大野町",
     "capital": false,
-    "name_kana": "オオノチョウ"
+    "name_kana": "オオノチョウ",
+    "district": "揖斐郡"
   },
   {
     "code": "214043",
     "prefecture_code": 21,
     "name": "池田町",
     "capital": false,
-    "name_kana": "イケダチョウ"
+    "name_kana": "イケダチョウ",
+    "district": "揖斐郡"
   },
   {
     "code": "214213",
     "prefecture_code": 21,
     "name": "北方町",
     "capital": false,
-    "name_kana": "キタガタチョウ"
+    "name_kana": "キタガタチョウ",
+    "district": "本巣郡"
   },
   {
     "code": "215015",
     "prefecture_code": 21,
     "name": "坂祝町",
     "capital": false,
-    "name_kana": "サカホギチョウ"
+    "name_kana": "サカホギチョウ",
+    "district": "加茂郡"
   },
   {
     "code": "215023",
     "prefecture_code": 21,
     "name": "富加町",
     "capital": false,
-    "name_kana": "トミカチョウ"
+    "name_kana": "トミカチョウ",
+    "district": "加茂郡"
   },
   {
     "code": "215031",
     "prefecture_code": 21,
     "name": "川辺町",
     "capital": false,
-    "name_kana": "カワベチョウ"
+    "name_kana": "カワベチョウ",
+    "district": "加茂郡"
   },
   {
     "code": "215040",
     "prefecture_code": 21,
     "name": "七宗町",
     "capital": false,
-    "name_kana": "ヒチソウチョウ"
+    "name_kana": "ヒチソウチョウ",
+    "district": "加茂郡"
   },
   {
     "code": "215058",
     "prefecture_code": 21,
     "name": "八百津町",
     "capital": false,
-    "name_kana": "ヤオツチョウ"
+    "name_kana": "ヤオツチョウ",
+    "district": "加茂郡"
   },
   {
     "code": "215066",
     "prefecture_code": 21,
     "name": "白川町",
     "capital": false,
-    "name_kana": "シラカワチョウ"
+    "name_kana": "シラカワチョウ",
+    "district": "加茂郡"
   },
   {
     "code": "215074",
     "prefecture_code": 21,
     "name": "東白川村",
     "capital": false,
-    "name_kana": "ヒガシシラカワムラ"
+    "name_kana": "ヒガシシラカワムラ",
+    "district": "加茂郡"
   },
   {
     "code": "215210",
     "prefecture_code": 21,
     "name": "御嵩町",
     "capital": false,
-    "name_kana": "ミタケチョウ"
+    "name_kana": "ミタケチョウ",
+    "district": "可児郡"
   },
   {
     "code": "216046",
     "prefecture_code": 21,
     "name": "白川村",
     "capital": false,
-    "name_kana": "シラカワムラ"
+    "name_kana": "シラカワムラ",
+    "district": "大野郡"
   }
 ]

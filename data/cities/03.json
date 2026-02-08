@@ -102,132 +102,151 @@
     "prefecture_code": 3,
     "name": "雫石町",
     "capital": false,
-    "name_kana": "シズクイシチョウ"
+    "name_kana": "シズクイシチョウ",
+    "district": "岩手郡"
   },
   {
     "code": "033022",
     "prefecture_code": 3,
     "name": "葛巻町",
     "capital": false,
-    "name_kana": "クズマキマチ"
+    "name_kana": "クズマキマチ",
+    "district": "岩手郡"
   },
   {
     "code": "033031",
     "prefecture_code": 3,
     "name": "岩手町",
     "capital": false,
-    "name_kana": "イワテマチ"
+    "name_kana": "イワテマチ",
+    "district": "岩手郡"
   },
   {
     "code": "033219",
     "prefecture_code": 3,
     "name": "紫波町",
     "capital": false,
-    "name_kana": "シワチョウ"
+    "name_kana": "シワチョウ",
+    "district": "紫波郡"
   },
   {
     "code": "033227",
     "prefecture_code": 3,
     "name": "矢巾町",
     "capital": false,
-    "name_kana": "ヤハバチョウ"
+    "name_kana": "ヤハバチョウ",
+    "district": "紫波郡"
   },
   {
     "code": "033669",
     "prefecture_code": 3,
     "name": "西和賀町",
     "capital": false,
-    "name_kana": "ニシワガマチ"
+    "name_kana": "ニシワガマチ",
+    "district": "和賀郡"
   },
   {
     "code": "033812",
     "prefecture_code": 3,
     "name": "金ケ崎町",
     "capital": false,
-    "name_kana": "カネガサキチョウ"
+    "name_kana": "カネガサキチョウ",
+    "district": "胆沢郡"
   },
   {
     "code": "034029",
     "prefecture_code": 3,
     "name": "平泉町",
     "capital": false,
-    "name_kana": "ヒライズミチョウ"
+    "name_kana": "ヒライズミチョウ",
+    "district": "西磐井郡"
   },
   {
     "code": "034410",
     "prefecture_code": 3,
     "name": "住田町",
     "capital": false,
-    "name_kana": "スミタチョウ"
+    "name_kana": "スミタチョウ",
+    "district": "気仙郡"
   },
   {
     "code": "034614",
     "prefecture_code": 3,
     "name": "大槌町",
     "capital": false,
-    "name_kana": "オオツチチョウ"
+    "name_kana": "オオツチチョウ",
+    "district": "上閉伊郡"
   },
   {
     "code": "034827",
     "prefecture_code": 3,
     "name": "山田町",
     "capital": false,
-    "name_kana": "ヤマダマチ"
+    "name_kana": "ヤマダマチ",
+    "district": "下閉伊郡"
   },
   {
     "code": "034835",
     "prefecture_code": 3,
     "name": "岩泉町",
     "capital": false,
-    "name_kana": "イワイズミチョウ"
+    "name_kana": "イワイズミチョウ",
+    "district": "下閉伊郡"
   },
   {
     "code": "034843",
     "prefecture_code": 3,
     "name": "田野畑村",
     "capital": false,
-    "name_kana": "タノハタムラ"
+    "name_kana": "タノハタムラ",
+    "district": "下閉伊郡"
   },
   {
     "code": "034851",
     "prefecture_code": 3,
     "name": "普代村",
     "capital": false,
-    "name_kana": "フダイムラ"
+    "name_kana": "フダイムラ",
+    "district": "下閉伊郡"
   },
   {
     "code": "035017",
     "prefecture_code": 3,
     "name": "軽米町",
     "capital": false,
-    "name_kana": "カルマイマチ"
+    "name_kana": "カルマイマチ",
+    "district": "九戸郡"
   },
   {
     "code": "035033",
     "prefecture_code": 3,
     "name": "野田村",
     "capital": false,
-    "name_kana": "ノダムラ"
+    "name_kana": "ノダムラ",
+    "district": "九戸郡"
   },
   {
     "code": "035068",
     "prefecture_code": 3,
     "name": "九戸村",
     "capital": false,
-    "name_kana": "クノヘムラ"
+    "name_kana": "クノヘムラ",
+    "district": "九戸郡"
   },
   {
     "code": "035076",
     "prefecture_code": 3,
     "name": "洋野町",
     "capital": false,
-    "name_kana": "ヒロノチョウ"
+    "name_kana": "ヒロノチョウ",
+    "district": "九戸郡"
   },
   {
     "code": "035246",
     "prefecture_code": 3,
     "name": "一戸町",
     "capital": false,
-    "name_kana": "イチノヘマチ"
+    "name_kana": "イチノヘマチ",
+    "district": "二戸郡"
   }
 ]

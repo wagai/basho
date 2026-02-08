@@ -67,146 +67,167 @@
     "prefecture_code": 30,
     "name": "紀美野町",
     "capital": false,
-    "name_kana": "キミノチョウ"
+    "name_kana": "キミノチョウ",
+    "district": "海草郡"
   },
   {
     "code": "303411",
     "prefecture_code": 30,
     "name": "かつらぎ町",
     "capital": false,
-    "name_kana": "カツラギチョウ"
+    "name_kana": "カツラギチョウ",
+    "district": "伊都郡"
   },
   {
     "code": "303437",
     "prefecture_code": 30,
     "name": "九度山町",
     "capital": false,
-    "name_kana": "クドヤマチョウ"
+    "name_kana": "クドヤマチョウ",
+    "district": "伊都郡"
   },
   {
     "code": "303445",
     "prefecture_code": 30,
     "name": "高野町",
     "capital": false,
-    "name_kana": "コウヤチョウ"
+    "name_kana": "コウヤチョウ",
+    "district": "伊都郡"
   },
   {
     "code": "303615",
     "prefecture_code": 30,
     "name": "湯浅町",
     "capital": false,
-    "name_kana": "ユアサチョウ"
+    "name_kana": "ユアサチョウ",
+    "district": "有田郡"
   },
   {
     "code": "303623",
     "prefecture_code": 30,
     "name": "広川町",
     "capital": false,
-    "name_kana": "ヒロガワチョウ"
+    "name_kana": "ヒロガワチョウ",
+    "district": "有田郡"
   },
   {
     "code": "303666",
     "prefecture_code": 30,
     "name": "有田川町",
     "capital": false,
-    "name_kana": "アリダガワチョウ"
+    "name_kana": "アリダガワチョウ",
+    "district": "有田郡"
   },
   {
     "code": "303810",
     "prefecture_code": 30,
     "name": "美浜町",
     "capital": false,
-    "name_kana": "ミハマチョウ"
+    "name_kana": "ミハマチョウ",
+    "district": "日高郡"
   },
   {
     "code": "303828",
     "prefecture_code": 30,
     "name": "日高町",
     "capital": false,
-    "name_kana": "ヒダカチョウ"
+    "name_kana": "ヒダカチョウ",
+    "district": "日高郡"
   },
   {
     "code": "303836",
     "prefecture_code": 30,
     "name": "由良町",
     "capital": false,
-    "name_kana": "ユラチョウ"
+    "name_kana": "ユラチョウ",
+    "district": "日高郡"
   },
   {
     "code": "303909",
     "prefecture_code": 30,
     "name": "印南町",
     "capital": false,
-    "name_kana": "イナミチョウ"
+    "name_kana": "イナミチョウ",
+    "district": "日高郡"
   },
   {
     "code": "303917",
     "prefecture_code": 30,
     "name": "みなべ町",
     "capital": false,
-    "name_kana": "ミナベチョウ"
+    "name_kana": "ミナベチョウ",
+    "district": "日高郡"
   },
   {
     "code": "303925",
     "prefecture_code": 30,
     "name": "日高川町",
     "capital": false,
-    "name_kana": "ヒダカガワチョウ"
+    "name_kana": "ヒダカガワチョウ",
+    "district": "日高郡"
   },
   {
     "code": "304018",
     "prefecture_code": 30,
     "name": "白浜町",
     "capital": false,
-    "name_kana": "シラハマチョウ"
+    "name_kana": "シラハマチョウ",
+    "district": "西牟婁郡"
   },
   {
     "code": "304042",
     "prefecture_code": 30,
     "name": "上富田町",
     "capital": false,
-    "name_kana": "カミトンダチョウ"
+    "name_kana": "カミトンダチョウ",
+    "district": "西牟婁郡"
   },
   {
     "code": "304069",
     "prefecture_code": 30,
     "name": "すさみ町",
     "capital": false,
-    "name_kana": "スサミチョウ"
+    "name_kana": "スサミチョウ",
+    "district": "西牟婁郡"
   },
   {
     "code": "304212",
     "prefecture_code": 30,
     "name": "那智勝浦町",
     "capital": false,
-    "name_kana": "ナチカツウラチョウ"
+    "name_kana": "ナチカツウラチョウ",
+    "district": "東牟婁郡"
   },
   {
     "code": "304221",
     "prefecture_code": 30,
     "name": "太地町",
     "capital": false,
-    "name_kana": "タイジチョウ"
+    "name_kana": "タイジチョウ",
+    "district": "東牟婁郡"
   },
   {
     "code": "304247",
     "prefecture_code": 30,
     "name": "古座川町",
     "capital": false,
-    "name_kana": "コザガワチョウ"
+    "name_kana": "コザガワチョウ",
+    "district": "東牟婁郡"
   },
   {
     "code": "304271",
     "prefecture_code": 30,
     "name": "北山村",
     "capital": false,
-    "name_kana": "キタヤマムラ"
+    "name_kana": "キタヤマムラ",
+    "district": "東牟婁郡"
   },
   {
     "code": "304280",
     "prefecture_code": 30,
     "name": "串本町",
     "capital": false,
-    "name_kana": "クシモトチョウ"
+    "name_kana": "クシモトチョウ",
+    "district": "東牟婁郡"
   }
 ]

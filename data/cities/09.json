@@ -102,76 +102,87 @@
     "prefecture_code": 9,
     "name": "上三川町",
     "capital": false,
-    "name_kana": "カミノカワマチ"
+    "name_kana": "カミノカワマチ",
+    "district": "河内郡"
   },
   {
     "code": "093424",
     "prefecture_code": 9,
     "name": "益子町",
     "capital": false,
-    "name_kana": "マシコマチ"
+    "name_kana": "マシコマチ",
+    "district": "芳賀郡"
   },
   {
     "code": "093432",
     "prefecture_code": 9,
     "name": "茂木町",
     "capital": false,
-    "name_kana": "モテギマチ"
+    "name_kana": "モテギマチ",
+    "district": "芳賀郡"
   },
   {
     "code": "093441",
     "prefecture_code": 9,
     "name": "市貝町",
     "capital": false,
-    "name_kana": "イチカイマチ"
+    "name_kana": "イチカイマチ",
+    "district": "芳賀郡"
   },
   {
     "code": "093459",
     "prefecture_code": 9,
     "name": "芳賀町",
     "capital": false,
-    "name_kana": "ハガマチ"
+    "name_kana": "ハガマチ",
+    "district": "芳賀郡"
   },
   {
     "code": "093611",
     "prefecture_code": 9,
     "name": "壬生町",
     "capital": false,
-    "name_kana": "ミブマチ"
+    "name_kana": "ミブマチ",
+    "district": "下都賀郡"
   },
   {
     "code": "093645",
     "prefecture_code": 9,
     "name": "野木町",
     "capital": false,
-    "name_kana": "ノギマチ"
+    "name_kana": "ノギマチ",
+    "district": "下都賀郡"
   },
   {
     "code": "093840",
     "prefecture_code": 9,
     "name": "塩谷町",
     "capital": false,
-    "name_kana": "シオヤマチ"
+    "name_kana": "シオヤマチ",
+    "district": "塩谷郡"
   },
   {
     "code": "093866",
     "prefecture_code": 9,
     "name": "高根沢町",
     "capital": false,
-    "name_kana": "タカネザワマチ"
+    "name_kana": "タカネザワマチ",
+    "district": "塩谷郡"
   },
   {
     "code": "094072",
     "prefecture_code": 9,
     "name": "那須町",
     "capital": false,
-    "name_kana": "ナスマチ"
+    "name_kana": "ナスマチ",
+    "district": "那須郡"
   },
   {
     "code": "094111",
     "prefecture_code": 9,
     "name": "那珂川町",
     "capital": false,
-    "name_kana": "ナカガワマチ"
+    "name_kana": "ナカガワマチ",
+    "district": "那須郡"
   }
 ]

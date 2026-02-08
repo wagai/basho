@@ -354,160 +354,183 @@
     "prefecture_code": 11,
     "name": "伊奈町",
     "capital": false,
-    "name_kana": "イナマチ"
+    "name_kana": "イナマチ",
+    "district": "北足立郡"
   },
   {
     "code": "113247",
     "prefecture_code": 11,
     "name": "三芳町",
     "capital": false,
-    "name_kana": "ミヨシマチ"
+    "name_kana": "ミヨシマチ",
+    "district": "入間郡"
   },
   {
     "code": "113263",
     "prefecture_code": 11,
     "name": "毛呂山町",
     "capital": false,
-    "name_kana": "モロヤママチ"
+    "name_kana": "モロヤママチ",
+    "district": "入間郡"
   },
   {
     "code": "113271",
     "prefecture_code": 11,
     "name": "越生町",
     "capital": false,
-    "name_kana": "オゴセマチ"
+    "name_kana": "オゴセマチ",
+    "district": "入間郡"
   },
   {
     "code": "113417",
     "prefecture_code": 11,
     "name": "滑川町",
     "capital": false,
-    "name_kana": "ナメガワマチ"
+    "name_kana": "ナメガワマチ",
+    "district": "比企郡"
   },
   {
     "code": "113425",
     "prefecture_code": 11,
     "name": "嵐山町",
     "capital": false,
-    "name_kana": "ランザンマチ"
+    "name_kana": "ランザンマチ",
+    "district": "比企郡"
   },
   {
     "code": "113433",
     "prefecture_code": 11,
     "name": "小川町",
     "capital": false,
-    "name_kana": "オガワマチ"
+    "name_kana": "オガワマチ",
+    "district": "比企郡"
   },
   {
     "code": "113468",
     "prefecture_code": 11,
     "name": "川島町",
     "capital": false,
-    "name_kana": "カワジママチ"
+    "name_kana": "カワジママチ",
+    "district": "比企郡"
   },
   {
     "code": "113476",
     "prefecture_code": 11,
     "name": "吉見町",
     "capital": false,
-    "name_kana": "ヨシミマチ"
+    "name_kana": "ヨシミマチ",
+    "district": "比企郡"
   },
   {
     "code": "113484",
     "prefecture_code": 11,
     "name": "鳩山町",
     "capital": false,
-    "name_kana": "ハトヤママチ"
+    "name_kana": "ハトヤママチ",
+    "district": "比企郡"
   },
   {
     "code": "113492",
     "prefecture_code": 11,
     "name": "ときがわ町",
     "capital": false,
-    "name_kana": "トキガワマチ"
+    "name_kana": "トキガワマチ",
+    "district": "比企郡"
   },
   {
     "code": "113611",
     "prefecture_code": 11,
     "name": "横瀬町",
     "capital": false,
-    "name_kana": "ヨコゼマチ"
+    "name_kana": "ヨコゼマチ",
+    "district": "秩父郡"
   },
   {
     "code": "113620",
     "prefecture_code": 11,
     "name": "皆野町",
     "capital": false,
-    "name_kana": "ミナノマチ"
+    "name_kana": "ミナノマチ",
+    "district": "秩父郡"
   },
   {
     "code": "113638",
     "prefecture_code": 11,
     "name": "長瀞町",
     "capital": false,
-    "name_kana": "ナガトロマチ"
+    "name_kana": "ナガトロマチ",
+    "district": "秩父郡"
   },
   {
     "code": "113654",
     "prefecture_code": 11,
     "name": "小鹿野町",
     "capital": false,
-    "name_kana": "オガノマチ"
+    "name_kana": "オガノマチ",
+    "district": "秩父郡"
   },
   {
     "code": "113697",
     "prefecture_code": 11,
     "name": "東秩父村",
     "capital": false,
-    "name_kana": "ヒガシチチブムラ"
+    "name_kana": "ヒガシチチブムラ",
+    "district": "秩父郡"
   },
   {
     "code": "113816",
     "prefecture_code": 11,
     "name": "美里町",
     "capital": false,
-    "name_kana": "ミサトマチ"
+    "name_kana": "ミサトマチ",
+    "district": "児玉郡"
   },
   {
     "code": "113832",
     "prefecture_code": 11,
     "name": "神川町",
     "capital": false,
-    "name_kana": "カミカワマチ"
+    "name_kana": "カミカワマチ",
+    "district": "児玉郡"
   },
   {
     "code": "113859",
     "prefecture_code": 11,
     "name": "上里町",
     "capital": false,
-    "name_kana": "カミサトマチ"
+    "name_kana": "カミサトマチ",
+    "district": "児玉郡"
   },
   {
     "code": "114081",
     "prefecture_code": 11,
     "name": "寄居町",
     "capital": false,
-    "name_kana": "ヨリイマチ"
+    "name_kana": "ヨリイマチ",
+    "district": "大里郡"
   },
   {
     "code": "114421",
     "prefecture_code": 11,
     "name": "宮代町",
     "capital": false,
-    "name_kana": "ミヤシロマチ"
+    "name_kana": "ミヤシロマチ",
+    "district": "南埼玉郡"
   },
   {
     "code": "114642",
     "prefecture_code": 11,
     "name": "杉戸町",
     "capital": false,
-    "name_kana": "スギトマチ"
+    "name_kana": "スギトマチ",
+    "district": "北葛飾郡"
   },
   {
     "code": "114651",
     "prefecture_code": 11,
     "name": "松伏町",
     "capital": false,
-    "name_kana": "マツブシマチ"
+    "name_kana": "マツブシマチ",
+    "district": "北葛飾郡"
   }
 ]

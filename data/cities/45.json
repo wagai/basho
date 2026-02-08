@@ -67,118 +67,135 @@
     "prefecture_code": 45,
     "name": "三股町",
     "capital": false,
-    "name_kana": "ミマタチョウ"
+    "name_kana": "ミマタチョウ",
+    "district": "北諸県郡"
   },
   {
     "code": "453617",
     "prefecture_code": 45,
     "name": "高原町",
     "capital": false,
-    "name_kana": "タカハルチョウ"
+    "name_kana": "タカハルチョウ",
+    "district": "西諸県郡"
   },
   {
     "code": "453820",
     "prefecture_code": 45,
     "name": "国富町",
     "capital": false,
-    "name_kana": "クニトミチョウ"
+    "name_kana": "クニトミチョウ",
+    "district": "東諸県郡"
   },
   {
     "code": "453838",
     "prefecture_code": 45,
     "name": "綾町",
     "capital": false,
-    "name_kana": "アヤチョウ"
+    "name_kana": "アヤチョウ",
+    "district": "東諸県郡"
   },
   {
     "code": "454010",
     "prefecture_code": 45,
     "name": "高鍋町",
     "capital": false,
-    "name_kana": "タカナベチョウ"
+    "name_kana": "タカナベチョウ",
+    "district": "児湯郡"
   },
   {
     "code": "454028",
     "prefecture_code": 45,
     "name": "新富町",
     "capital": false,
-    "name_kana": "シントミチョウ"
+    "name_kana": "シントミチョウ",
+    "district": "児湯郡"
   },
   {
     "code": "454036",
     "prefecture_code": 45,
     "name": "西米良村",
     "capital": false,
-    "name_kana": "ニシメラソン"
+    "name_kana": "ニシメラソン",
+    "district": "児湯郡"
   },
   {
     "code": "454044",
     "prefecture_code": 45,
     "name": "木城町",
     "capital": false,
-    "name_kana": "キジョウチョウ"
+    "name_kana": "キジョウチョウ",
+    "district": "児湯郡"
   },
   {
     "code": "454052",
     "prefecture_code": 45,
     "name": "川南町",
     "capital": false,
-    "name_kana": "カワミナミチョウ"
+    "name_kana": "カワミナミチョウ",
+    "district": "児湯郡"
   },
   {
     "code": "454061",
     "prefecture_code": 45,
     "name": "都農町",
     "capital": false,
-    "name_kana": "ツノチョウ"
+    "name_kana": "ツノチョウ",
+    "district": "児湯郡"
   },
   {
     "code": "454214",
     "prefecture_code": 45,
     "name": "門川町",
     "capital": false,
-    "name_kana": "カドガワチョウ"
+    "name_kana": "カドガワチョウ",
+    "district": "東臼杵郡"
   },
   {
     "code": "454290",
     "prefecture_code": 45,
     "name": "諸塚村",
     "capital": false,
-    "name_kana": "モロツカソン"
+    "name_kana": "モロツカソン",
+    "district": "東臼杵郡"
   },
   {
     "code": "454303",
     "prefecture_code": 45,
     "name": "椎葉村",
     "capital": false,
-    "name_kana": "シイバソン"
+    "name_kana": "シイバソン",
+    "district": "東臼杵郡"
   },
   {
     "code": "454311",
     "prefecture_code": 45,
     "name": "美郷町",
     "capital": false,
-    "name_kana": "ミサトチョウ"
+    "name_kana": "ミサトチョウ",
+    "district": "東臼杵郡"
   },
   {
     "code": "454419",
     "prefecture_code": 45,
     "name": "高千穂町",
     "capital": false,
-    "name_kana": "タカチホチョウ"
+    "name_kana": "タカチホチョウ",
+    "district": "西臼杵郡"
   },
   {
     "code": "454427",
     "prefecture_code": 45,
     "name": "日之影町",
     "capital": false,
-    "name_kana": "ヒノカゲチョウ"
+    "name_kana": "ヒノカゲチョウ",
+    "district": "西臼杵郡"
   },
   {
     "code": "454435",
     "prefecture_code": 45,
     "name": "五ヶ瀬町",
     "capital": false,
-    "name_kana": "ゴカセチョウ"
+    "name_kana": "ゴカセチョウ",
+    "district": "西臼杵郡"
   }
 ]

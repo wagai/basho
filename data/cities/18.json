@@ -67,55 +67,63 @@
     "prefecture_code": 18,
     "name": "永平寺町",
     "capital": false,
-    "name_kana": "エイヘイジチョウ"
+    "name_kana": "エイヘイジチョウ",
+    "district": "吉田郡"
   },
   {
     "code": "183822",
     "prefecture_code": 18,
     "name": "池田町",
     "capital": false,
-    "name_kana": "イケダチョウ"
+    "name_kana": "イケダチョウ",
+    "district": "今立郡"
   },
   {
     "code": "184047",
     "prefecture_code": 18,
     "name": "南越前町",
     "capital": false,
-    "name_kana": "ミナミエチゼンチョウ"
+    "name_kana": "ミナミエチゼンチョウ",
+    "district": "南条郡"
   },
   {
     "code": "184233",
     "prefecture_code": 18,
     "name": "越前町",
     "capital": false,
-    "name_kana": "エチゼンチョウ"
+    "name_kana": "エチゼンチョウ",
+    "district": "丹生郡"
   },
   {
     "code": "184420",
     "prefecture_code": 18,
     "name": "美浜町",
     "capital": false,
-    "name_kana": "ミハマチョウ"
+    "name_kana": "ミハマチョウ",
+    "district": "三方郡"
   },
   {
     "code": "184811",
     "prefecture_code": 18,
     "name": "高浜町",
     "capital": false,
-    "name_kana": "タカハマチョウ"
+    "name_kana": "タカハマチョウ",
+    "district": "大飯郡"
   },
   {
     "code": "184837",
     "prefecture_code": 18,
     "name": "おおい町",
     "capital": false,
-    "name_kana": "オオイチョウ"
+    "name_kana": "オオイチョウ",
+    "district": "大飯郡"
   },
   {
     "code": "185019",
     "prefecture_code": 18,
     "name": "若狭町",
     "capital": false,
-    "name_kana": "ワカサチョウ"
+    "name_kana": "ワカサチョウ",
+    "district": "三方上中郡"
   }
 ]

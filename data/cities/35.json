@@ -95,41 +95,47 @@
     "prefecture_code": 35,
     "name": "周防大島町",
     "capital": false,
-    "name_kana": "スオウオオシマチョウ"
+    "name_kana": "スオウオオシマチョウ",
+    "district": "大島郡"
   },
   {
     "code": "353213",
     "prefecture_code": 35,
     "name": "和木町",
     "capital": false,
-    "name_kana": "ワキチョウ"
+    "name_kana": "ワキチョウ",
+    "district": "玖珂郡"
   },
   {
     "code": "353418",
     "prefecture_code": 35,
     "name": "上関町",
     "capital": false,
-    "name_kana": "カミノセキチョウ"
+    "name_kana": "カミノセキチョウ",
+    "district": "熊毛郡"
   },
   {
     "code": "353434",
     "prefecture_code": 35,
     "name": "田布施町",
     "capital": false,
-    "name_kana": "タブセチョウ"
+    "name_kana": "タブセチョウ",
+    "district": "熊毛郡"
   },
   {
     "code": "353442",
     "prefecture_code": 35,
     "name": "平生町",
     "capital": false,
-    "name_kana": "ヒラオチョウ"
+    "name_kana": "ヒラオチョウ",
+    "district": "熊毛郡"
   },
   {
     "code": "355020",
     "prefecture_code": 35,
     "name": "阿武町",
     "capital": false,
-    "name_kana": "アブチョウ"
+    "name_kana": "アブチョウ",
+    "district": "阿武郡"
   }
 ]

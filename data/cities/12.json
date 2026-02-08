@@ -305,118 +305,135 @@
     "prefecture_code": 12,
     "name": "酒々井町",
     "capital": false,
-    "name_kana": "シスイマチ"
+    "name_kana": "シスイマチ",
+    "district": "印旛郡"
   },
   {
     "code": "123293",
     "prefecture_code": 12,
     "name": "栄町",
     "capital": false,
-    "name_kana": "サカエマチ"
+    "name_kana": "サカエマチ",
+    "district": "印旛郡"
   },
   {
     "code": "123421",
     "prefecture_code": 12,
     "name": "神崎町",
     "capital": false,
-    "name_kana": "コウザキマチ"
+    "name_kana": "コウザキマチ",
+    "district": "香取郡"
   },
   {
     "code": "123471",
     "prefecture_code": 12,
     "name": "多古町",
     "capital": false,
-    "name_kana": "タコマチ"
+    "name_kana": "タコマチ",
+    "district": "香取郡"
   },
   {
     "code": "123498",
     "prefecture_code": 12,
     "name": "東庄町",
     "capital": false,
-    "name_kana": "トウノショウマチ"
+    "name_kana": "トウノショウマチ",
+    "district": "香取郡"
   },
   {
     "code": "124036",
     "prefecture_code": 12,
     "name": "九十九里町",
     "capital": false,
-    "name_kana": "クジユウクリマチ"
+    "name_kana": "クジユウクリマチ",
+    "district": "山武郡"
   },
   {
     "code": "124095",
     "prefecture_code": 12,
     "name": "芝山町",
     "capital": false,
-    "name_kana": "シバヤママチ"
+    "name_kana": "シバヤママチ",
+    "district": "山武郡"
   },
   {
     "code": "124109",
     "prefecture_code": 12,
     "name": "横芝光町",
     "capital": false,
-    "name_kana": "ヨコシバヒカリマチ"
+    "name_kana": "ヨコシバヒカリマチ",
+    "district": "山武郡"
   },
   {
     "code": "124214",
     "prefecture_code": 12,
     "name": "一宮町",
     "capital": false,
-    "name_kana": "イチノミヤマチ"
+    "name_kana": "イチノミヤマチ",
+    "district": "長生郡"
   },
   {
     "code": "124222",
     "prefecture_code": 12,
     "name": "睦沢町",
     "capital": false,
-    "name_kana": "ムツザワマチ"
+    "name_kana": "ムツザワマチ",
+    "district": "長生郡"
   },
   {
     "code": "124231",
     "prefecture_code": 12,
     "name": "長生村",
     "capital": false,
-    "name_kana": "チョウセイムラ"
+    "name_kana": "チョウセイムラ",
+    "district": "長生郡"
   },
   {
     "code": "124249",
     "prefecture_code": 12,
     "name": "白子町",
     "capital": false,
-    "name_kana": "シラコマチ"
+    "name_kana": "シラコマチ",
+    "district": "長生郡"
   },
   {
     "code": "124265",
     "prefecture_code": 12,
     "name": "長柄町",
     "capital": false,
-    "name_kana": "ナガラマチ"
+    "name_kana": "ナガラマチ",
+    "district": "長生郡"
   },
   {
     "code": "124273",
     "prefecture_code": 12,
     "name": "長南町",
     "capital": false,
-    "name_kana": "チョウナンマチ"
+    "name_kana": "チョウナンマチ",
+    "district": "長生郡"
   },
   {
     "code": "124419",
     "prefecture_code": 12,
     "name": "大多喜町",
     "capital": false,
-    "name_kana": "オオタキマチ"
+    "name_kana": "オオタキマチ",
+    "district": "夷隅郡"
   },
   {
     "code": "124435",
     "prefecture_code": 12,
     "name": "御宿町",
     "capital": false,
-    "name_kana": "オンジユクマチ"
+    "name_kana": "オンジユクマチ",
+    "district": "夷隅郡"
   },
   {
     "code": "124630",
     "prefecture_code": 12,
     "name": "鋸南町",
     "capital": false,
-    "name_kana": "キヨナンマチ"
+    "name_kana": "キヨナンマチ",
+    "district": "安房郡"
   }
 ]

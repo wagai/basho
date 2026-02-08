@@ -95,153 +95,175 @@
     "prefecture_code": 6,
     "name": "山辺町",
     "capital": false,
-    "name_kana": "ヤマノベマチ"
+    "name_kana": "ヤマノベマチ",
+    "district": "東村山郡"
   },
   {
     "code": "063029",
     "prefecture_code": 6,
     "name": "中山町",
     "capital": false,
-    "name_kana": "ナカヤママチ"
+    "name_kana": "ナカヤママチ",
+    "district": "東村山郡"
   },
   {
     "code": "063215",
     "prefecture_code": 6,
     "name": "河北町",
     "capital": false,
-    "name_kana": "カホクチョウ"
+    "name_kana": "カホクチョウ",
+    "district": "西村山郡"
   },
   {
     "code": "063223",
     "prefecture_code": 6,
     "name": "西川町",
     "capital": false,
-    "name_kana": "ニシカワマチ"
+    "name_kana": "ニシカワマチ",
+    "district": "西村山郡"
   },
   {
     "code": "063231",
     "prefecture_code": 6,
     "name": "朝日町",
     "capital": false,
-    "name_kana": "アサヒマチ"
+    "name_kana": "アサヒマチ",
+    "district": "西村山郡"
   },
   {
     "code": "063240",
     "prefecture_code": 6,
     "name": "大江町",
     "capital": false,
-    "name_kana": "オオエマチ"
+    "name_kana": "オオエマチ",
+    "district": "西村山郡"
   },
   {
     "code": "063410",
     "prefecture_code": 6,
     "name": "大石田町",
     "capital": false,
-    "name_kana": "オオイシダマチ"
+    "name_kana": "オオイシダマチ",
+    "district": "北村山郡"
   },
   {
     "code": "063614",
     "prefecture_code": 6,
     "name": "金山町",
     "capital": false,
-    "name_kana": "カネヤママチ"
+    "name_kana": "カネヤママチ",
+    "district": "最上郡"
   },
   {
     "code": "063622",
     "prefecture_code": 6,
     "name": "最上町",
     "capital": false,
-    "name_kana": "モガミマチ"
+    "name_kana": "モガミマチ",
+    "district": "最上郡"
   },
   {
     "code": "063631",
     "prefecture_code": 6,
     "name": "舟形町",
     "capital": false,
-    "name_kana": "フナガタマチ"
+    "name_kana": "フナガタマチ",
+    "district": "最上郡"
   },
   {
     "code": "063649",
     "prefecture_code": 6,
     "name": "真室川町",
     "capital": false,
-    "name_kana": "マムロガワマチ"
+    "name_kana": "マムロガワマチ",
+    "district": "最上郡"
   },
   {
     "code": "063657",
     "prefecture_code": 6,
     "name": "大蔵村",
     "capital": false,
-    "name_kana": "オオクラムラ"
+    "name_kana": "オオクラムラ",
+    "district": "最上郡"
   },
   {
     "code": "063665",
     "prefecture_code": 6,
     "name": "鮭川村",
     "capital": false,
-    "name_kana": "サケガワムラ"
+    "name_kana": "サケガワムラ",
+    "district": "最上郡"
   },
   {
     "code": "063673",
     "prefecture_code": 6,
     "name": "戸沢村",
     "capital": false,
-    "name_kana": "トザワムラ"
+    "name_kana": "トザワムラ",
+    "district": "最上郡"
   },
   {
     "code": "063819",
     "prefecture_code": 6,
     "name": "高畠町",
     "capital": false,
-    "name_kana": "タカハタマチ"
+    "name_kana": "タカハタマチ",
+    "district": "東置賜郡"
   },
   {
     "code": "063827",
     "prefecture_code": 6,
     "name": "川西町",
     "capital": false,
-    "name_kana": "カワニシマチ"
+    "name_kana": "カワニシマチ",
+    "district": "東置賜郡"
   },
   {
     "code": "064017",
     "prefecture_code": 6,
     "name": "小国町",
     "capital": false,
-    "name_kana": "オグニマチ"
+    "name_kana": "オグニマチ",
+    "district": "西置賜郡"
   },
   {
     "code": "064025",
     "prefecture_code": 6,
     "name": "白鷹町",
     "capital": false,
-    "name_kana": "シラタカマチ"
+    "name_kana": "シラタカマチ",
+    "district": "西置賜郡"
   },
   {
     "code": "064033",
     "prefecture_code": 6,
     "name": "飯豊町",
     "capital": false,
-    "name_kana": "イイデマチ"
+    "name_kana": "イイデマチ",
+    "district": "西置賜郡"
   },
   {
     "code": "064262",
     "prefecture_code": 6,
     "name": "三川町",
     "capital": false,
-    "name_kana": "ミカワマチ"
+    "name_kana": "ミカワマチ",
+    "district": "東田川郡"
   },
   {
     "code": "064289",
     "prefecture_code": 6,
     "name": "庄内町",
     "capital": false,
-    "name_kana": "シヨウナイマチ"
+    "name_kana": "シヨウナイマチ",
+    "district": "東田川郡"
   },
   {
     "code": "064611",
     "prefecture_code": 6,
     "name": "遊佐町",
     "capital": false,
-    "name_kana": "ユザマチ"
+    "name_kana": "ユザマチ",
+    "district": "飽海郡"
   }
 ]

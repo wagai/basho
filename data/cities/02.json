@@ -74,209 +74,239 @@
     "prefecture_code": 2,
     "name": "平内町",
     "capital": false,
-    "name_kana": "ヒラナイマチ"
+    "name_kana": "ヒラナイマチ",
+    "district": "東津軽郡"
   },
   {
     "code": "023035",
     "prefecture_code": 2,
     "name": "今別町",
     "capital": false,
-    "name_kana": "イマベツマチ"
+    "name_kana": "イマベツマチ",
+    "district": "東津軽郡"
   },
   {
     "code": "023043",
     "prefecture_code": 2,
     "name": "蓬田村",
     "capital": false,
-    "name_kana": "ヨモギタムラ"
+    "name_kana": "ヨモギタムラ",
+    "district": "東津軽郡"
   },
   {
     "code": "023078",
     "prefecture_code": 2,
     "name": "外ヶ浜町",
     "capital": false,
-    "name_kana": "ソトガハママチ"
+    "name_kana": "ソトガハママチ",
+    "district": "東津軽郡"
   },
   {
     "code": "023213",
     "prefecture_code": 2,
     "name": "鰺ヶ沢町",
     "capital": false,
-    "name_kana": "アジガサワマチ"
+    "name_kana": "アジガサワマチ",
+    "district": "西津軽郡"
   },
   {
     "code": "023230",
     "prefecture_code": 2,
     "name": "深浦町",
     "capital": false,
-    "name_kana": "フカウラマチ"
+    "name_kana": "フカウラマチ",
+    "district": "西津軽郡"
   },
   {
     "code": "023434",
     "prefecture_code": 2,
     "name": "西目屋村",
     "capital": false,
-    "name_kana": "ニシメヤムラ"
+    "name_kana": "ニシメヤムラ",
+    "district": "中津軽郡"
   },
   {
     "code": "023612",
     "prefecture_code": 2,
     "name": "藤崎町",
     "capital": false,
-    "name_kana": "フジサキマチ"
+    "name_kana": "フジサキマチ",
+    "district": "南津軽郡"
   },
   {
     "code": "023621",
     "prefecture_code": 2,
     "name": "大鰐町",
     "capital": false,
-    "name_kana": "オオワニマチ"
+    "name_kana": "オオワニマチ",
+    "district": "南津軽郡"
   },
   {
     "code": "023671",
     "prefecture_code": 2,
     "name": "田舎館村",
     "capital": false,
-    "name_kana": "イナカダテムラ"
+    "name_kana": "イナカダテムラ",
+    "district": "南津軽郡"
   },
   {
     "code": "023817",
     "prefecture_code": 2,
     "name": "板柳町",
     "capital": false,
-    "name_kana": "イタヤナギマチ"
+    "name_kana": "イタヤナギマチ",
+    "district": "北津軽郡"
   },
   {
     "code": "023841",
     "prefecture_code": 2,
     "name": "鶴田町",
     "capital": false,
-    "name_kana": "ツルタマチ"
+    "name_kana": "ツルタマチ",
+    "district": "北津軽郡"
   },
   {
     "code": "023876",
     "prefecture_code": 2,
     "name": "中泊町",
     "capital": false,
-    "name_kana": "ナカドマリマチ"
+    "name_kana": "ナカドマリマチ",
+    "district": "北津軽郡"
   },
   {
     "code": "024015",
     "prefecture_code": 2,
     "name": "野辺地町",
     "capital": false,
-    "name_kana": "ノヘジマチ"
+    "name_kana": "ノヘジマチ",
+    "district": "上北郡"
   },
   {
     "code": "024023",
     "prefecture_code": 2,
     "name": "七戸町",
     "capital": false,
-    "name_kana": "シチノヘマチ"
+    "name_kana": "シチノヘマチ",
+    "district": "上北郡"
   },
   {
     "code": "024058",
     "prefecture_code": 2,
     "name": "六戸町",
     "capital": false,
-    "name_kana": "ロクノヘマチ"
+    "name_kana": "ロクノヘマチ",
+    "district": "上北郡"
   },
   {
     "code": "024066",
     "prefecture_code": 2,
     "name": "横浜町",
     "capital": false,
-    "name_kana": "ヨコハママチ"
+    "name_kana": "ヨコハママチ",
+    "district": "上北郡"
   },
   {
     "code": "024082",
     "prefecture_code": 2,
     "name": "東北町",
     "capital": false,
-    "name_kana": "トウホクマチ"
+    "name_kana": "トウホクマチ",
+    "district": "上北郡"
   },
   {
     "code": "024112",
     "prefecture_code": 2,
     "name": "六ヶ所村",
     "capital": false,
-    "name_kana": "ロッカショムラ"
+    "name_kana": "ロッカショムラ",
+    "district": "上北郡"
   },
   {
     "code": "024121",
     "prefecture_code": 2,
     "name": "おいらせ町",
     "capital": false,
-    "name_kana": "オイラセチョウ"
+    "name_kana": "オイラセチョウ",
+    "district": "上北郡"
   },
   {
     "code": "024236",
     "prefecture_code": 2,
     "name": "大間町",
     "capital": false,
-    "name_kana": "オオママチ"
+    "name_kana": "オオママチ",
+    "district": "下北郡"
   },
   {
     "code": "024244",
     "prefecture_code": 2,
     "name": "東通村",
     "capital": false,
-    "name_kana": "ヒガシドオリムラ"
+    "name_kana": "ヒガシドオリムラ",
+    "district": "下北郡"
   },
   {
     "code": "024252",
     "prefecture_code": 2,
     "name": "風間浦村",
     "capital": false,
-    "name_kana": "カザマウラムラ"
+    "name_kana": "カザマウラムラ",
+    "district": "下北郡"
   },
   {
     "code": "024261",
     "prefecture_code": 2,
     "name": "佐井村",
     "capital": false,
-    "name_kana": "サイムラ"
+    "name_kana": "サイムラ",
+    "district": "下北郡"
   },
   {
     "code": "024414",
     "prefecture_code": 2,
     "name": "三戸町",
     "capital": false,
-    "name_kana": "サンノヘマチ"
+    "name_kana": "サンノヘマチ",
+    "district": "三戸郡"
   },
   {
     "code": "024422",
     "prefecture_code": 2,
     "name": "五戸町",
     "capital": false,
-    "name_kana": "ゴノヘマチ"
+    "name_kana": "ゴノヘマチ",
+    "district": "三戸郡"
   },
   {
     "code": "024431",
     "prefecture_code": 2,
     "name": "田子町",
     "capital": false,
-    "name_kana": "タッコマチ"
+    "name_kana": "タッコマチ",
+    "district": "三戸郡"
   },
   {
     "code": "024457",
     "prefecture_code": 2,
     "name": "南部町",
     "capital": false,
-    "name_kana": "ナンブチョウ"
+    "name_kana": "ナンブチョウ",
+    "district": "三戸郡"
   },
   {
     "code": "024465",
     "prefecture_code": 2,
     "name": "階上町",
     "capital": false,
-    "name_kana": "ハシカミチョウ"
+    "name_kana": "ハシカミチョウ",
+    "district": "三戸郡"
   },
   {
     "code": "024503",
     "prefecture_code": 2,
     "name": "新郷村",
     "capital": false,
-    "name_kana": "シンゴウムラ"
+    "name_kana": "シンゴウムラ",
+    "district": "三戸郡"
   }
 ]

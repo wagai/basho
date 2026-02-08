@@ -81,55 +81,63 @@
     "prefecture_code": 17,
     "name": "川北町",
     "capital": false,
-    "name_kana": "カワキタマチ"
+    "name_kana": "カワキタマチ",
+    "district": "能美郡"
   },
   {
     "code": "173614",
     "prefecture_code": 17,
     "name": "津幡町",
     "capital": false,
-    "name_kana": "ツバタマチ"
+    "name_kana": "ツバタマチ",
+    "district": "河北郡"
   },
   {
     "code": "173657",
     "prefecture_code": 17,
     "name": "内灘町",
     "capital": false,
-    "name_kana": "ウチナダマチ"
+    "name_kana": "ウチナダマチ",
+    "district": "河北郡"
   },
   {
     "code": "173843",
     "prefecture_code": 17,
     "name": "志賀町",
     "capital": false,
-    "name_kana": "シカマチ"
+    "name_kana": "シカマチ",
+    "district": "羽咋郡"
   },
   {
     "code": "173860",
     "prefecture_code": 17,
     "name": "宝達志水町",
     "capital": false,
-    "name_kana": "ホウダツシミズチョウ"
+    "name_kana": "ホウダツシミズチョウ",
+    "district": "羽咋郡"
   },
   {
     "code": "174076",
     "prefecture_code": 17,
     "name": "中能登町",
     "capital": false,
-    "name_kana": "ナカノトマチ"
+    "name_kana": "ナカノトマチ",
+    "district": "鹿島郡"
   },
   {
     "code": "174611",
     "prefecture_code": 17,
     "name": "穴水町",
     "capital": false,
-    "name_kana": "アナミズマチ"
+    "name_kana": "アナミズマチ",
+    "district": "鳳珠郡"
   },
   {
     "code": "174637",
     "prefecture_code": 17,
     "name": "能登町",
     "capital": false,
-    "name_kana": "ノトチョウ"
+    "name_kana": "ノトチョウ",
+    "district": "鳳珠郡"
   }
 ]
