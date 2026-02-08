@@ -81,160 +81,183 @@
     "prefecture_code": 39,
     "name": "東洋町",
     "capital": false,
-    "name_kana": "トウヨウチョウ"
+    "name_kana": "トウヨウチョウ",
+    "district": "安芸郡"
   },
   {
     "code": "393029",
     "prefecture_code": 39,
     "name": "奈半利町",
     "capital": false,
-    "name_kana": "ナハリチョウ"
+    "name_kana": "ナハリチョウ",
+    "district": "安芸郡"
   },
   {
     "code": "393037",
     "prefecture_code": 39,
     "name": "田野町",
     "capital": false,
-    "name_kana": "タノチョウ"
+    "name_kana": "タノチョウ",
+    "district": "安芸郡"
   },
   {
     "code": "393045",
     "prefecture_code": 39,
     "name": "安田町",
     "capital": false,
-    "name_kana": "ヤスダチョウ"
+    "name_kana": "ヤスダチョウ",
+    "district": "安芸郡"
   },
   {
     "code": "393053",
     "prefecture_code": 39,
     "name": "北川村",
     "capital": false,
-    "name_kana": "キタガワムラ"
+    "name_kana": "キタガワムラ",
+    "district": "安芸郡"
   },
   {
     "code": "393061",
     "prefecture_code": 39,
     "name": "馬路村",
     "capital": false,
-    "name_kana": "ウマジムラ"
+    "name_kana": "ウマジムラ",
+    "district": "安芸郡"
   },
   {
     "code": "393070",
     "prefecture_code": 39,
     "name": "芸西村",
     "capital": false,
-    "name_kana": "ゲイセイムラ"
+    "name_kana": "ゲイセイムラ",
+    "district": "安芸郡"
   },
   {
     "code": "393410",
     "prefecture_code": 39,
     "name": "本山町",
     "capital": false,
-    "name_kana": "モトヤマチョウ"
+    "name_kana": "モトヤマチョウ",
+    "district": "長岡郡"
   },
   {
     "code": "393444",
     "prefecture_code": 39,
     "name": "大豊町",
     "capital": false,
-    "name_kana": "オオトヨチョウ"
+    "name_kana": "オオトヨチョウ",
+    "district": "長岡郡"
   },
   {
     "code": "393631",
     "prefecture_code": 39,
     "name": "土佐町",
     "capital": false,
-    "name_kana": "トサチョウ"
+    "name_kana": "トサチョウ",
+    "district": "土佐郡"
   },
   {
     "code": "393649",
     "prefecture_code": 39,
     "name": "大川村",
     "capital": false,
-    "name_kana": "オオカワムラ"
+    "name_kana": "オオカワムラ",
+    "district": "土佐郡"
   },
   {
     "code": "393860",
     "prefecture_code": 39,
     "name": "いの町",
     "capital": false,
-    "name_kana": "イノチョウ"
+    "name_kana": "イノチョウ",
+    "district": "吾川郡"
   },
   {
     "code": "393878",
     "prefecture_code": 39,
     "name": "仁淀川町",
     "capital": false,
-    "name_kana": "ニヨドガワチョウ"
+    "name_kana": "ニヨドガワチョウ",
+    "district": "吾川郡"
   },
   {
     "code": "394017",
     "prefecture_code": 39,
     "name": "中土佐町",
     "capital": false,
-    "name_kana": "ナカトサチョウ"
+    "name_kana": "ナカトサチョウ",
+    "district": "高岡郡"
   },
   {
     "code": "394025",
     "prefecture_code": 39,
     "name": "佐川町",
     "capital": false,
-    "name_kana": "サカワチョウ"
+    "name_kana": "サカワチョウ",
+    "district": "高岡郡"
   },
   {
     "code": "394033",
     "prefecture_code": 39,
     "name": "越知町",
     "capital": false,
-    "name_kana": "オチチョウ"
+    "name_kana": "オチチョウ",
+    "district": "高岡郡"
   },
   {
     "code": "394050",
     "prefecture_code": 39,
-    "name": "梼原町",
+    "name": "檮原町",
     "capital": false,
-    "name_kana": "ユスハラチョウ"
+    "name_kana": "ユスハラチョウ",
+    "district": "高岡郡"
   },
   {
     "code": "394106",
     "prefecture_code": 39,
     "name": "日高村",
     "capital": false,
-    "name_kana": "ヒダカムラ"
+    "name_kana": "ヒダカムラ",
+    "district": "高岡郡"
   },
   {
     "code": "394114",
     "prefecture_code": 39,
     "name": "津野町",
     "capital": false,
-    "name_kana": "ツノチョウ"
+    "name_kana": "ツノチョウ",
+    "district": "高岡郡"
   },
   {
     "code": "394122",
     "prefecture_code": 39,
     "name": "四万十町",
     "capital": false,
-    "name_kana": "シマントチョウ"
+    "name_kana": "シマントチョウ",
+    "district": "高岡郡"
   },
   {
     "code": "394246",
     "prefecture_code": 39,
     "name": "大月町",
     "capital": false,
-    "name_kana": "オオツキチョウ"
+    "name_kana": "オオツキチョウ",
+    "district": "幡多郡"
   },
   {
     "code": "394271",
     "prefecture_code": 39,
     "name": "三原村",
     "capital": false,
-    "name_kana": "ミハラムラ"
+    "name_kana": "ミハラムラ",
+    "district": "幡多郡"
   },
   {
     "code": "394289",
     "prefecture_code": 39,
     "name": "黒潮町",
     "capital": false,
-    "name_kana": "クロシオチョウ"
+    "name_kana": "クロシオチョウ",
+    "district": "幡多郡"
   }
 ]

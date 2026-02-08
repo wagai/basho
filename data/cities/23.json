@@ -4,7 +4,8 @@
     "prefecture_code": 23,
     "name": "名古屋市",
     "capital": true,
-    "name_kana": "ナゴヤシ"
+    "name_kana": "ナゴヤシ",
+    "district": "北"
   },
   {
     "code": "231011",
@@ -382,111 +383,127 @@
     "prefecture_code": 23,
     "name": "東郷町",
     "capital": false,
-    "name_kana": "トウゴウチョウ"
+    "name_kana": "トウゴウチョウ",
+    "district": "愛知郡"
   },
   {
     "code": "233421",
     "prefecture_code": 23,
     "name": "豊山町",
     "capital": false,
-    "name_kana": "トヨヤマチョウ"
+    "name_kana": "トヨヤマチョウ",
+    "district": "西春日井郡"
   },
   {
     "code": "233617",
     "prefecture_code": 23,
     "name": "大口町",
     "capital": false,
-    "name_kana": "オオグチチョウ"
+    "name_kana": "オオグチチョウ",
+    "district": "丹羽郡"
   },
   {
     "code": "233625",
     "prefecture_code": 23,
     "name": "扶桑町",
     "capital": false,
-    "name_kana": "フソウチョウ"
+    "name_kana": "フソウチョウ",
+    "district": "丹羽郡"
   },
   {
     "code": "234249",
     "prefecture_code": 23,
     "name": "大治町",
     "capital": false,
-    "name_kana": "オオハルチョウ"
+    "name_kana": "オオハルチョウ",
+    "district": "海部郡"
   },
   {
     "code": "234257",
     "prefecture_code": 23,
     "name": "蟹江町",
     "capital": false,
-    "name_kana": "カニエチョウ"
+    "name_kana": "カニエチョウ",
+    "district": "海部郡"
   },
   {
     "code": "234273",
     "prefecture_code": 23,
     "name": "飛島村",
     "capital": false,
-    "name_kana": "トビシマムラ"
+    "name_kana": "トビシマムラ",
+    "district": "海部郡"
   },
   {
     "code": "234419",
     "prefecture_code": 23,
     "name": "阿久比町",
     "capital": false,
-    "name_kana": "アグイチョウ"
+    "name_kana": "アグイチョウ",
+    "district": "知多郡"
   },
   {
     "code": "234427",
     "prefecture_code": 23,
     "name": "東浦町",
     "capital": false,
-    "name_kana": "ヒガシウラチョウ"
+    "name_kana": "ヒガシウラチョウ",
+    "district": "知多郡"
   },
   {
     "code": "234451",
     "prefecture_code": 23,
     "name": "南知多町",
     "capital": false,
-    "name_kana": "ミナミチタチョウ"
+    "name_kana": "ミナミチタチョウ",
+    "district": "知多郡"
   },
   {
     "code": "234460",
     "prefecture_code": 23,
     "name": "美浜町",
     "capital": false,
-    "name_kana": "ミハマチョウ"
+    "name_kana": "ミハマチョウ",
+    "district": "知多郡"
   },
   {
     "code": "234478",
     "prefecture_code": 23,
     "name": "武豊町",
     "capital": false,
-    "name_kana": "タケトヨチョウ"
+    "name_kana": "タケトヨチョウ",
+    "district": "知多郡"
   },
   {
     "code": "235016",
     "prefecture_code": 23,
     "name": "幸田町",
     "capital": false,
-    "name_kana": "コウタチョウ"
+    "name_kana": "コウタチョウ",
+    "district": "額田郡"
   },
   {
     "code": "235610",
     "prefecture_code": 23,
     "name": "設楽町",
     "capital": false,
-    "name_kana": "シタラチョウ"
+    "name_kana": "シタラチョウ",
+    "district": "北設楽郡"
   },
   {
     "code": "235628",
     "prefecture_code": 23,
     "name": "東栄町",
     "capital": false,
-    "name_kana": "トウエイチョウ"
+    "name_kana": "トウエイチョウ",
+    "district": "北設楽郡"
   },
   {
     "code": "235636",
     "prefecture_code": 23,
     "name": "豊根村",
     "capital": false,
-    "name_kana": "トヨネムラ"
+    "name_kana": "トヨネムラ",
+    "district": "北設楽郡"
   }
 ]

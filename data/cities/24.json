@@ -102,104 +102,119 @@
     "prefecture_code": 24,
     "name": "木曽岬町",
     "capital": false,
-    "name_kana": "キソサキチョウ"
+    "name_kana": "キソサキチョウ",
+    "district": "桑名郡"
   },
   {
     "code": "243248",
     "prefecture_code": 24,
     "name": "東員町",
     "capital": false,
-    "name_kana": "トウインチョウ"
+    "name_kana": "トウインチョウ",
+    "district": "員弁郡"
   },
   {
     "code": "243418",
     "prefecture_code": 24,
     "name": "菰野町",
     "capital": false,
-    "name_kana": "コモノチョウ"
+    "name_kana": "コモノチョウ",
+    "district": "三重郡"
   },
   {
     "code": "243434",
     "prefecture_code": 24,
     "name": "朝日町",
     "capital": false,
-    "name_kana": "アサヒチョウ"
+    "name_kana": "アサヒチョウ",
+    "district": "三重郡"
   },
   {
     "code": "243442",
     "prefecture_code": 24,
     "name": "川越町",
     "capital": false,
-    "name_kana": "カワゴエチョウ"
+    "name_kana": "カワゴエチョウ",
+    "district": "三重郡"
   },
   {
     "code": "244414",
     "prefecture_code": 24,
     "name": "多気町",
     "capital": false,
-    "name_kana": "タキチョウ"
+    "name_kana": "タキチョウ",
+    "district": "多気郡"
   },
   {
     "code": "244422",
     "prefecture_code": 24,
     "name": "明和町",
     "capital": false,
-    "name_kana": "メイワチョウ"
+    "name_kana": "メイワチョウ",
+    "district": "多気郡"
   },
   {
     "code": "244431",
     "prefecture_code": 24,
     "name": "大台町",
     "capital": false,
-    "name_kana": "オオダイチョウ"
+    "name_kana": "オオダイチョウ",
+    "district": "多気郡"
   },
   {
     "code": "244619",
     "prefecture_code": 24,
     "name": "玉城町",
     "capital": false,
-    "name_kana": "タマキチョウ"
+    "name_kana": "タマキチョウ",
+    "district": "度会郡"
   },
   {
     "code": "244708",
     "prefecture_code": 24,
     "name": "度会町",
     "capital": false,
-    "name_kana": "ワタライチョウ"
+    "name_kana": "ワタライチョウ",
+    "district": "度会郡"
   },
   {
     "code": "244716",
     "prefecture_code": 24,
     "name": "大紀町",
     "capital": false,
-    "name_kana": "タイキチョウ"
+    "name_kana": "タイキチョウ",
+    "district": "度会郡"
   },
   {
     "code": "244724",
     "prefecture_code": 24,
     "name": "南伊勢町",
     "capital": false,
-    "name_kana": "ミナミイセチョウ"
+    "name_kana": "ミナミイセチョウ",
+    "district": "度会郡"
   },
   {
     "code": "245437",
     "prefecture_code": 24,
     "name": "紀北町",
     "capital": false,
-    "name_kana": "キホクチョウ"
+    "name_kana": "キホクチョウ",
+    "district": "北牟婁郡"
   },
   {
     "code": "245615",
     "prefecture_code": 24,
     "name": "御浜町",
     "capital": false,
-    "name_kana": "ミハマチョウ"
+    "name_kana": "ミハマチョウ",
+    "district": "南牟婁郡"
   },
   {
     "code": "245623",
     "prefecture_code": 24,
     "name": "紀宝町",
     "capital": false,
-    "name_kana": "キホウチョウ"
+    "name_kana": "キホウチョウ",
+    "district": "南牟婁郡"
   }
 ]

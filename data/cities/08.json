@@ -228,83 +228,95 @@
     "prefecture_code": 8,
     "name": "茨城町",
     "capital": false,
-    "name_kana": "イバラキマチ"
+    "name_kana": "イバラキマチ",
+    "district": "東茨城郡"
   },
   {
     "code": "083097",
     "prefecture_code": 8,
     "name": "大洗町",
     "capital": false,
-    "name_kana": "オオアライマチ"
+    "name_kana": "オオアライマチ",
+    "district": "東茨城郡"
   },
   {
     "code": "083101",
     "prefecture_code": 8,
     "name": "城里町",
     "capital": false,
-    "name_kana": "シロサトマチ"
+    "name_kana": "シロサトマチ",
+    "district": "東茨城郡"
   },
   {
     "code": "083411",
     "prefecture_code": 8,
     "name": "東海村",
     "capital": false,
-    "name_kana": "トウカイムラ"
+    "name_kana": "トウカイムラ",
+    "district": "那珂郡"
   },
   {
     "code": "083640",
     "prefecture_code": 8,
     "name": "大子町",
     "capital": false,
-    "name_kana": "ダイゴマチ"
+    "name_kana": "ダイゴマチ",
+    "district": "久慈郡"
   },
   {
     "code": "084425",
     "prefecture_code": 8,
     "name": "美浦村",
     "capital": false,
-    "name_kana": "ミホムラ"
+    "name_kana": "ミホムラ",
+    "district": "稲敷郡"
   },
   {
     "code": "084433",
     "prefecture_code": 8,
     "name": "阿見町",
     "capital": false,
-    "name_kana": "アミマチ"
+    "name_kana": "アミマチ",
+    "district": "稲敷郡"
   },
   {
     "code": "084476",
     "prefecture_code": 8,
     "name": "河内町",
     "capital": false,
-    "name_kana": "カワチマチ"
+    "name_kana": "カワチマチ",
+    "district": "稲敷郡"
   },
   {
     "code": "085219",
     "prefecture_code": 8,
     "name": "八千代町",
     "capital": false,
-    "name_kana": "ヤチヨマチ"
+    "name_kana": "ヤチヨマチ",
+    "district": "結城郡"
   },
   {
     "code": "085421",
     "prefecture_code": 8,
     "name": "五霞町",
     "capital": false,
-    "name_kana": "ゴカマチ"
+    "name_kana": "ゴカマチ",
+    "district": "猿島郡"
   },
   {
     "code": "085464",
     "prefecture_code": 8,
     "name": "境町",
     "capital": false,
-    "name_kana": "サカイマチ"
+    "name_kana": "サカイマチ",
+    "district": "猿島郡"
   },
   {
     "code": "085642",
     "prefecture_code": 8,
     "name": "利根町",
     "capital": false,
-    "name_kana": "トネマチ"
+    "name_kana": "トネマチ",
+    "district": "北相馬郡"
   }
 ]

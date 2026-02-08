@@ -186,76 +186,87 @@
     "prefecture_code": 26,
     "name": "大山崎町",
     "capital": false,
-    "name_kana": "オオヤマザキチョウ"
+    "name_kana": "オオヤマザキチョウ",
+    "district": "乙訓郡"
   },
   {
     "code": "263222",
     "prefecture_code": 26,
     "name": "久御山町",
     "capital": false,
-    "name_kana": "クミヤマチョウ"
+    "name_kana": "クミヤマチョウ",
+    "district": "久世郡"
   },
   {
     "code": "263435",
     "prefecture_code": 26,
     "name": "井手町",
     "capital": false,
-    "name_kana": "イデチョウ"
+    "name_kana": "イデチョウ",
+    "district": "綴喜郡"
   },
   {
     "code": "263443",
     "prefecture_code": 26,
     "name": "宇治田原町",
     "capital": false,
-    "name_kana": "ウジタワラチョウ"
+    "name_kana": "ウジタワラチョウ",
+    "district": "綴喜郡"
   },
   {
     "code": "263648",
     "prefecture_code": 26,
     "name": "笠置町",
     "capital": false,
-    "name_kana": "カサギチョウ"
+    "name_kana": "カサギチョウ",
+    "district": "相楽郡"
   },
   {
     "code": "263656",
     "prefecture_code": 26,
     "name": "和束町",
     "capital": false,
-    "name_kana": "ワヅカチョウ"
+    "name_kana": "ワヅカチョウ",
+    "district": "相楽郡"
   },
   {
     "code": "263664",
     "prefecture_code": 26,
     "name": "精華町",
     "capital": false,
-    "name_kana": "セイカチョウ"
+    "name_kana": "セイカチョウ",
+    "district": "相楽郡"
   },
   {
     "code": "263672",
     "prefecture_code": 26,
     "name": "南山城村",
     "capital": false,
-    "name_kana": "ミナミヤマシロムラ"
+    "name_kana": "ミナミヤマシロムラ",
+    "district": "相楽郡"
   },
   {
     "code": "264075",
     "prefecture_code": 26,
     "name": "京丹波町",
     "capital": false,
-    "name_kana": "キョウタンバチョウ"
+    "name_kana": "キョウタンバチョウ",
+    "district": "船井郡"
   },
   {
     "code": "264636",
     "prefecture_code": 26,
     "name": "伊根町",
     "capital": false,
-    "name_kana": "イネチョウ"
+    "name_kana": "イネチョウ",
+    "district": "与謝郡"
   },
   {
     "code": "264652",
     "prefecture_code": 26,
     "name": "与謝野町",
     "capital": false,
-    "name_kana": "ヨサノチョウ"
+    "name_kana": "ヨサノチョウ",
+    "district": "与謝郡"
   }
 ]

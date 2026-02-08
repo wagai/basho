@@ -123,7 +123,8 @@
     "prefecture_code": 43,
     "name": "天草市",
     "capital": false,
-    "name_kana": "アマクサシ"
+    "name_kana": "アマクサシ",
+    "district": "上"
   },
   {
     "code": "432164",
@@ -137,216 +138,247 @@
     "prefecture_code": 43,
     "name": "美里町",
     "capital": false,
-    "name_kana": "ミサトマチ"
+    "name_kana": "ミサトマチ",
+    "district": "下益城郡"
   },
   {
     "code": "433641",
     "prefecture_code": 43,
     "name": "玉東町",
     "capital": false,
-    "name_kana": "ギョクトウマチ"
+    "name_kana": "ギョクトウマチ",
+    "district": "玉名郡"
   },
   {
     "code": "433675",
     "prefecture_code": 43,
     "name": "南関町",
     "capital": false,
-    "name_kana": "ナンカンマチ"
+    "name_kana": "ナンカンマチ",
+    "district": "玉名郡"
   },
   {
     "code": "433683",
     "prefecture_code": 43,
     "name": "長洲町",
     "capital": false,
-    "name_kana": "ナガスマチ"
+    "name_kana": "ナガスマチ",
+    "district": "玉名郡"
   },
   {
     "code": "433691",
     "prefecture_code": 43,
     "name": "和水町",
     "capital": false,
-    "name_kana": "ナゴミマチ"
+    "name_kana": "ナゴミマチ",
+    "district": "玉名郡"
   },
   {
     "code": "434035",
     "prefecture_code": 43,
     "name": "大津町",
     "capital": false,
-    "name_kana": "オオヅマチ"
+    "name_kana": "オオヅマチ",
+    "district": "菊池郡"
   },
   {
     "code": "434043",
     "prefecture_code": 43,
     "name": "菊陽町",
     "capital": false,
-    "name_kana": "キクヨウマチ"
+    "name_kana": "キクヨウマチ",
+    "district": "菊池郡"
   },
   {
     "code": "434230",
     "prefecture_code": 43,
     "name": "南小国町",
     "capital": false,
-    "name_kana": "ミナミオグニマチ"
+    "name_kana": "ミナミオグニマチ",
+    "district": "阿蘇郡"
   },
   {
     "code": "434248",
     "prefecture_code": 43,
     "name": "小国町",
     "capital": false,
-    "name_kana": "オグニマチ"
+    "name_kana": "オグニマチ",
+    "district": "阿蘇郡南"
   },
   {
     "code": "434256",
     "prefecture_code": 43,
     "name": "産山村",
     "capital": false,
-    "name_kana": "ウブヤマムラ"
+    "name_kana": "ウブヤマムラ",
+    "district": "阿蘇郡"
   },
   {
     "code": "434281",
     "prefecture_code": 43,
     "name": "高森町",
     "capital": false,
-    "name_kana": "タカモリマチ"
+    "name_kana": "タカモリマチ",
+    "district": "阿蘇郡"
   },
   {
     "code": "434329",
     "prefecture_code": 43,
     "name": "西原村",
     "capital": false,
-    "name_kana": "ニシハラムラ"
+    "name_kana": "ニシハラムラ",
+    "district": "阿蘇郡"
   },
   {
     "code": "434337",
     "prefecture_code": 43,
     "name": "南阿蘇村",
     "capital": false,
-    "name_kana": "ミナミアソムラ"
+    "name_kana": "ミナミアソムラ",
+    "district": "阿蘇郡"
   },
   {
     "code": "434418",
     "prefecture_code": 43,
     "name": "御船町",
     "capital": false,
-    "name_kana": "ミフネマチ"
+    "name_kana": "ミフネマチ",
+    "district": "上益城郡"
   },
   {
     "code": "434426",
     "prefecture_code": 43,
     "name": "嘉島町",
     "capital": false,
-    "name_kana": "カシママチ"
+    "name_kana": "カシママチ",
+    "district": "上益城郡"
   },
   {
     "code": "434434",
     "prefecture_code": 43,
     "name": "益城町",
     "capital": false,
-    "name_kana": "マシキマチ"
+    "name_kana": "マシキマチ",
+    "district": "上益城郡"
   },
   {
     "code": "434442",
     "prefecture_code": 43,
     "name": "甲佐町",
     "capital": false,
-    "name_kana": "コウサマチ"
+    "name_kana": "コウサマチ",
+    "district": "上益城郡"
   },
   {
     "code": "434477",
     "prefecture_code": 43,
     "name": "山都町",
     "capital": false,
-    "name_kana": "ヤマトチョウ"
+    "name_kana": "ヤマトチョウ",
+    "district": "上益城郡"
   },
   {
     "code": "434680",
     "prefecture_code": 43,
     "name": "氷川町",
     "capital": false,
-    "name_kana": "ヒカワチョウ"
+    "name_kana": "ヒカワチョウ",
+    "district": "八代郡"
   },
   {
     "code": "434825",
     "prefecture_code": 43,
     "name": "芦北町",
     "capital": false,
-    "name_kana": "アシキタマチ"
+    "name_kana": "アシキタマチ",
+    "district": "葦北郡"
   },
   {
     "code": "434841",
     "prefecture_code": 43,
     "name": "津奈木町",
     "capital": false,
-    "name_kana": "ツナギマチ"
+    "name_kana": "ツナギマチ",
+    "district": "葦北郡"
   },
   {
     "code": "435015",
     "prefecture_code": 43,
     "name": "錦町",
     "capital": false,
-    "name_kana": "ニシキマチ"
+    "name_kana": "ニシキマチ",
+    "district": "球磨郡"
   },
   {
     "code": "435058",
     "prefecture_code": 43,
     "name": "多良木町",
     "capital": false,
-    "name_kana": "タラギマチ"
+    "name_kana": "タラギマチ",
+    "district": "球磨郡"
   },
   {
     "code": "435066",
     "prefecture_code": 43,
     "name": "湯前町",
     "capital": false,
-    "name_kana": "ユノマエマチ"
+    "name_kana": "ユノマエマチ",
+    "district": "球磨郡"
   },
   {
     "code": "435074",
     "prefecture_code": 43,
     "name": "水上村",
     "capital": false,
-    "name_kana": "ミズカミムラ"
+    "name_kana": "ミズカミムラ",
+    "district": "球磨郡"
   },
   {
     "code": "435104",
     "prefecture_code": 43,
     "name": "相良村",
     "capital": false,
-    "name_kana": "サガラムラ"
+    "name_kana": "サガラムラ",
+    "district": "球磨郡"
   },
   {
     "code": "435112",
     "prefecture_code": 43,
     "name": "五木村",
     "capital": false,
-    "name_kana": "イツキムラ"
+    "name_kana": "イツキムラ",
+    "district": "球磨郡"
   },
   {
     "code": "435121",
     "prefecture_code": 43,
     "name": "山江村",
     "capital": false,
-    "name_kana": "ヤマエムラ"
+    "name_kana": "ヤマエムラ",
+    "district": "球磨郡"
   },
   {
     "code": "435139",
     "prefecture_code": 43,
     "name": "球磨村",
     "capital": false,
-    "name_kana": "クマムラ"
+    "name_kana": "クマムラ",
+    "district": "球磨郡"
   },
   {
     "code": "435147",
     "prefecture_code": 43,
     "name": "あさぎり町",
     "capital": false,
-    "name_kana": "アサギリチョウ"
+    "name_kana": "アサギリチョウ",
+    "district": "球磨郡"
   },
   {
     "code": "435317",
     "prefecture_code": 43,
     "name": "苓北町",
     "capital": false,
-    "name_kana": "レイホクマチ"
+    "name_kana": "レイホクマチ",
+    "district": "天草郡"
   }
 ]

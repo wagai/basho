@@ -137,146 +137,167 @@
     "prefecture_code": 4,
     "name": "蔵王町",
     "capital": false,
-    "name_kana": "ザオウマチ"
+    "name_kana": "ザオウマチ",
+    "district": "刈田郡"
   },
   {
     "code": "043028",
     "prefecture_code": 4,
     "name": "七ヶ宿町",
     "capital": false,
-    "name_kana": "シチカシュクマチ"
+    "name_kana": "シチカシュクマチ",
+    "district": "刈田郡"
   },
   {
     "code": "043214",
     "prefecture_code": 4,
     "name": "大河原町",
     "capital": false,
-    "name_kana": "オオガワラマチ"
+    "name_kana": "オオガワラマチ",
+    "district": "柴田郡"
   },
   {
     "code": "043222",
     "prefecture_code": 4,
     "name": "村田町",
     "capital": false,
-    "name_kana": "ムラタマチ"
+    "name_kana": "ムラタマチ",
+    "district": "柴田郡"
   },
   {
     "code": "043231",
     "prefecture_code": 4,
     "name": "柴田町",
     "capital": false,
-    "name_kana": "シバタマチ"
+    "name_kana": "シバタマチ",
+    "district": "柴田郡"
   },
   {
     "code": "043249",
     "prefecture_code": 4,
     "name": "川崎町",
     "capital": false,
-    "name_kana": "カワサキマチ"
+    "name_kana": "カワサキマチ",
+    "district": "柴田郡"
   },
   {
     "code": "043419",
     "prefecture_code": 4,
     "name": "丸森町",
     "capital": false,
-    "name_kana": "マルモリマチ"
+    "name_kana": "マルモリマチ",
+    "district": "伊具郡"
   },
   {
     "code": "043613",
     "prefecture_code": 4,
     "name": "亘理町",
     "capital": false,
-    "name_kana": "ワタリチョウ"
+    "name_kana": "ワタリチョウ",
+    "district": "亘理郡"
   },
   {
     "code": "043621",
     "prefecture_code": 4,
     "name": "山元町",
     "capital": false,
-    "name_kana": "ヤマモトチョウ"
+    "name_kana": "ヤマモトチョウ",
+    "district": "亘理郡"
   },
   {
     "code": "044016",
     "prefecture_code": 4,
     "name": "松島町",
     "capital": false,
-    "name_kana": "マツシママチ"
+    "name_kana": "マツシママチ",
+    "district": "宮城郡"
   },
   {
     "code": "044041",
     "prefecture_code": 4,
     "name": "七ヶ浜町",
     "capital": false,
-    "name_kana": "シチガハママチ"
+    "name_kana": "シチガハママチ",
+    "district": "宮城郡"
   },
   {
     "code": "044067",
     "prefecture_code": 4,
     "name": "利府町",
     "capital": false,
-    "name_kana": "リフチョウ"
+    "name_kana": "リフチョウ",
+    "district": "宮城郡"
   },
   {
     "code": "044211",
     "prefecture_code": 4,
     "name": "大和町",
     "capital": false,
-    "name_kana": "タイワチョウ"
+    "name_kana": "タイワチョウ",
+    "district": "黒川郡"
   },
   {
     "code": "044229",
     "prefecture_code": 4,
     "name": "大郷町",
     "capital": false,
-    "name_kana": "オオサトチョウ"
+    "name_kana": "オオサトチョウ",
+    "district": "黒川郡"
   },
   {
     "code": "044245",
     "prefecture_code": 4,
     "name": "大衡村",
     "capital": false,
-    "name_kana": "オオヒラムラ"
+    "name_kana": "オオヒラムラ",
+    "district": "黒川郡"
   },
   {
     "code": "044440",
     "prefecture_code": 4,
     "name": "色麻町",
     "capital": false,
-    "name_kana": "シカマチョウ"
+    "name_kana": "シカマチョウ",
+    "district": "加美郡"
   },
   {
     "code": "044458",
     "prefecture_code": 4,
     "name": "加美町",
     "capital": false,
-    "name_kana": "カミマチ"
+    "name_kana": "カミマチ",
+    "district": "加美郡"
   },
   {
     "code": "045012",
     "prefecture_code": 4,
     "name": "涌谷町",
     "capital": false,
-    "name_kana": "ワクヤチョウ"
+    "name_kana": "ワクヤチョウ",
+    "district": "遠田郡"
   },
   {
     "code": "045055",
     "prefecture_code": 4,
     "name": "美里町",
     "capital": false,
-    "name_kana": "ミサトマチ"
+    "name_kana": "ミサトマチ",
+    "district": "遠田郡"
   },
   {
     "code": "045811",
     "prefecture_code": 4,
     "name": "女川町",
     "capital": false,
-    "name_kana": "オナガワチョウ"
+    "name_kana": "オナガワチョウ",
+    "district": "牡鹿郡"
   },
   {
     "code": "046060",
     "prefecture_code": 4,
     "name": "南三陸町",
     "capital": false,
-    "name_kana": "ミナミサンリクチョウ"
+    "name_kana": "ミナミサンリクチョウ",
+    "district": "本吉郡"
   }
 ]

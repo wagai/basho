@@ -60,76 +60,87 @@
     "prefecture_code": 32,
     "name": "奥出雲町",
     "capital": false,
-    "name_kana": "オクイズモチョウ"
+    "name_kana": "オクイズモチョウ",
+    "district": "仁多郡"
   },
   {
     "code": "323861",
     "prefecture_code": 32,
     "name": "飯南町",
     "capital": false,
-    "name_kana": "イイナンチョウ"
+    "name_kana": "イイナンチョウ",
+    "district": "飯石郡"
   },
   {
     "code": "324418",
     "prefecture_code": 32,
     "name": "川本町",
     "capital": false,
-    "name_kana": "カワモトマチ"
+    "name_kana": "カワモトマチ",
+    "district": "邑智郡"
   },
   {
     "code": "324485",
     "prefecture_code": 32,
     "name": "美郷町",
     "capital": false,
-    "name_kana": "ミサトチョウ"
+    "name_kana": "ミサトチョウ",
+    "district": "邑智郡"
   },
   {
     "code": "324493",
     "prefecture_code": 32,
     "name": "邑南町",
     "capital": false,
-    "name_kana": "オオナンチョウ"
+    "name_kana": "オオナンチョウ",
+    "district": "邑智郡"
   },
   {
     "code": "325015",
     "prefecture_code": 32,
     "name": "津和野町",
     "capital": false,
-    "name_kana": "ツワノチョウ"
+    "name_kana": "ツワノチョウ",
+    "district": "鹿足郡"
   },
   {
     "code": "325058",
     "prefecture_code": 32,
     "name": "吉賀町",
     "capital": false,
-    "name_kana": "ヨシカチョウ"
+    "name_kana": "ヨシカチョウ",
+    "district": "鹿足郡"
   },
   {
     "code": "325252",
     "prefecture_code": 32,
     "name": "海士町",
     "capital": false,
-    "name_kana": "アマチョウ"
+    "name_kana": "アマチョウ",
+    "district": "隠岐郡"
   },
   {
     "code": "325261",
     "prefecture_code": 32,
     "name": "西ノ島町",
     "capital": false,
-    "name_kana": "ニシノシマチョウ"
+    "name_kana": "ニシノシマチョウ",
+    "district": "隠岐郡"
   },
   {
     "code": "325279",
     "prefecture_code": 32,
     "name": "知夫村",
     "capital": false,
-    "name_kana": "チブムラ"
+    "name_kana": "チブムラ",
+    "district": "隠岐郡"
   },
   {
     "code": "325287",
     "prefecture_code": 32,
     "name": "隠岐の島町",
     "capital": false,
-    "name_kana": "オキノシマチョウ"
+    "name_kana": "オキノシマチョウ",
+    "district": "隠岐郡"
   }
 ]

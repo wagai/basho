@@ -81,62 +81,71 @@
     "prefecture_code": 38,
     "name": "上島町",
     "capital": false,
-    "name_kana": "カミジマチョウ"
+    "name_kana": "カミジマチョウ",
+    "district": "越智郡"
   },
   {
     "code": "383864",
     "prefecture_code": 38,
     "name": "久万高原町",
     "capital": false,
-    "name_kana": "クマコウゲンチョウ"
+    "name_kana": "クマコウゲンチョウ",
+    "district": "上浮穴郡"
   },
   {
     "code": "384011",
     "prefecture_code": 38,
     "name": "松前町",
     "capital": false,
-    "name_kana": "マサキチョウ"
+    "name_kana": "マサキチョウ",
+    "district": "伊予郡"
   },
   {
     "code": "384020",
     "prefecture_code": 38,
     "name": "砥部町",
     "capital": false,
-    "name_kana": "トベチョウ"
+    "name_kana": "トベチョウ",
+    "district": "伊予郡"
   },
   {
     "code": "384224",
     "prefecture_code": 38,
     "name": "内子町",
     "capital": false,
-    "name_kana": "ウチコチョウ"
+    "name_kana": "ウチコチョウ",
+    "district": "喜多郡"
   },
   {
     "code": "384429",
     "prefecture_code": 38,
     "name": "伊方町",
     "capital": false,
-    "name_kana": "イカタチョウ"
+    "name_kana": "イカタチョウ",
+    "district": "西宇和郡"
   },
   {
     "code": "384844",
     "prefecture_code": 38,
     "name": "松野町",
     "capital": false,
-    "name_kana": "マツノチョウ"
+    "name_kana": "マツノチョウ",
+    "district": "北宇和郡"
   },
   {
     "code": "384887",
     "prefecture_code": 38,
     "name": "鬼北町",
     "capital": false,
-    "name_kana": "キホクチョウ"
+    "name_kana": "キホクチョウ",
+    "district": "北宇和郡"
   },
   {
     "code": "385069",
     "prefecture_code": 38,
     "name": "愛南町",
     "capital": false,
-    "name_kana": "アイナンチョウ"
+    "name_kana": "アイナンチョウ",
+    "district": "南宇和郡"
   }
 ]

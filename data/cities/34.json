@@ -4,7 +4,8 @@
     "prefecture_code": 34,
     "name": "広島市",
     "capital": true,
-    "name_kana": "ヒロシマシ"
+    "name_kana": "ヒロシマシ",
+    "district": "東"
   },
   {
     "code": "341011",
@@ -158,62 +159,71 @@
     "prefecture_code": 34,
     "name": "府中町",
     "capital": false,
-    "name_kana": "フチュウチョウ"
+    "name_kana": "フチュウチョウ",
+    "district": "安芸郡"
   },
   {
     "code": "343048",
     "prefecture_code": 34,
     "name": "海田町",
     "capital": false,
-    "name_kana": "カイタチョウ"
+    "name_kana": "カイタチョウ",
+    "district": "安芸郡"
   },
   {
     "code": "343072",
     "prefecture_code": 34,
     "name": "熊野町",
     "capital": false,
-    "name_kana": "クマノチョウ"
+    "name_kana": "クマノチョウ",
+    "district": "安芸郡"
   },
   {
     "code": "343099",
     "prefecture_code": 34,
     "name": "坂町",
     "capital": false,
-    "name_kana": "サカチョウ"
+    "name_kana": "サカチョウ",
+    "district": "安芸郡"
   },
   {
     "code": "343684",
     "prefecture_code": 34,
     "name": "安芸太田町",
     "capital": false,
-    "name_kana": "アキオオタチョウ"
+    "name_kana": "アキオオタチョウ",
+    "district": "山県郡"
   },
   {
     "code": "343692",
     "prefecture_code": 34,
     "name": "北広島町",
     "capital": false,
-    "name_kana": "キタヒロシマチョウ"
+    "name_kana": "キタヒロシマチョウ",
+    "district": "山県郡"
   },
   {
     "code": "344311",
     "prefecture_code": 34,
     "name": "大崎上島町",
     "capital": false,
-    "name_kana": "オオサキカミジマチョウ"
+    "name_kana": "オオサキカミジマチョウ",
+    "district": "豊田郡"
   },
   {
     "code": "344621",
     "prefecture_code": 34,
     "name": "世羅町",
     "capital": false,
-    "name_kana": "セラチョウ"
+    "name_kana": "セラチョウ",
+    "district": "世羅郡"
   },
   {
     "code": "345458",
     "prefecture_code": 34,
     "name": "神石高原町",
     "capital": false,
-    "name_kana": "ジンセキコウゲンチョウ"
+    "name_kana": "ジンセキコウゲンチョウ",
+    "district": "神石郡"
   }
 ]

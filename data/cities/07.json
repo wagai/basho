@@ -53,7 +53,8 @@
     "prefecture_code": 7,
     "name": "相馬市",
     "capital": false,
-    "name_kana": "ソウマシ"
+    "name_kana": "ソウマシ",
+    "district": "南"
   },
   {
     "code": "072109",
@@ -95,321 +96,367 @@
     "prefecture_code": 7,
     "name": "桑折町",
     "capital": false,
-    "name_kana": "コオリマチ"
+    "name_kana": "コオリマチ",
+    "district": "伊達郡"
   },
   {
     "code": "073032",
     "prefecture_code": 7,
     "name": "国見町",
     "capital": false,
-    "name_kana": "クニミマチ"
+    "name_kana": "クニミマチ",
+    "district": "伊達郡"
   },
   {
     "code": "073083",
     "prefecture_code": 7,
     "name": "川俣町",
     "capital": false,
-    "name_kana": "カワマタマチ"
+    "name_kana": "カワマタマチ",
+    "district": "伊達郡"
   },
   {
     "code": "073229",
     "prefecture_code": 7,
     "name": "大玉村",
     "capital": false,
-    "name_kana": "オオタマムラ"
+    "name_kana": "オオタマムラ",
+    "district": "安達郡"
   },
   {
     "code": "073423",
     "prefecture_code": 7,
     "name": "鏡石町",
     "capital": false,
-    "name_kana": "カガミイシマチ"
+    "name_kana": "カガミイシマチ",
+    "district": "岩瀬郡"
   },
   {
     "code": "073440",
     "prefecture_code": 7,
     "name": "天栄村",
     "capital": false,
-    "name_kana": "テンエイムラ"
+    "name_kana": "テンエイムラ",
+    "district": "岩瀬郡"
   },
   {
     "code": "073628",
     "prefecture_code": 7,
     "name": "下郷町",
     "capital": false,
-    "name_kana": "シモゴウマチ"
+    "name_kana": "シモゴウマチ",
+    "district": "南会津郡"
   },
   {
     "code": "073644",
     "prefecture_code": 7,
     "name": "檜枝岐村",
     "capital": false,
-    "name_kana": "ヒノエマタムラ"
+    "name_kana": "ヒノエマタムラ",
+    "district": "南会津郡"
   },
   {
     "code": "073679",
     "prefecture_code": 7,
     "name": "只見町",
     "capital": false,
-    "name_kana": "タダミマチ"
+    "name_kana": "タダミマチ",
+    "district": "南会津郡"
   },
   {
     "code": "073687",
     "prefecture_code": 7,
     "name": "南会津町",
     "capital": false,
-    "name_kana": "ミナミアイヅマチ"
+    "name_kana": "ミナミアイヅマチ",
+    "district": "南会津郡"
   },
   {
     "code": "074021",
     "prefecture_code": 7,
     "name": "北塩原村",
     "capital": false,
-    "name_kana": "キタシオバラムラ"
+    "name_kana": "キタシオバラムラ",
+    "district": "耶麻郡"
   },
   {
     "code": "074055",
     "prefecture_code": 7,
     "name": "西会津町",
     "capital": false,
-    "name_kana": "ニシアイヅマチ"
+    "name_kana": "ニシアイヅマチ",
+    "district": "耶麻郡"
   },
   {
     "code": "074071",
     "prefecture_code": 7,
     "name": "磐梯町",
     "capital": false,
-    "name_kana": "バンダイマチ"
+    "name_kana": "バンダイマチ",
+    "district": "耶麻郡"
   },
   {
     "code": "074080",
     "prefecture_code": 7,
     "name": "猪苗代町",
     "capital": false,
-    "name_kana": "イナワシロマチ"
+    "name_kana": "イナワシロマチ",
+    "district": "耶麻郡"
   },
   {
     "code": "074217",
     "prefecture_code": 7,
     "name": "会津坂下町",
     "capital": false,
-    "name_kana": "アイヅバンゲマチ"
+    "name_kana": "アイヅバンゲマチ",
+    "district": "河沼郡"
   },
   {
     "code": "074225",
     "prefecture_code": 7,
     "name": "湯川村",
     "capital": false,
-    "name_kana": "ユガワムラ"
+    "name_kana": "ユガワムラ",
+    "district": "河沼郡"
   },
   {
     "code": "074233",
     "prefecture_code": 7,
     "name": "柳津町",
     "capital": false,
-    "name_kana": "ヤナイヅマチ"
+    "name_kana": "ヤナイヅマチ",
+    "district": "河沼郡"
   },
   {
     "code": "074446",
     "prefecture_code": 7,
     "name": "三島町",
     "capital": false,
-    "name_kana": "ミシママチ"
+    "name_kana": "ミシママチ",
+    "district": "大沼郡"
   },
   {
     "code": "074454",
     "prefecture_code": 7,
     "name": "金山町",
     "capital": false,
-    "name_kana": "カネヤママチ"
+    "name_kana": "カネヤママチ",
+    "district": "大沼郡"
   },
   {
     "code": "074462",
     "prefecture_code": 7,
     "name": "昭和村",
     "capital": false,
-    "name_kana": "ショウワムラ"
+    "name_kana": "ショウワムラ",
+    "district": "大沼郡"
   },
   {
     "code": "074471",
     "prefecture_code": 7,
     "name": "会津美里町",
     "capital": false,
-    "name_kana": "アイヅミサトマチ"
+    "name_kana": "アイヅミサトマチ",
+    "district": "大沼郡"
   },
   {
     "code": "074616",
     "prefecture_code": 7,
     "name": "西郷村",
     "capital": false,
-    "name_kana": "ニシゴウムラ"
+    "name_kana": "ニシゴウムラ",
+    "district": "西白河郡"
   },
   {
     "code": "074641",
     "prefecture_code": 7,
     "name": "泉崎村",
     "capital": false,
-    "name_kana": "イズミザキムラ"
+    "name_kana": "イズミザキムラ",
+    "district": "西白河郡"
   },
   {
     "code": "074659",
     "prefecture_code": 7,
     "name": "中島村",
     "capital": false,
-    "name_kana": "ナカジマムラ"
+    "name_kana": "ナカジマムラ",
+    "district": "西白河郡"
   },
   {
     "code": "074667",
     "prefecture_code": 7,
     "name": "矢吹町",
     "capital": false,
-    "name_kana": "ヤブキマチ"
+    "name_kana": "ヤブキマチ",
+    "district": "西白河郡"
   },
   {
     "code": "074811",
     "prefecture_code": 7,
     "name": "棚倉町",
     "capital": false,
-    "name_kana": "タナグラマチ"
+    "name_kana": "タナグラマチ",
+    "district": "東白川郡"
   },
   {
     "code": "074829",
     "prefecture_code": 7,
     "name": "矢祭町",
     "capital": false,
-    "name_kana": "ヤマツリマチ"
+    "name_kana": "ヤマツリマチ",
+    "district": "東白川郡"
   },
   {
     "code": "074837",
     "prefecture_code": 7,
     "name": "塙町",
     "capital": false,
-    "name_kana": "ハナワマチ"
+    "name_kana": "ハナワマチ",
+    "district": "東白川郡"
   },
   {
     "code": "074845",
     "prefecture_code": 7,
     "name": "鮫川村",
     "capital": false,
-    "name_kana": "サメガワムラ"
+    "name_kana": "サメガワムラ",
+    "district": "東白川郡"
   },
   {
     "code": "075019",
     "prefecture_code": 7,
     "name": "石川町",
     "capital": false,
-    "name_kana": "イシカワマチ"
+    "name_kana": "イシカワマチ",
+    "district": "石川郡"
   },
   {
     "code": "075027",
     "prefecture_code": 7,
     "name": "玉川村",
     "capital": false,
-    "name_kana": "タマカワムラ"
+    "name_kana": "タマカワムラ",
+    "district": "石川郡"
   },
   {
     "code": "075035",
     "prefecture_code": 7,
     "name": "平田村",
     "capital": false,
-    "name_kana": "ヒラタムラ"
+    "name_kana": "ヒラタムラ",
+    "district": "石川郡"
   },
   {
     "code": "075043",
     "prefecture_code": 7,
     "name": "浅川町",
     "capital": false,
-    "name_kana": "アサカワマチ"
+    "name_kana": "アサカワマチ",
+    "district": "石川郡"
   },
   {
     "code": "075051",
     "prefecture_code": 7,
     "name": "古殿町",
     "capital": false,
-    "name_kana": "フルドノマチ"
+    "name_kana": "フルドノマチ",
+    "district": "石川郡"
   },
   {
     "code": "075213",
     "prefecture_code": 7,
     "name": "三春町",
     "capital": false,
-    "name_kana": "ミハルマチ"
+    "name_kana": "ミハルマチ",
+    "district": "田村郡"
   },
   {
     "code": "075221",
     "prefecture_code": 7,
     "name": "小野町",
     "capital": false,
-    "name_kana": "オノマチ"
+    "name_kana": "オノマチ",
+    "district": "田村郡"
   },
   {
     "code": "075418",
     "prefecture_code": 7,
     "name": "広野町",
     "capital": false,
-    "name_kana": "ヒロノマチ"
+    "name_kana": "ヒロノマチ",
+    "district": "双葉郡"
   },
   {
     "code": "075426",
     "prefecture_code": 7,
     "name": "楢葉町",
     "capital": false,
-    "name_kana": "ナラハマチ"
+    "name_kana": "ナラハマチ",
+    "district": "双葉郡"
   },
   {
     "code": "075434",
     "prefecture_code": 7,
     "name": "富岡町",
     "capital": false,
-    "name_kana": "トミオカマチ"
+    "name_kana": "トミオカマチ",
+    "district": "双葉郡"
   },
   {
     "code": "075442",
     "prefecture_code": 7,
     "name": "川内村",
     "capital": false,
-    "name_kana": "カワウチムラ"
+    "name_kana": "カワウチムラ",
+    "district": "双葉郡"
   },
   {
     "code": "075451",
     "prefecture_code": 7,
     "name": "大熊町",
     "capital": false,
-    "name_kana": "オオクママチ"
+    "name_kana": "オオクママチ",
+    "district": "双葉郡"
   },
   {
     "code": "075469",
     "prefecture_code": 7,
     "name": "双葉町",
     "capital": false,
-    "name_kana": "フタバマチ"
+    "name_kana": "フタバマチ",
+    "district": "双葉郡"
   },
   {
     "code": "075477",
     "prefecture_code": 7,
     "name": "浪江町",
     "capital": false,
-    "name_kana": "ナミエマチ"
+    "name_kana": "ナミエマチ",
+    "district": "双葉郡"
   },
   {
     "code": "075485",
     "prefecture_code": 7,
     "name": "葛尾村",
     "capital": false,
-    "name_kana": "カツラオムラ"
+    "name_kana": "カツラオムラ",
+    "district": "双葉郡"
   },
   {
     "code": "075612",
     "prefecture_code": 7,
     "name": "新地町",
     "capital": false,
-    "name_kana": "シンチマチ"
+    "name_kana": "シンチマチ",
+    "district": "相馬郡"
   },
   {
     "code": "075647",
     "prefecture_code": 7,
     "name": "飯舘村",
     "capital": false,
-    "name_kana": "イイタテムラ"
+    "name_kana": "イイタテムラ",
+    "district": "相馬郡"
   }
 ]

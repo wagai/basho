@@ -95,97 +95,111 @@
     "prefecture_code": 19,
     "name": "市川三郷町",
     "capital": false,
-    "name_kana": "イチカワミサトチョウ"
+    "name_kana": "イチカワミサトチョウ",
+    "district": "西八代郡"
   },
   {
     "code": "193640",
     "prefecture_code": 19,
     "name": "早川町",
     "capital": false,
-    "name_kana": "ハヤカワチョウ"
+    "name_kana": "ハヤカワチョウ",
+    "district": "南巨摩郡"
   },
   {
     "code": "193658",
     "prefecture_code": 19,
     "name": "身延町",
     "capital": false,
-    "name_kana": "ミノブチョウ"
+    "name_kana": "ミノブチョウ",
+    "district": "南巨摩郡"
   },
   {
     "code": "193666",
     "prefecture_code": 19,
     "name": "南部町",
     "capital": false,
-    "name_kana": "ナンブチョウ"
+    "name_kana": "ナンブチョウ",
+    "district": "南巨摩郡"
   },
   {
     "code": "193682",
     "prefecture_code": 19,
     "name": "富士川町",
     "capital": false,
-    "name_kana": "フジカワチョウ"
+    "name_kana": "フジカワチョウ",
+    "district": "南巨摩郡"
   },
   {
     "code": "193844",
     "prefecture_code": 19,
     "name": "昭和町",
     "capital": false,
-    "name_kana": "ショウワチョウ"
+    "name_kana": "ショウワチョウ",
+    "district": "中巨摩郡"
   },
   {
     "code": "194221",
     "prefecture_code": 19,
     "name": "道志村",
     "capital": false,
-    "name_kana": "ドウシムラ"
+    "name_kana": "ドウシムラ",
+    "district": "南都留郡"
   },
   {
     "code": "194239",
     "prefecture_code": 19,
     "name": "西桂町",
     "capital": false,
-    "name_kana": "ニシカツラチョウ"
+    "name_kana": "ニシカツラチョウ",
+    "district": "南都留郡"
   },
   {
     "code": "194247",
     "prefecture_code": 19,
     "name": "忍野村",
     "capital": false,
-    "name_kana": "オシノムラ"
+    "name_kana": "オシノムラ",
+    "district": "南都留郡"
   },
   {
     "code": "194255",
     "prefecture_code": 19,
     "name": "山中湖村",
     "capital": false,
-    "name_kana": "ヤマナカコムラ"
+    "name_kana": "ヤマナカコムラ",
+    "district": "南都留郡"
   },
   {
     "code": "194298",
     "prefecture_code": 19,
     "name": "鳴沢村",
     "capital": false,
-    "name_kana": "ナルサワムラ"
+    "name_kana": "ナルサワムラ",
+    "district": "南都留郡"
   },
   {
     "code": "194301",
     "prefecture_code": 19,
     "name": "富士河口湖町",
     "capital": false,
-    "name_kana": "フジカワグチコマチ"
+    "name_kana": "フジカワグチコマチ",
+    "district": "南都留郡"
   },
   {
     "code": "194425",
     "prefecture_code": 19,
     "name": "小菅村",
     "capital": false,
-    "name_kana": "コスゲムラ"
+    "name_kana": "コスゲムラ",
+    "district": "北都留郡"
   },
   {
     "code": "194433",
     "prefecture_code": 19,
     "name": "丹波山村",
     "capital": false,
-    "name_kana": "タバヤマムラ"
+    "name_kana": "タバヤマムラ",
+    "district": "北都留郡"
   }
 ]

@@ -102,27 +102,31 @@
     "prefecture_code": 44,
     "name": "姫島村",
     "capital": false,
-    "name_kana": "ヒメシマムラ"
+    "name_kana": "ヒメシマムラ",
+    "district": "東国東郡"
   },
   {
     "code": "443417",
     "prefecture_code": 44,
     "name": "日出町",
     "capital": false,
-    "name_kana": "ヒジマチ"
+    "name_kana": "ヒジマチ",
+    "district": "速見郡"
   },
   {
     "code": "444618",
     "prefecture_code": 44,
     "name": "九重町",
     "capital": false,
-    "name_kana": "ココノエマチ"
+    "name_kana": "ココノエマチ",
+    "district": "玖珠郡"
   },
   {
     "code": "444626",
     "prefecture_code": 44,
     "name": "玖珠町",
     "capital": false,
-    "name_kana": "クスマチ"
+    "name_kana": "クスマチ",
+    "district": "玖珠郡"
   }
 ]

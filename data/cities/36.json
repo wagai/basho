@@ -60,111 +60,127 @@
     "prefecture_code": 36,
     "name": "勝浦町",
     "capital": false,
-    "name_kana": "カツウラチョウ"
+    "name_kana": "カツウラチョウ",
+    "district": "勝浦郡"
   },
   {
     "code": "363022",
     "prefecture_code": 36,
     "name": "上勝町",
     "capital": false,
-    "name_kana": "カミカツチョウ"
+    "name_kana": "カミカツチョウ",
+    "district": "勝浦郡"
   },
   {
     "code": "363219",
     "prefecture_code": 36,
     "name": "佐那河内村",
     "capital": false,
-    "name_kana": "サナゴウチソン"
+    "name_kana": "サナゴウチソン",
+    "district": "名東郡"
   },
   {
     "code": "363413",
     "prefecture_code": 36,
     "name": "石井町",
     "capital": false,
-    "name_kana": "イシイチョウ"
+    "name_kana": "イシイチョウ",
+    "district": "名西郡"
   },
   {
     "code": "363421",
     "prefecture_code": 36,
     "name": "神山町",
     "capital": false,
-    "name_kana": "カミヤマチョウ"
+    "name_kana": "カミヤマチョウ",
+    "district": "名西郡"
   },
   {
     "code": "363685",
     "prefecture_code": 36,
     "name": "那賀町",
     "capital": false,
-    "name_kana": "ナカチョウ"
+    "name_kana": "ナカチョウ",
+    "district": "那賀郡"
   },
   {
     "code": "363839",
     "prefecture_code": 36,
     "name": "牟岐町",
     "capital": false,
-    "name_kana": "ムギチョウ"
+    "name_kana": "ムギチョウ",
+    "district": "海部郡"
   },
   {
     "code": "363871",
     "prefecture_code": 36,
     "name": "美波町",
     "capital": false,
-    "name_kana": "ミナミチョウ"
+    "name_kana": "ミナミチョウ",
+    "district": "海部郡"
   },
   {
     "code": "363880",
     "prefecture_code": 36,
     "name": "海陽町",
     "capital": false,
-    "name_kana": "カイヨウチョウ"
+    "name_kana": "カイヨウチョウ",
+    "district": "海部郡"
   },
   {
     "code": "364011",
     "prefecture_code": 36,
     "name": "松茂町",
     "capital": false,
-    "name_kana": "マツシゲチョウ"
+    "name_kana": "マツシゲチョウ",
+    "district": "板野郡"
   },
   {
     "code": "364029",
     "prefecture_code": 36,
     "name": "北島町",
     "capital": false,
-    "name_kana": "キタジマチョウ"
+    "name_kana": "キタジマチョウ",
+    "district": "板野郡"
   },
   {
     "code": "364037",
     "prefecture_code": 36,
     "name": "藍住町",
     "capital": false,
-    "name_kana": "アイズミチョウ"
+    "name_kana": "アイズミチョウ",
+    "district": "板野郡"
   },
   {
     "code": "364045",
     "prefecture_code": 36,
     "name": "板野町",
     "capital": false,
-    "name_kana": "イタノチョウ"
+    "name_kana": "イタノチョウ",
+    "district": "板野郡"
   },
   {
     "code": "364053",
     "prefecture_code": 36,
     "name": "上板町",
     "capital": false,
-    "name_kana": "カミイタチョウ"
+    "name_kana": "カミイタチョウ",
+    "district": "板野郡"
   },
   {
     "code": "364681",
     "prefecture_code": 36,
     "name": "つるぎ町",
     "capital": false,
-    "name_kana": "ツルギチョウ"
+    "name_kana": "ツルギチョウ",
+    "district": "美馬郡"
   },
   {
     "code": "364894",
     "prefecture_code": 36,
     "name": "東みよし町",
     "capital": false,
-    "name_kana": "ヒガシミヨシチョウ"
+    "name_kana": "ヒガシミヨシチョウ",
+    "district": "三好郡"
   }
 ]

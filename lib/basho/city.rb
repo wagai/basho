@@ -1,12 +1,16 @@
 # frozen_string_literal: true
 
 module Basho
-  City = ::Data.define(:code, :prefecture_code, :name, :name_kana, :capital) do
-    def initialize(capital: false, **)
+  City = ::Data.define(:code, :prefecture_code, :name, :name_kana, :district, :capital) do
+    def initialize(district: nil, capital: false, **)
       super
     end
 
     def capital? = capital
+
+    def full_name
+      district ? "#{district}#{name}" : name
+    end
 
     def prefecture
       Prefecture.find(prefecture_code)

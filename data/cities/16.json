@@ -74,34 +74,39 @@
     "prefecture_code": 16,
     "name": "舟橋村",
     "capital": false,
-    "name_kana": "フナハシムラ"
+    "name_kana": "フナハシムラ",
+    "district": "中新川郡"
   },
   {
     "code": "163228",
     "prefecture_code": 16,
     "name": "上市町",
     "capital": false,
-    "name_kana": "カミイチマチ"
+    "name_kana": "カミイチマチ",
+    "district": "中新川郡"
   },
   {
     "code": "163236",
     "prefecture_code": 16,
     "name": "立山町",
     "capital": false,
-    "name_kana": "タテヤママチ"
+    "name_kana": "タテヤママチ",
+    "district": "中新川郡"
   },
   {
     "code": "163422",
     "prefecture_code": 16,
     "name": "入善町",
     "capital": false,
-    "name_kana": "ニュウゼンマチ"
+    "name_kana": "ニュウゼンマチ",
+    "district": "下新川郡"
   },
   {
     "code": "163431",
     "prefecture_code": 16,
     "name": "朝日町",
     "capital": false,
-    "name_kana": "アサヒマチ"
+    "name_kana": "アサヒマチ",
+    "district": "下新川郡"
   }
 ]

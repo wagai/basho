@@ -88,188 +88,215 @@
     "prefecture_code": 29,
     "name": "山添村",
     "capital": false,
-    "name_kana": "ヤマゾエムラ"
+    "name_kana": "ヤマゾエムラ",
+    "district": "山辺郡"
   },
   {
     "code": "293423",
     "prefecture_code": 29,
     "name": "平群町",
     "capital": false,
-    "name_kana": "ヘグリチョウ"
+    "name_kana": "ヘグリチョウ",
+    "district": "生駒郡"
   },
   {
     "code": "293431",
     "prefecture_code": 29,
     "name": "三郷町",
     "capital": false,
-    "name_kana": "サンゴウチョウ"
+    "name_kana": "サンゴウチョウ",
+    "district": "生駒郡"
   },
   {
     "code": "293440",
     "prefecture_code": 29,
     "name": "斑鳩町",
     "capital": false,
-    "name_kana": "イカルガチョウ"
+    "name_kana": "イカルガチョウ",
+    "district": "生駒郡"
   },
   {
     "code": "293458",
     "prefecture_code": 29,
     "name": "安堵町",
     "capital": false,
-    "name_kana": "アンドチョウ"
+    "name_kana": "アンドチョウ",
+    "district": "生駒郡"
   },
   {
     "code": "293610",
     "prefecture_code": 29,
     "name": "川西町",
     "capital": false,
-    "name_kana": "カワニシチョウ"
+    "name_kana": "カワニシチョウ",
+    "district": "磯城郡"
   },
   {
     "code": "293628",
     "prefecture_code": 29,
     "name": "三宅町",
     "capital": false,
-    "name_kana": "ミヤケチョウ"
+    "name_kana": "ミヤケチョウ",
+    "district": "磯城郡"
   },
   {
     "code": "293636",
     "prefecture_code": 29,
     "name": "田原本町",
     "capital": false,
-    "name_kana": "タワラモトチョウ"
+    "name_kana": "タワラモトチョウ",
+    "district": "磯城郡"
   },
   {
     "code": "293857",
     "prefecture_code": 29,
     "name": "曽爾村",
     "capital": false,
-    "name_kana": "ソニムラ"
+    "name_kana": "ソニムラ",
+    "district": "宇陀郡"
   },
   {
     "code": "293865",
     "prefecture_code": 29,
     "name": "御杖村",
     "capital": false,
-    "name_kana": "ミツエムラ"
+    "name_kana": "ミツエムラ",
+    "district": "宇陀郡"
   },
   {
     "code": "294012",
     "prefecture_code": 29,
     "name": "高取町",
     "capital": false,
-    "name_kana": "タカトリチョウ"
+    "name_kana": "タカトリチョウ",
+    "district": "高市郡"
   },
   {
     "code": "294021",
     "prefecture_code": 29,
     "name": "明日香村",
     "capital": false,
-    "name_kana": "アスカムラ"
+    "name_kana": "アスカムラ",
+    "district": "高市郡"
   },
   {
     "code": "294241",
     "prefecture_code": 29,
     "name": "上牧町",
     "capital": false,
-    "name_kana": "カンマキチョウ"
+    "name_kana": "カンマキチョウ",
+    "district": "北葛城郡"
   },
   {
     "code": "294250",
     "prefecture_code": 29,
     "name": "王寺町",
     "capital": false,
-    "name_kana": "オウジチョウ"
+    "name_kana": "オウジチョウ",
+    "district": "北葛城郡"
   },
   {
     "code": "294268",
     "prefecture_code": 29,
     "name": "広陵町",
     "capital": false,
-    "name_kana": "コウリヨウチョウ"
+    "name_kana": "コウリヨウチョウ",
+    "district": "北葛城郡"
   },
   {
     "code": "294276",
     "prefecture_code": 29,
     "name": "河合町",
     "capital": false,
-    "name_kana": "カワイチョウ"
+    "name_kana": "カワイチョウ",
+    "district": "北葛城郡"
   },
   {
     "code": "294411",
     "prefecture_code": 29,
     "name": "吉野町",
     "capital": false,
-    "name_kana": "ヨシノチョウ"
+    "name_kana": "ヨシノチョウ",
+    "district": "吉野郡"
   },
   {
     "code": "294420",
     "prefecture_code": 29,
     "name": "大淀町",
     "capital": false,
-    "name_kana": "オオヨドチョウ"
+    "name_kana": "オオヨドチョウ",
+    "district": "吉野郡"
   },
   {
     "code": "294438",
     "prefecture_code": 29,
     "name": "下市町",
     "capital": false,
-    "name_kana": "シモイチチョウ"
+    "name_kana": "シモイチチョウ",
+    "district": "吉野郡"
   },
   {
     "code": "294446",
     "prefecture_code": 29,
     "name": "黒滝村",
     "capital": false,
-    "name_kana": "クロタキムラ"
+    "name_kana": "クロタキムラ",
+    "district": "吉野郡"
   },
   {
     "code": "294462",
     "prefecture_code": 29,
     "name": "天川村",
     "capital": false,
-    "name_kana": "テンカワムラ"
+    "name_kana": "テンカワムラ",
+    "district": "吉野郡"
   },
   {
     "code": "294471",
     "prefecture_code": 29,
     "name": "野迫川村",
     "capital": false,
-    "name_kana": "ノセガワムラ"
+    "name_kana": "ノセガワムラ",
+    "district": "吉野郡"
   },
   {
     "code": "294497",
     "prefecture_code": 29,
     "name": "十津川村",
     "capital": false,
-    "name_kana": "トツカワムラ"
+    "name_kana": "トツカワムラ",
+    "district": "吉野郡"
   },
   {
     "code": "294501",
     "prefecture_code": 29,
     "name": "下北山村",
     "capital": false,
-    "name_kana": "シモキタヤマムラ"
+    "name_kana": "シモキタヤマムラ",
+    "district": "吉野郡"
   },
   {
     "code": "294519",
     "prefecture_code": 29,
     "name": "上北山村",
     "capital": false,
-    "name_kana": "カミキタヤマムラ"
+    "name_kana": "カミキタヤマムラ",
+    "district": "吉野郡"
   },
   {
     "code": "294527",
     "prefecture_code": 29,
     "name": "川上村",
     "capital": false,
-    "name_kana": "カワカミムラ"
+    "name_kana": "カワカミムラ",
+    "district": "吉野郡"
   },
   {
     "code": "294535",
     "prefecture_code": 29,
     "name": "東吉野村",
     "capital": false,
-    "name_kana": "ヒガシヨシノムラ"
+    "name_kana": "ヒガシヨシノムラ",
+    "district": "吉野郡"
   }
 ]

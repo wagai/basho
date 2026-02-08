@@ -60,62 +60,71 @@
     "prefecture_code": 37,
     "name": "土庄町",
     "capital": false,
-    "name_kana": "トノショウチョウ"
+    "name_kana": "トノショウチョウ",
+    "district": "小豆郡"
   },
   {
     "code": "373249",
     "prefecture_code": 37,
     "name": "小豆島町",
     "capital": false,
-    "name_kana": "ショウドシマチョウ"
+    "name_kana": "ショウドシマチョウ",
+    "district": "小豆郡"
   },
   {
     "code": "373419",
     "prefecture_code": 37,
     "name": "三木町",
     "capital": false,
-    "name_kana": "ミキチョウ"
+    "name_kana": "ミキチョウ",
+    "district": "木田郡"
   },
   {
     "code": "373648",
     "prefecture_code": 37,
     "name": "直島町",
     "capital": false,
-    "name_kana": "ナオシマチョウ"
+    "name_kana": "ナオシマチョウ",
+    "district": "香川郡"
   },
   {
     "code": "373869",
     "prefecture_code": 37,
     "name": "宇多津町",
     "capital": false,
-    "name_kana": "ウタヅチョウ"
+    "name_kana": "ウタヅチョウ",
+    "district": "綾歌郡"
   },
   {
     "code": "373877",
     "prefecture_code": 37,
     "name": "綾川町",
     "capital": false,
-    "name_kana": "アヤガワチョウ"
+    "name_kana": "アヤガワチョウ",
+    "district": "綾歌郡"
   },
   {
     "code": "374032",
     "prefecture_code": 37,
     "name": "琴平町",
     "capital": false,
-    "name_kana": "コトヒラチョウ"
+    "name_kana": "コトヒラチョウ",
+    "district": "仲多度郡"
   },
   {
     "code": "374041",
     "prefecture_code": 37,
     "name": "多度津町",
     "capital": false,
-    "name_kana": "タドツチョウ"
+    "name_kana": "タドツチョウ",
+    "district": "仲多度郡"
   },
   {
     "code": "374067",
     "prefecture_code": 37,
     "name": "まんのう町",
     "capital": false,
-    "name_kana": "マンノウチョウ"
+    "name_kana": "マンノウチョウ",
+    "district": "仲多度郡"
   }
 ]

@@ -88,160 +88,183 @@
     "prefecture_code": 10,
     "name": "榛東村",
     "capital": false,
-    "name_kana": "シントウムラ"
+    "name_kana": "シントウムラ",
+    "district": "北群馬郡"
   },
   {
     "code": "103454",
     "prefecture_code": 10,
     "name": "吉岡町",
     "capital": false,
-    "name_kana": "ヨシオカマチ"
+    "name_kana": "ヨシオカマチ",
+    "district": "北群馬郡"
   },
   {
     "code": "103667",
     "prefecture_code": 10,
     "name": "上野村",
     "capital": false,
-    "name_kana": "ウエノムラ"
+    "name_kana": "ウエノムラ",
+    "district": "多野郡"
   },
   {
     "code": "103675",
     "prefecture_code": 10,
     "name": "神流町",
     "capital": false,
-    "name_kana": "カンナマチ"
+    "name_kana": "カンナマチ",
+    "district": "多野郡"
   },
   {
     "code": "103829",
     "prefecture_code": 10,
     "name": "下仁田町",
     "capital": false,
-    "name_kana": "シモニタマチ"
+    "name_kana": "シモニタマチ",
+    "district": "甘楽郡"
   },
   {
     "code": "103837",
     "prefecture_code": 10,
     "name": "南牧村",
     "capital": false,
-    "name_kana": "ナンモクムラ"
+    "name_kana": "ナンモクムラ",
+    "district": "甘楽郡"
   },
   {
     "code": "103845",
     "prefecture_code": 10,
     "name": "甘楽町",
     "capital": false,
-    "name_kana": "カンラマチ"
+    "name_kana": "カンラマチ",
+    "district": "甘楽郡"
   },
   {
     "code": "104213",
     "prefecture_code": 10,
     "name": "中之条町",
     "capital": false,
-    "name_kana": "ナカノジヨウマチ"
+    "name_kana": "ナカノジヨウマチ",
+    "district": "吾妻郡"
   },
   {
     "code": "104248",
     "prefecture_code": 10,
     "name": "長野原町",
     "capital": false,
-    "name_kana": "ナガノハラマチ"
+    "name_kana": "ナガノハラマチ",
+    "district": "吾妻郡"
   },
   {
     "code": "104256",
     "prefecture_code": 10,
     "name": "嬬恋村",
     "capital": false,
-    "name_kana": "ツマゴイムラ"
+    "name_kana": "ツマゴイムラ",
+    "district": "吾妻郡"
   },
   {
     "code": "104264",
     "prefecture_code": 10,
     "name": "草津町",
     "capital": false,
-    "name_kana": "クサツマチ"
+    "name_kana": "クサツマチ",
+    "district": "吾妻郡"
   },
   {
     "code": "104281",
     "prefecture_code": 10,
     "name": "高山村",
     "capital": false,
-    "name_kana": "タカヤマムラ"
+    "name_kana": "タカヤマムラ",
+    "district": "吾妻郡"
   },
   {
     "code": "104299",
     "prefecture_code": 10,
     "name": "東吾妻町",
     "capital": false,
-    "name_kana": "ヒガシアガツママチ"
+    "name_kana": "ヒガシアガツママチ",
+    "district": "吾妻郡"
   },
   {
     "code": "104434",
     "prefecture_code": 10,
     "name": "片品村",
     "capital": false,
-    "name_kana": "カタシナムラ"
+    "name_kana": "カタシナムラ",
+    "district": "利根郡"
   },
   {
     "code": "104442",
     "prefecture_code": 10,
     "name": "川場村",
     "capital": false,
-    "name_kana": "カワバムラ"
+    "name_kana": "カワバムラ",
+    "district": "利根郡"
   },
   {
     "code": "104485",
     "prefecture_code": 10,
     "name": "昭和村",
     "capital": false,
-    "name_kana": "ショウワムラ"
+    "name_kana": "ショウワムラ",
+    "district": "利根郡"
   },
   {
     "code": "104493",
     "prefecture_code": 10,
     "name": "みなかみ町",
     "capital": false,
-    "name_kana": "ミナカミマチ"
+    "name_kana": "ミナカミマチ",
+    "district": "利根郡"
   },
   {
     "code": "104647",
     "prefecture_code": 10,
     "name": "玉村町",
     "capital": false,
-    "name_kana": "タマムラマチ"
+    "name_kana": "タマムラマチ",
+    "district": "佐波郡"
   },
   {
     "code": "105210",
     "prefecture_code": 10,
     "name": "板倉町",
     "capital": false,
-    "name_kana": "イタクラマチ"
+    "name_kana": "イタクラマチ",
+    "district": "邑楽郡"
   },
   {
     "code": "105228",
     "prefecture_code": 10,
     "name": "明和町",
     "capital": false,
-    "name_kana": "メイワマチ"
+    "name_kana": "メイワマチ",
+    "district": "邑楽郡"
   },
   {
     "code": "105236",
     "prefecture_code": 10,
     "name": "千代田町",
     "capital": false,
-    "name_kana": "チヨダマチ"
+    "name_kana": "チヨダマチ",
+    "district": "邑楽郡"
   },
   {
     "code": "105244",
     "prefecture_code": 10,
     "name": "大泉町",
     "capital": false,
-    "name_kana": "オオイズミマチ"
+    "name_kana": "オオイズミマチ",
+    "district": "邑楽郡"
   },
   {
     "code": "105252",
     "prefecture_code": 10,
     "name": "邑楽町",
     "capital": false,
-    "name_kana": "オウラマチ"
+    "name_kana": "オウラマチ",
+    "district": "邑楽郡"
   }
 ]

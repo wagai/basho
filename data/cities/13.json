@@ -347,28 +347,32 @@
     "prefecture_code": 13,
     "name": "瑞穂町",
     "capital": false,
-    "name_kana": "ミズホマチ"
+    "name_kana": "ミズホマチ",
+    "district": "西多摩郡"
   },
   {
     "code": "133051",
     "prefecture_code": 13,
     "name": "日の出町",
     "capital": false,
-    "name_kana": "ヒノデマチ"
+    "name_kana": "ヒノデマチ",
+    "district": "西多摩郡"
   },
   {
     "code": "133078",
     "prefecture_code": 13,
     "name": "檜原村",
     "capital": false,
-    "name_kana": "ヒノハラムラ"
+    "name_kana": "ヒノハラムラ",
+    "district": "西多摩郡"
   },
   {
     "code": "133086",
     "prefecture_code": 13,
     "name": "奥多摩町",
     "capital": false,
-    "name_kana": "オクタママチ"
+    "name_kana": "オクタママチ",
+    "district": "西多摩郡"
   },
   {
     "code": "133612",
@@ -403,7 +407,8 @@
     "prefecture_code": 13,
     "name": "三宅村",
     "capital": false,
-    "name_kana": "ミヤケムラ"
+    "name_kana": "ミヤケムラ",
+    "district": "三宅島"
   },
   {
     "code": "133825",
@@ -417,7 +422,8 @@
     "prefecture_code": 13,
     "name": "八丈町",
     "capital": false,
-    "name_kana": "ハチジョウマチ"
+    "name_kana": "ハチジョウマチ",
+    "district": "八丈島"
   },
   {
     "code": "134023",
