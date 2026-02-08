@@ -207,83 +207,95 @@
     "prefecture_code": 22,
     "name": "東伊豆町",
     "capital": false,
-    "name_kana": "ヒガシイズチョウ"
+    "name_kana": "ヒガシイズチョウ",
+    "district": "賀茂郡"
   },
   {
     "code": "223026",
     "prefecture_code": 22,
     "name": "河津町",
     "capital": false,
-    "name_kana": "カワヅチョウ"
+    "name_kana": "カワヅチョウ",
+    "district": "賀茂郡"
   },
   {
     "code": "223042",
     "prefecture_code": 22,
     "name": "南伊豆町",
     "capital": false,
-    "name_kana": "ミナミイズチョウ"
+    "name_kana": "ミナミイズチョウ",
+    "district": "賀茂郡"
   },
   {
     "code": "223051",
     "prefecture_code": 22,
     "name": "松崎町",
     "capital": false,
-    "name_kana": "マツザキチョウ"
+    "name_kana": "マツザキチョウ",
+    "district": "賀茂郡"
   },
   {
     "code": "223069",
     "prefecture_code": 22,
     "name": "西伊豆町",
     "capital": false,
-    "name_kana": "ニシイズチョウ"
+    "name_kana": "ニシイズチョウ",
+    "district": "賀茂郡"
   },
   {
     "code": "223255",
     "prefecture_code": 22,
     "name": "函南町",
     "capital": false,
-    "name_kana": "カンナミチョウ"
+    "name_kana": "カンナミチョウ",
+    "district": "田方郡"
   },
   {
     "code": "223417",
     "prefecture_code": 22,
     "name": "清水町",
     "capital": false,
-    "name_kana": "シミズチョウ"
+    "name_kana": "シミズチョウ",
+    "district": "駿東郡"
   },
   {
     "code": "223425",
     "prefecture_code": 22,
     "name": "長泉町",
     "capital": false,
-    "name_kana": "ナガイズミチョウ"
+    "name_kana": "ナガイズミチョウ",
+    "district": "駿東郡"
   },
   {
     "code": "223441",
     "prefecture_code": 22,
     "name": "小山町",
     "capital": false,
-    "name_kana": "オヤマチョウ"
+    "name_kana": "オヤマチョウ",
+    "district": "駿東郡"
   },
   {
     "code": "224243",
     "prefecture_code": 22,
     "name": "吉田町",
     "capital": false,
-    "name_kana": "ヨシダチョウ"
+    "name_kana": "ヨシダチョウ",
+    "district": "榛原郡"
   },
   {
     "code": "224294",
     "prefecture_code": 22,
     "name": "川根本町",
     "capital": false,
-    "name_kana": "カワネホンチョウ"
+    "name_kana": "カワネホンチョウ",
+    "district": "榛原郡"
   },
   {
     "code": "224618",
     "prefecture_code": 22,
     "name": "森町",
     "capital": false,
-    "name_kana": "モリマチ"
+    "name_kana": "モリマチ",
+    "district": "周智郡"
   }
 ]

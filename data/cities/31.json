@@ -32,104 +32,119 @@
     "prefecture_code": 31,
     "name": "岩美町",
     "capital": false,
-    "name_kana": "イワミチョウ"
+    "name_kana": "イワミチョウ",
+    "district": "岩美郡"
   },
   {
     "code": "313254",
     "prefecture_code": 31,
     "name": "若桜町",
     "capital": false,
-    "name_kana": "ワカサチョウ"
+    "name_kana": "ワカサチョウ",
+    "district": "八頭郡"
   },
   {
     "code": "313289",
     "prefecture_code": 31,
     "name": "智頭町",
     "capital": false,
-    "name_kana": "チヅチョウ"
+    "name_kana": "チヅチョウ",
+    "district": "八頭郡"
   },
   {
     "code": "313297",
     "prefecture_code": 31,
     "name": "八頭町",
     "capital": false,
-    "name_kana": "ヤズチョウ"
+    "name_kana": "ヤズチョウ",
+    "district": "八頭郡"
   },
   {
     "code": "313645",
     "prefecture_code": 31,
     "name": "三朝町",
     "capital": false,
-    "name_kana": "ミササチョウ"
+    "name_kana": "ミササチョウ",
+    "district": "東伯郡"
   },
   {
     "code": "313700",
     "prefecture_code": 31,
     "name": "湯梨浜町",
     "capital": false,
-    "name_kana": "ユリハマチョウ"
+    "name_kana": "ユリハマチョウ",
+    "district": "東伯郡"
   },
   {
     "code": "313718",
     "prefecture_code": 31,
     "name": "琴浦町",
     "capital": false,
-    "name_kana": "コトウラチョウ"
+    "name_kana": "コトウラチョウ",
+    "district": "東伯郡"
   },
   {
     "code": "313726",
     "prefecture_code": 31,
     "name": "北栄町",
     "capital": false,
-    "name_kana": "ホクエイチョウ"
+    "name_kana": "ホクエイチョウ",
+    "district": "東伯郡"
   },
   {
     "code": "313840",
     "prefecture_code": 31,
     "name": "日吉津村",
     "capital": false,
-    "name_kana": "ヒエヅソン"
+    "name_kana": "ヒエヅソン",
+    "district": "西伯郡"
   },
   {
     "code": "313866",
     "prefecture_code": 31,
     "name": "大山町",
     "capital": false,
-    "name_kana": "ダイセンチョウ"
+    "name_kana": "ダイセンチョウ",
+    "district": "西伯郡"
   },
   {
     "code": "313891",
     "prefecture_code": 31,
     "name": "南部町",
     "capital": false,
-    "name_kana": "ナンブチョウ"
+    "name_kana": "ナンブチョウ",
+    "district": "西伯郡"
   },
   {
     "code": "313904",
     "prefecture_code": 31,
     "name": "伯耆町",
     "capital": false,
-    "name_kana": "ホウキチョウ"
+    "name_kana": "ホウキチョウ",
+    "district": "西伯郡"
   },
   {
     "code": "314013",
     "prefecture_code": 31,
     "name": "日南町",
     "capital": false,
-    "name_kana": "ニチナンチョウ"
+    "name_kana": "ニチナンチョウ",
+    "district": "日野郡"
   },
   {
     "code": "314021",
     "prefecture_code": 31,
     "name": "日野町",
     "capital": false,
-    "name_kana": "ヒノチョウ"
+    "name_kana": "ヒノチョウ",
+    "district": "日野郡"
   },
   {
     "code": "314030",
     "prefecture_code": 31,
     "name": "江府町",
     "capital": false,
-    "name_kana": "コウフチョウ"
+    "name_kana": "コウフチョウ",
+    "district": "日野郡"
   }
 ]

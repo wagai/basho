@@ -333,97 +333,111 @@
     "prefecture_code": 14,
     "name": "葉山町",
     "capital": false,
-    "name_kana": "ハヤママチ"
+    "name_kana": "ハヤママチ",
+    "district": "三浦郡"
   },
   {
     "code": "143219",
     "prefecture_code": 14,
     "name": "寒川町",
     "capital": false,
-    "name_kana": "サムカワマチ"
+    "name_kana": "サムカワマチ",
+    "district": "高座郡"
   },
   {
     "code": "143413",
     "prefecture_code": 14,
     "name": "大磯町",
     "capital": false,
-    "name_kana": "オオイソマチ"
+    "name_kana": "オオイソマチ",
+    "district": "中郡"
   },
   {
     "code": "143421",
     "prefecture_code": 14,
     "name": "二宮町",
     "capital": false,
-    "name_kana": "ニノミヤマチ"
+    "name_kana": "ニノミヤマチ",
+    "district": "中郡"
   },
   {
     "code": "143618",
     "prefecture_code": 14,
     "name": "中井町",
     "capital": false,
-    "name_kana": "ナカイマチ"
+    "name_kana": "ナカイマチ",
+    "district": "足柄上郡"
   },
   {
     "code": "143626",
     "prefecture_code": 14,
     "name": "大井町",
     "capital": false,
-    "name_kana": "オオイマチ"
+    "name_kana": "オオイマチ",
+    "district": "足柄上郡"
   },
   {
     "code": "143634",
     "prefecture_code": 14,
     "name": "松田町",
     "capital": false,
-    "name_kana": "マツダマチ"
+    "name_kana": "マツダマチ",
+    "district": "足柄上郡"
   },
   {
     "code": "143642",
     "prefecture_code": 14,
     "name": "山北町",
     "capital": false,
-    "name_kana": "ヤマキタマチ"
+    "name_kana": "ヤマキタマチ",
+    "district": "足柄上郡"
   },
   {
     "code": "143669",
     "prefecture_code": 14,
     "name": "開成町",
     "capital": false,
-    "name_kana": "カイセイマチ"
+    "name_kana": "カイセイマチ",
+    "district": "足柄上郡"
   },
   {
     "code": "143821",
     "prefecture_code": 14,
     "name": "箱根町",
     "capital": false,
-    "name_kana": "ハコネマチ"
+    "name_kana": "ハコネマチ",
+    "district": "足柄下郡"
   },
   {
     "code": "143839",
     "prefecture_code": 14,
     "name": "真鶴町",
     "capital": false,
-    "name_kana": "マナツルマチ"
+    "name_kana": "マナツルマチ",
+    "district": "足柄下郡"
   },
   {
     "code": "143847",
     "prefecture_code": 14,
     "name": "湯河原町",
     "capital": false,
-    "name_kana": "ユガワラマチ"
+    "name_kana": "ユガワラマチ",
+    "district": "足柄下郡"
   },
   {
     "code": "144011",
     "prefecture_code": 14,
     "name": "愛川町",
     "capital": false,
-    "name_kana": "アイカワマチ"
+    "name_kana": "アイカワマチ",
+    "district": "愛甲郡"
   },
   {
     "code": "144029",
     "prefecture_code": 14,
     "name": "清川村",
     "capital": false,
-    "name_kana": "キヨカワムラ"
+    "name_kana": "キヨカワムラ",
+    "district": "愛甲郡"
   }
 ]

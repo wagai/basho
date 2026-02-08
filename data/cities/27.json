@@ -4,7 +4,8 @@
     "prefecture_code": 27,
     "name": "大阪市",
     "capital": true,
-    "name_kana": "オオサカシ"
+    "name_kana": "オオサカシ",
+    "district": "東"
   },
   {
     "code": "271021",
@@ -452,69 +453,79 @@
     "prefecture_code": 27,
     "name": "島本町",
     "capital": false,
-    "name_kana": "シマモトチョウ"
+    "name_kana": "シマモトチョウ",
+    "district": "三島郡"
   },
   {
     "code": "273210",
     "prefecture_code": 27,
     "name": "豊能町",
     "capital": false,
-    "name_kana": "トヨノチョウ"
+    "name_kana": "トヨノチョウ",
+    "district": "豊能郡"
   },
   {
     "code": "273228",
     "prefecture_code": 27,
     "name": "能勢町",
     "capital": false,
-    "name_kana": "ノセチョウ"
+    "name_kana": "ノセチョウ",
+    "district": "豊能郡"
   },
   {
     "code": "273414",
     "prefecture_code": 27,
     "name": "忠岡町",
     "capital": false,
-    "name_kana": "タダオカチョウ"
+    "name_kana": "タダオカチョウ",
+    "district": "泉北郡"
   },
   {
     "code": "273619",
     "prefecture_code": 27,
     "name": "熊取町",
     "capital": false,
-    "name_kana": "クマトリチョウ"
+    "name_kana": "クマトリチョウ",
+    "district": "泉南郡"
   },
   {
     "code": "273627",
     "prefecture_code": 27,
     "name": "田尻町",
     "capital": false,
-    "name_kana": "タジリチョウ"
+    "name_kana": "タジリチョウ",
+    "district": "泉南郡"
   },
   {
     "code": "273660",
     "prefecture_code": 27,
     "name": "岬町",
     "capital": false,
-    "name_kana": "ミサキチョウ"
+    "name_kana": "ミサキチョウ",
+    "district": "泉南郡"
   },
   {
     "code": "273813",
     "prefecture_code": 27,
     "name": "太子町",
     "capital": false,
-    "name_kana": "タイシチョウ"
+    "name_kana": "タイシチョウ",
+    "district": "南河内郡"
   },
   {
     "code": "273821",
     "prefecture_code": 27,
     "name": "河南町",
     "capital": false,
-    "name_kana": "カナンチョウ"
+    "name_kana": "カナンチョウ",
+    "district": "南河内郡"
   },
   {
     "code": "273830",
     "prefecture_code": 27,
     "name": "千早赤阪村",
     "capital": false,
-    "name_kana": "チハヤアカサカムラ"
+    "name_kana": "チハヤアカサカムラ",
+    "district": "南河内郡"
   }
 ]

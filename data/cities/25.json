@@ -95,41 +95,47 @@
     "prefecture_code": 25,
     "name": "日野町",
     "capital": false,
-    "name_kana": "ヒノチョウ"
+    "name_kana": "ヒノチョウ",
+    "district": "蒲生郡"
   },
   {
     "code": "253847",
     "prefecture_code": 25,
     "name": "竜王町",
     "capital": false,
-    "name_kana": "リユウオウチョウ"
+    "name_kana": "リユウオウチョウ",
+    "district": "蒲生郡"
   },
   {
     "code": "254258",
     "prefecture_code": 25,
     "name": "愛荘町",
     "capital": false,
-    "name_kana": "アイショウチョウ"
+    "name_kana": "アイショウチョウ",
+    "district": "愛知郡"
   },
   {
     "code": "254410",
     "prefecture_code": 25,
     "name": "豊郷町",
     "capital": false,
-    "name_kana": "トヨサトチョウ"
+    "name_kana": "トヨサトチョウ",
+    "district": "犬上郡"
   },
   {
     "code": "254428",
     "prefecture_code": 25,
     "name": "甲良町",
     "capital": false,
-    "name_kana": "コウラチョウ"
+    "name_kana": "コウラチョウ",
+    "district": "犬上郡"
   },
   {
     "code": "254436",
     "prefecture_code": 25,
     "name": "多賀町",
     "capital": false,
-    "name_kana": "タガチョウ"
+    "name_kana": "タガチョウ",
+    "district": "犬上郡"
   }
 ]

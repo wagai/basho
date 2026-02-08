@@ -79,4 +79,29 @@ RSpec.describe Basho::City do
       expect(city.prefecture.name).to eq("東京都")
     end
   end
+
+  describe "#district" do
+    it "郡に属する町村は郡名を持つ" do
+      city = described_class.find("473626")
+      expect(city.name).to eq("八重瀬町")
+      expect(city.district).to eq("島尻郡")
+    end
+
+    it "市・区は郡名を持たない" do
+      city = described_class.find("131016")
+      expect(city.district).to be_nil
+    end
+  end
+
+  describe "#full_name" do
+    it "郡名付きの正式名を返す" do
+      city = described_class.find("473626")
+      expect(city.full_name).to eq("島尻郡八重瀬町")
+    end
+
+    it "郡がない場合はnameと同じ" do
+      city = described_class.find("131016")
+      expect(city.full_name).to eq("千代田区")
+    end
+  end
 end

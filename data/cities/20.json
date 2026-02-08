@@ -137,405 +137,463 @@
     "prefecture_code": 20,
     "name": "小海町",
     "capital": false,
-    "name_kana": "コウミマチ"
+    "name_kana": "コウミマチ",
+    "district": "南佐久郡"
   },
   {
     "code": "203041",
     "prefecture_code": 20,
     "name": "川上村",
     "capital": false,
-    "name_kana": "カワカミムラ"
+    "name_kana": "カワカミムラ",
+    "district": "南佐久郡"
   },
   {
     "code": "203050",
     "prefecture_code": 20,
     "name": "南牧村",
     "capital": false,
-    "name_kana": "ミナミマキムラ"
+    "name_kana": "ミナミマキムラ",
+    "district": "南佐久郡"
   },
   {
     "code": "203068",
     "prefecture_code": 20,
     "name": "南相木村",
     "capital": false,
-    "name_kana": "ミナミアイキムラ"
+    "name_kana": "ミナミアイキムラ",
+    "district": "南佐久郡"
   },
   {
     "code": "203076",
     "prefecture_code": 20,
     "name": "北相木村",
     "capital": false,
-    "name_kana": "キタアイキムラ"
+    "name_kana": "キタアイキムラ",
+    "district": "南佐久郡"
   },
   {
     "code": "203092",
     "prefecture_code": 20,
     "name": "佐久穂町",
     "capital": false,
-    "name_kana": "サクホマチ"
+    "name_kana": "サクホマチ",
+    "district": "南佐久郡"
   },
   {
     "code": "203211",
     "prefecture_code": 20,
     "name": "軽井沢町",
     "capital": false,
-    "name_kana": "カルイザワマチ"
+    "name_kana": "カルイザワマチ",
+    "district": "北佐久郡"
   },
   {
     "code": "203238",
     "prefecture_code": 20,
     "name": "御代田町",
     "capital": false,
-    "name_kana": "ミヨタマチ"
+    "name_kana": "ミヨタマチ",
+    "district": "北佐久郡"
   },
   {
     "code": "203246",
     "prefecture_code": 20,
     "name": "立科町",
     "capital": false,
-    "name_kana": "タテシナマチ"
+    "name_kana": "タテシナマチ",
+    "district": "北佐久郡"
   },
   {
     "code": "203491",
     "prefecture_code": 20,
     "name": "青木村",
     "capital": false,
-    "name_kana": "アオキムラ"
+    "name_kana": "アオキムラ",
+    "district": "小県郡"
   },
   {
     "code": "203505",
     "prefecture_code": 20,
     "name": "長和町",
     "capital": false,
-    "name_kana": "ナガワマチ"
+    "name_kana": "ナガワマチ",
+    "district": "小県郡"
   },
   {
     "code": "203611",
     "prefecture_code": 20,
     "name": "下諏訪町",
     "capital": false,
-    "name_kana": "シモスワマチ"
+    "name_kana": "シモスワマチ",
+    "district": "諏訪郡"
   },
   {
     "code": "203629",
     "prefecture_code": 20,
     "name": "富士見町",
     "capital": false,
-    "name_kana": "フジミマチ"
+    "name_kana": "フジミマチ",
+    "district": "諏訪郡"
   },
   {
     "code": "203637",
     "prefecture_code": 20,
     "name": "原村",
     "capital": false,
-    "name_kana": "ハラムラ"
+    "name_kana": "ハラムラ",
+    "district": "諏訪郡"
   },
   {
     "code": "203823",
     "prefecture_code": 20,
     "name": "辰野町",
     "capital": false,
-    "name_kana": "タツノマチ"
+    "name_kana": "タツノマチ",
+    "district": "上伊那郡"
   },
   {
     "code": "203831",
     "prefecture_code": 20,
     "name": "箕輪町",
     "capital": false,
-    "name_kana": "ミノワマチ"
+    "name_kana": "ミノワマチ",
+    "district": "上伊那郡"
   },
   {
     "code": "203840",
     "prefecture_code": 20,
     "name": "飯島町",
     "capital": false,
-    "name_kana": "イイジママチ"
+    "name_kana": "イイジママチ",
+    "district": "上伊那郡"
   },
   {
     "code": "203858",
     "prefecture_code": 20,
     "name": "南箕輪村",
     "capital": false,
-    "name_kana": "ミナミミノワムラ"
+    "name_kana": "ミナミミノワムラ",
+    "district": "上伊那郡"
   },
   {
     "code": "203866",
     "prefecture_code": 20,
     "name": "中川村",
     "capital": false,
-    "name_kana": "ナカガワムラ"
+    "name_kana": "ナカガワムラ",
+    "district": "上伊那郡"
   },
   {
     "code": "203882",
     "prefecture_code": 20,
     "name": "宮田村",
     "capital": false,
-    "name_kana": "ミヤダムラ"
+    "name_kana": "ミヤダムラ",
+    "district": "上伊那郡"
   },
   {
     "code": "204021",
     "prefecture_code": 20,
     "name": "松川町",
     "capital": false,
-    "name_kana": "マツカワマチ"
+    "name_kana": "マツカワマチ",
+    "district": "下伊那郡"
   },
   {
     "code": "204030",
     "prefecture_code": 20,
     "name": "高森町",
     "capital": false,
-    "name_kana": "タカモリマチ"
+    "name_kana": "タカモリマチ",
+    "district": "下伊那郡"
   },
   {
     "code": "204048",
     "prefecture_code": 20,
     "name": "阿南町",
     "capital": false,
-    "name_kana": "アナンチョウ"
+    "name_kana": "アナンチョウ",
+    "district": "下伊那郡"
   },
   {
     "code": "204072",
     "prefecture_code": 20,
     "name": "阿智村",
     "capital": false,
-    "name_kana": "アチムラ"
+    "name_kana": "アチムラ",
+    "district": "下伊那郡"
   },
   {
     "code": "204099",
     "prefecture_code": 20,
     "name": "平谷村",
     "capital": false,
-    "name_kana": "ヒラヤムラ"
+    "name_kana": "ヒラヤムラ",
+    "district": "下伊那郡"
   },
   {
     "code": "204102",
     "prefecture_code": 20,
     "name": "根羽村",
     "capital": false,
-    "name_kana": "ネバムラ"
+    "name_kana": "ネバムラ",
+    "district": "下伊那郡"
   },
   {
     "code": "204111",
     "prefecture_code": 20,
     "name": "下條村",
     "capital": false,
-    "name_kana": "シモジョウムラ"
+    "name_kana": "シモジョウムラ",
+    "district": "下伊那郡"
   },
   {
     "code": "204129",
     "prefecture_code": 20,
     "name": "売木村",
     "capital": false,
-    "name_kana": "ウルギムラ"
+    "name_kana": "ウルギムラ",
+    "district": "下伊那郡"
   },
   {
     "code": "204137",
     "prefecture_code": 20,
     "name": "天龍村",
     "capital": false,
-    "name_kana": "テンリュウムラ"
+    "name_kana": "テンリュウムラ",
+    "district": "下伊那郡"
   },
   {
     "code": "204145",
     "prefecture_code": 20,
     "name": "泰阜村",
     "capital": false,
-    "name_kana": "ヤスオカムラ"
+    "name_kana": "ヤスオカムラ",
+    "district": "下伊那郡"
   },
   {
     "code": "204153",
     "prefecture_code": 20,
     "name": "喬木村",
     "capital": false,
-    "name_kana": "タカギムラ"
+    "name_kana": "タカギムラ",
+    "district": "下伊那郡"
   },
   {
     "code": "204161",
     "prefecture_code": 20,
     "name": "豊丘村",
     "capital": false,
-    "name_kana": "トヨオカムラ"
+    "name_kana": "トヨオカムラ",
+    "district": "下伊那郡"
   },
   {
     "code": "204170",
     "prefecture_code": 20,
     "name": "大鹿村",
     "capital": false,
-    "name_kana": "オオシカムラ"
+    "name_kana": "オオシカムラ",
+    "district": "下伊那郡"
   },
   {
     "code": "204226",
     "prefecture_code": 20,
     "name": "上松町",
     "capital": false,
-    "name_kana": "アゲマツマチ"
+    "name_kana": "アゲマツマチ",
+    "district": "木曽郡"
   },
   {
     "code": "204234",
     "prefecture_code": 20,
     "name": "南木曽町",
     "capital": false,
-    "name_kana": "ナギソマチ"
+    "name_kana": "ナギソマチ",
+    "district": "木曽郡"
   },
   {
     "code": "204251",
     "prefecture_code": 20,
     "name": "木祖村",
     "capital": false,
-    "name_kana": "キソムラ"
+    "name_kana": "キソムラ",
+    "district": "木曽郡"
   },
   {
     "code": "204293",
     "prefecture_code": 20,
     "name": "王滝村",
     "capital": false,
-    "name_kana": "オウタキムラ"
+    "name_kana": "オウタキムラ",
+    "district": "木曽郡"
   },
   {
     "code": "204307",
     "prefecture_code": 20,
     "name": "大桑村",
     "capital": false,
-    "name_kana": "オオクワムラ"
+    "name_kana": "オオクワムラ",
+    "district": "木曽郡"
   },
   {
     "code": "204323",
     "prefecture_code": 20,
     "name": "木曽町",
     "capital": false,
-    "name_kana": "キソマチ"
+    "name_kana": "キソマチ",
+    "district": "木曽郡"
   },
   {
     "code": "204463",
     "prefecture_code": 20,
     "name": "麻績村",
     "capital": false,
-    "name_kana": "オミムラ"
+    "name_kana": "オミムラ",
+    "district": "東筑摩郡"
   },
   {
     "code": "204480",
     "prefecture_code": 20,
     "name": "生坂村",
     "capital": false,
-    "name_kana": "イクサカムラ"
+    "name_kana": "イクサカムラ",
+    "district": "東筑摩郡"
   },
   {
     "code": "204501",
     "prefecture_code": 20,
     "name": "山形村",
     "capital": false,
-    "name_kana": "ヤマガタムラ"
+    "name_kana": "ヤマガタムラ",
+    "district": "東筑摩郡"
   },
   {
     "code": "204510",
     "prefecture_code": 20,
     "name": "朝日村",
     "capital": false,
-    "name_kana": "アサヒムラ"
+    "name_kana": "アサヒムラ",
+    "district": "東筑摩郡"
   },
   {
     "code": "204528",
     "prefecture_code": 20,
     "name": "筑北村",
     "capital": false,
-    "name_kana": "チクホクムラ"
+    "name_kana": "チクホクムラ",
+    "district": "東筑摩郡"
   },
   {
     "code": "204811",
     "prefecture_code": 20,
     "name": "池田町",
     "capital": false,
-    "name_kana": "イケダマチ"
+    "name_kana": "イケダマチ",
+    "district": "北安曇郡"
   },
   {
     "code": "204820",
     "prefecture_code": 20,
     "name": "松川村",
     "capital": false,
-    "name_kana": "マツカワムラ"
+    "name_kana": "マツカワムラ",
+    "district": "北安曇郡"
   },
   {
     "code": "204854",
     "prefecture_code": 20,
     "name": "白馬村",
     "capital": false,
-    "name_kana": "ハクバムラ"
+    "name_kana": "ハクバムラ",
+    "district": "北安曇郡"
   },
   {
     "code": "204862",
     "prefecture_code": 20,
     "name": "小谷村",
     "capital": false,
-    "name_kana": "オタリムラ"
+    "name_kana": "オタリムラ",
+    "district": "北安曇郡"
   },
   {
     "code": "205214",
     "prefecture_code": 20,
     "name": "坂城町",
     "capital": false,
-    "name_kana": "サカキマチ"
+    "name_kana": "サカキマチ",
+    "district": "埴科郡"
   },
   {
     "code": "205419",
     "prefecture_code": 20,
     "name": "小布施町",
     "capital": false,
-    "name_kana": "オブセマチ"
+    "name_kana": "オブセマチ",
+    "district": "上高井郡"
   },
   {
     "code": "205435",
     "prefecture_code": 20,
     "name": "高山村",
     "capital": false,
-    "name_kana": "タカヤマムラ"
+    "name_kana": "タカヤマムラ",
+    "district": "上高井郡"
   },
   {
     "code": "205613",
     "prefecture_code": 20,
     "name": "山ノ内町",
     "capital": false,
-    "name_kana": "ヤマノウチマチ"
+    "name_kana": "ヤマノウチマチ",
+    "district": "下高井郡"
   },
   {
     "code": "205621",
     "prefecture_code": 20,
     "name": "木島平村",
     "capital": false,
-    "name_kana": "キジマダイラムラ"
+    "name_kana": "キジマダイラムラ",
+    "district": "下高井郡"
   },
   {
     "code": "205630",
     "prefecture_code": 20,
     "name": "野沢温泉村",
     "capital": false,
-    "name_kana": "ノザワオンセンムラ"
+    "name_kana": "ノザワオンセンムラ",
+    "district": "下高井郡"
   },
   {
     "code": "205834",
     "prefecture_code": 20,
     "name": "信濃町",
     "capital": false,
-    "name_kana": "シナノマチ"
+    "name_kana": "シナノマチ",
+    "district": "上水内郡"
   },
   {
     "code": "205885",
     "prefecture_code": 20,
     "name": "小川村",
     "capital": false,
-    "name_kana": "オガワムラ"
+    "name_kana": "オガワムラ",
+    "district": "上水内郡"
   },
   {
     "code": "205907",
     "prefecture_code": 20,
     "name": "飯綱町",
     "capital": false,
-    "name_kana": "イイヅナマチ"
+    "name_kana": "イイヅナマチ",
+    "district": "上水内郡"
   },
   {
     "code": "206024",
     "prefecture_code": 20,
     "name": "栄村",
     "capital": false,
-    "name_kana": "サカエムラ"
+    "name_kana": "サカエムラ",
+    "district": "下水内郡"
   }
 ]

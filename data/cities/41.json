@@ -74,69 +74,79 @@
     "prefecture_code": 41,
     "name": "吉野ヶ里町",
     "capital": false,
-    "name_kana": "ヨシノガリチョウ"
+    "name_kana": "ヨシノガリチョウ",
+    "district": "神埼郡"
   },
   {
     "code": "413411",
     "prefecture_code": 41,
     "name": "基山町",
     "capital": false,
-    "name_kana": "キヤマチョウ"
+    "name_kana": "キヤマチョウ",
+    "district": "三養基郡"
   },
   {
     "code": "413453",
     "prefecture_code": 41,
     "name": "上峰町",
     "capital": false,
-    "name_kana": "カミミネチョウ"
+    "name_kana": "カミミネチョウ",
+    "district": "三養基郡"
   },
   {
     "code": "413461",
     "prefecture_code": 41,
     "name": "みやき町",
     "capital": false,
-    "name_kana": "ミヤキチョウ"
+    "name_kana": "ミヤキチョウ",
+    "district": "三養基郡"
   },
   {
     "code": "413879",
     "prefecture_code": 41,
     "name": "玄海町",
     "capital": false,
-    "name_kana": "ゲンカイチョウ"
+    "name_kana": "ゲンカイチョウ",
+    "district": "東松浦郡"
   },
   {
     "code": "414018",
     "prefecture_code": 41,
     "name": "有田町",
     "capital": false,
-    "name_kana": "アリタチョウ"
+    "name_kana": "アリタチョウ",
+    "district": "西松浦郡"
   },
   {
     "code": "414239",
     "prefecture_code": 41,
     "name": "大町町",
     "capital": false,
-    "name_kana": "オオマチチョウ"
+    "name_kana": "オオマチチョウ",
+    "district": "杵島郡"
   },
   {
     "code": "414247",
     "prefecture_code": 41,
     "name": "江北町",
     "capital": false,
-    "name_kana": "コウホクマチ"
+    "name_kana": "コウホクマチ",
+    "district": "杵島郡"
   },
   {
     "code": "414255",
     "prefecture_code": 41,
     "name": "白石町",
     "capital": false,
-    "name_kana": "シロイシチョウ"
+    "name_kana": "シロイシチョウ",
+    "district": "杵島郡"
   },
   {
     "code": "414417",
     "prefecture_code": 41,
     "name": "太良町",
     "capital": false,
-    "name_kana": "タラチョウ"
+    "name_kana": "タラチョウ",
+    "district": "藤津郡"
   }
 ]

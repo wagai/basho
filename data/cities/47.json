@@ -81,209 +81,239 @@
     "prefecture_code": 47,
     "name": "国頭村",
     "capital": false,
-    "name_kana": "クニガミソン"
+    "name_kana": "クニガミソン",
+    "district": "国頭郡"
   },
   {
     "code": "473022",
     "prefecture_code": 47,
     "name": "大宜味村",
     "capital": false,
-    "name_kana": "オオギミソン"
+    "name_kana": "オオギミソン",
+    "district": "国頭郡"
   },
   {
     "code": "473031",
     "prefecture_code": 47,
     "name": "東村",
     "capital": false,
-    "name_kana": "ヒガシソン"
+    "name_kana": "ヒガシソン",
+    "district": "国頭郡"
   },
   {
     "code": "473065",
     "prefecture_code": 47,
     "name": "今帰仁村",
     "capital": false,
-    "name_kana": "ナキジンソン"
+    "name_kana": "ナキジンソン",
+    "district": "国頭郡"
   },
   {
     "code": "473081",
     "prefecture_code": 47,
     "name": "本部町",
     "capital": false,
-    "name_kana": "モトブチョウ"
+    "name_kana": "モトブチョウ",
+    "district": "国頭郡"
   },
   {
     "code": "473111",
     "prefecture_code": 47,
     "name": "恩納村",
     "capital": false,
-    "name_kana": "オンナソン"
+    "name_kana": "オンナソン",
+    "district": "国頭郡"
   },
   {
     "code": "473138",
     "prefecture_code": 47,
     "name": "宜野座村",
     "capital": false,
-    "name_kana": "ギノザソン"
+    "name_kana": "ギノザソン",
+    "district": "国頭郡"
   },
   {
     "code": "473146",
     "prefecture_code": 47,
     "name": "金武町",
     "capital": false,
-    "name_kana": "キンチョウ"
+    "name_kana": "キンチョウ",
+    "district": "国頭郡"
   },
   {
     "code": "473154",
     "prefecture_code": 47,
     "name": "伊江村",
     "capital": false,
-    "name_kana": "イエソン"
+    "name_kana": "イエソン",
+    "district": "国頭郡"
   },
   {
     "code": "473243",
     "prefecture_code": 47,
     "name": "読谷村",
     "capital": false,
-    "name_kana": "ヨミタンソン"
+    "name_kana": "ヨミタンソン",
+    "district": "中頭郡"
   },
   {
     "code": "473251",
     "prefecture_code": 47,
     "name": "嘉手納町",
     "capital": false,
-    "name_kana": "カデナチョウ"
+    "name_kana": "カデナチョウ",
+    "district": "中頭郡"
   },
   {
     "code": "473260",
     "prefecture_code": 47,
     "name": "北谷町",
     "capital": false,
-    "name_kana": "チヤタンチョウ"
+    "name_kana": "チヤタンチョウ",
+    "district": "中頭郡"
   },
   {
     "code": "473278",
     "prefecture_code": 47,
     "name": "北中城村",
     "capital": false,
-    "name_kana": "キタナカグスクソン"
+    "name_kana": "キタナカグスクソン",
+    "district": "中頭郡"
   },
   {
     "code": "473286",
     "prefecture_code": 47,
     "name": "中城村",
     "capital": false,
-    "name_kana": "ナカグスクソン"
+    "name_kana": "ナカグスクソン",
+    "district": "中頭郡"
   },
   {
     "code": "473294",
     "prefecture_code": 47,
     "name": "西原町",
     "capital": false,
-    "name_kana": "ニシハラチョウ"
+    "name_kana": "ニシハラチョウ",
+    "district": "中頭郡"
   },
   {
     "code": "473481",
     "prefecture_code": 47,
     "name": "与那原町",
     "capital": false,
-    "name_kana": "ヨナバルチョウ"
+    "name_kana": "ヨナバルチョウ",
+    "district": "島尻郡"
   },
   {
     "code": "473502",
     "prefecture_code": 47,
     "name": "南風原町",
     "capital": false,
-    "name_kana": "ハエバルチョウ"
+    "name_kana": "ハエバルチョウ",
+    "district": "島尻郡"
   },
   {
     "code": "473537",
     "prefecture_code": 47,
     "name": "渡嘉敷村",
     "capital": false,
-    "name_kana": "トカシキソン"
+    "name_kana": "トカシキソン",
+    "district": "島尻郡"
   },
   {
     "code": "473545",
     "prefecture_code": 47,
     "name": "座間味村",
     "capital": false,
-    "name_kana": "ザマミソン"
+    "name_kana": "ザマミソン",
+    "district": "島尻郡"
   },
   {
     "code": "473553",
     "prefecture_code": 47,
     "name": "粟国村",
     "capital": false,
-    "name_kana": "アグニソン"
+    "name_kana": "アグニソン",
+    "district": "島尻郡"
   },
   {
     "code": "473561",
     "prefecture_code": 47,
     "name": "渡名喜村",
     "capital": false,
-    "name_kana": "トナキソン"
+    "name_kana": "トナキソン",
+    "district": "島尻郡"
   },
   {
     "code": "473570",
     "prefecture_code": 47,
     "name": "南大東村",
     "capital": false,
-    "name_kana": "ミナミダイトウソン"
+    "name_kana": "ミナミダイトウソン",
+    "district": "島尻郡"
   },
   {
     "code": "473588",
     "prefecture_code": 47,
     "name": "北大東村",
     "capital": false,
-    "name_kana": "キタダイトウソン"
+    "name_kana": "キタダイトウソン",
+    "district": "島尻郡"
   },
   {
     "code": "473596",
     "prefecture_code": 47,
     "name": "伊平屋村",
     "capital": false,
-    "name_kana": "イヘヤソン"
+    "name_kana": "イヘヤソン",
+    "district": "島尻郡"
   },
   {
     "code": "473600",
     "prefecture_code": 47,
     "name": "伊是名村",
     "capital": false,
-    "name_kana": "イゼナソン"
+    "name_kana": "イゼナソン",
+    "district": "島尻郡"
   },
   {
     "code": "473618",
     "prefecture_code": 47,
     "name": "久米島町",
     "capital": false,
-    "name_kana": "クメジマチョウ"
+    "name_kana": "クメジマチョウ",
+    "district": "島尻郡"
   },
   {
     "code": "473626",
     "prefecture_code": 47,
     "name": "八重瀬町",
     "capital": false,
-    "name_kana": "ヤエセチョウ"
+    "name_kana": "ヤエセチョウ",
+    "district": "島尻郡"
   },
   {
     "code": "473758",
     "prefecture_code": 47,
     "name": "多良間村",
     "capital": false,
-    "name_kana": "タラマソン"
+    "name_kana": "タラマソン",
+    "district": "宮古郡"
   },
   {
     "code": "473812",
     "prefecture_code": 47,
     "name": "竹富町",
     "capital": false,
-    "name_kana": "タケトミチョウ"
+    "name_kana": "タケトミチョウ",
+    "district": "八重山郡"
   },
   {
     "code": "473821",
     "prefecture_code": 47,
     "name": "与那国町",
     "capital": false,
-    "name_kana": "ヨナグニチョウ"
+    "name_kana": "ヨナグニチョウ",
+    "district": "八重山郡"
   }
 ]

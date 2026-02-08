@@ -305,216 +305,247 @@
     "prefecture_code": 40,
     "name": "宇美町",
     "capital": false,
-    "name_kana": "ウミマチ"
+    "name_kana": "ウミマチ",
+    "district": "糟屋郡"
   },
   {
     "code": "403423",
     "prefecture_code": 40,
     "name": "篠栗町",
     "capital": false,
-    "name_kana": "ササグリマチ"
+    "name_kana": "ササグリマチ",
+    "district": "糟屋郡"
   },
   {
     "code": "403431",
     "prefecture_code": 40,
     "name": "志免町",
     "capital": false,
-    "name_kana": "シメマチ"
+    "name_kana": "シメマチ",
+    "district": "糟屋郡"
   },
   {
     "code": "403440",
     "prefecture_code": 40,
-    "name": "須恵町",
+    "name": "須惠町",
     "capital": false,
-    "name_kana": "スエマチ"
+    "name_kana": "スエマチ",
+    "district": "糟屋郡"
   },
   {
     "code": "403458",
     "prefecture_code": 40,
     "name": "新宮町",
     "capital": false,
-    "name_kana": "シングウマチ"
+    "name_kana": "シングウマチ",
+    "district": "糟屋郡"
   },
   {
     "code": "403482",
     "prefecture_code": 40,
     "name": "久山町",
     "capital": false,
-    "name_kana": "ヒサヤママチ"
+    "name_kana": "ヒサヤママチ",
+    "district": "糟屋郡"
   },
   {
     "code": "403491",
     "prefecture_code": 40,
     "name": "粕屋町",
     "capital": false,
-    "name_kana": "カスヤマチ"
+    "name_kana": "カスヤマチ",
+    "district": "糟屋郡"
   },
   {
     "code": "403814",
     "prefecture_code": 40,
     "name": "芦屋町",
     "capital": false,
-    "name_kana": "アシヤマチ"
+    "name_kana": "アシヤマチ",
+    "district": "遠賀郡"
   },
   {
     "code": "403822",
     "prefecture_code": 40,
     "name": "水巻町",
     "capital": false,
-    "name_kana": "ミズマキマチ"
+    "name_kana": "ミズマキマチ",
+    "district": "遠賀郡"
   },
   {
     "code": "403831",
     "prefecture_code": 40,
     "name": "岡垣町",
     "capital": false,
-    "name_kana": "オカガキマチ"
+    "name_kana": "オカガキマチ",
+    "district": "遠賀郡"
   },
   {
     "code": "403849",
     "prefecture_code": 40,
     "name": "遠賀町",
     "capital": false,
-    "name_kana": "オンガチョウ"
+    "name_kana": "オンガチョウ",
+    "district": "遠賀郡"
   },
   {
     "code": "404012",
     "prefecture_code": 40,
     "name": "小竹町",
     "capital": false,
-    "name_kana": "コタケマチ"
+    "name_kana": "コタケマチ",
+    "district": "鞍手郡"
   },
   {
     "code": "404021",
     "prefecture_code": 40,
     "name": "鞍手町",
     "capital": false,
-    "name_kana": "クラテマチ"
+    "name_kana": "クラテマチ",
+    "district": "鞍手郡"
   },
   {
     "code": "404217",
     "prefecture_code": 40,
     "name": "桂川町",
     "capital": false,
-    "name_kana": "ケイセンマチ"
+    "name_kana": "ケイセンマチ",
+    "district": "嘉穂郡"
   },
   {
     "code": "404471",
     "prefecture_code": 40,
     "name": "筑前町",
     "capital": false,
-    "name_kana": "チクゼンマチ"
+    "name_kana": "チクゼンマチ",
+    "district": "朝倉郡"
   },
   {
     "code": "404489",
     "prefecture_code": 40,
     "name": "東峰村",
     "capital": false,
-    "name_kana": "トウホウムラ"
+    "name_kana": "トウホウムラ",
+    "district": "朝倉郡"
   },
   {
     "code": "405035",
     "prefecture_code": 40,
     "name": "大刀洗町",
     "capital": false,
-    "name_kana": "タチアライマチ"
+    "name_kana": "タチアライマチ",
+    "district": "三井郡"
   },
   {
     "code": "405221",
     "prefecture_code": 40,
     "name": "大木町",
     "capital": false,
-    "name_kana": "オオキマチ"
+    "name_kana": "オオキマチ",
+    "district": "三潴郡"
   },
   {
     "code": "405442",
     "prefecture_code": 40,
     "name": "広川町",
     "capital": false,
-    "name_kana": "ヒロカワマチ"
+    "name_kana": "ヒロカワマチ",
+    "district": "八女郡"
   },
   {
     "code": "406015",
     "prefecture_code": 40,
     "name": "香春町",
     "capital": false,
-    "name_kana": "カワラマチ"
+    "name_kana": "カワラマチ",
+    "district": "田川郡"
   },
   {
     "code": "406023",
     "prefecture_code": 40,
     "name": "添田町",
     "capital": false,
-    "name_kana": "ソエダマチ"
+    "name_kana": "ソエダマチ",
+    "district": "田川郡"
   },
   {
     "code": "406040",
     "prefecture_code": 40,
     "name": "糸田町",
     "capital": false,
-    "name_kana": "イトダマチ"
+    "name_kana": "イトダマチ",
+    "district": "田川郡"
   },
   {
     "code": "406058",
     "prefecture_code": 40,
     "name": "川崎町",
     "capital": false,
-    "name_kana": "カワサキマチ"
+    "name_kana": "カワサキマチ",
+    "district": "田川郡"
   },
   {
     "code": "406082",
     "prefecture_code": 40,
     "name": "大任町",
     "capital": false,
-    "name_kana": "オオトウマチ"
+    "name_kana": "オオトウマチ",
+    "district": "田川郡"
   },
   {
     "code": "406091",
     "prefecture_code": 40,
     "name": "赤村",
     "capital": false,
-    "name_kana": "アカムラ"
+    "name_kana": "アカムラ",
+    "district": "田川郡"
   },
   {
     "code": "406104",
     "prefecture_code": 40,
     "name": "福智町",
     "capital": false,
-    "name_kana": "フクチマチ"
+    "name_kana": "フクチマチ",
+    "district": "田川郡"
   },
   {
     "code": "406210",
     "prefecture_code": 40,
     "name": "苅田町",
     "capital": false,
-    "name_kana": "カンダマチ"
+    "name_kana": "カンダマチ",
+    "district": "京都郡"
   },
   {
     "code": "406252",
     "prefecture_code": 40,
     "name": "みやこ町",
     "capital": false,
-    "name_kana": "ミヤコマチ"
+    "name_kana": "ミヤコマチ",
+    "district": "京都郡"
   },
   {
     "code": "406422",
     "prefecture_code": 40,
     "name": "吉富町",
     "capital": false,
-    "name_kana": "ヨシトミマチ"
+    "name_kana": "ヨシトミマチ",
+    "district": "築上郡"
   },
   {
     "code": "406465",
     "prefecture_code": 40,
     "name": "上毛町",
     "capital": false,
-    "name_kana": "コウゲマチ"
+    "name_kana": "コウゲマチ",
+    "district": "築上郡"
   },
   {
     "code": "406473",
     "prefecture_code": 40,
     "name": "築上町",
     "capital": false,
-    "name_kana": "チクジョウマチ"
+    "name_kana": "チクジョウマチ",
+    "district": "築上郡"
   }
 ]
