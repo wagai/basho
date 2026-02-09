@@ -66,7 +66,7 @@ module Basho
 
       def resolve_city_code(postal)
         City.where(prefecture_code: postal.prefecture_code)
-            .find { |c| c.name == postal.city_name }&.code
+            .find { |c| c.full_name == postal.city_name }&.code
       end
     end
   end
