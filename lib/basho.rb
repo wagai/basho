@@ -8,6 +8,7 @@ require_relative "basho/code_validator"
 require_relative "basho/city"
 require_relative "basho/postal_code"
 require_relative "basho/active_record/base"
+require_relative "basho/engine" if defined?(Rails::Engine)
 
 # 日本の住所データ（都道府県・市区町村・郵便番号・地方区分）を統一的に扱うgem
 module Basho
