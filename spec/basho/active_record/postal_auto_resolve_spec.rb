@@ -158,6 +158,15 @@ RSpec.describe Basho::ActiveRecord::PostalAutoResolve do
       expect(record.pref_code).to be_nil
       expect(record.cty_code).to be_nil
     end
+
+    it "郡のある町村でも正しくcity_codeを解決する" do
+      record = model_class.new(postal_code: "3703502") # 北群馬郡榛東村
+      record.mark_changed("postal_code")
+      record.run_before_save
+
+      expect(record.pref_code).to eq(10)
+      expect(record.cty_code).to eq("103446")
+    end
   end
 
   describe "before_save非対応クラス" do
