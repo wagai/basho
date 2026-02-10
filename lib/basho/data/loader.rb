@@ -37,7 +37,7 @@ module Basho
 
         def load_json(relative_path)
           path = File.join(DATA_DIR, relative_path)
-          return [] unless File.exist?(path)
+          return [] unless path.start_with?("#{DATA_DIR}/") && File.exist?(path)
 
           JSON.parse(File.read(path), symbolize_names: true)
         end
