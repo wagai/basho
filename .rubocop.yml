@@ -13,6 +13,7 @@ Metrics/MethodLength:
   Exclude:
     - "spec/**/*"
     - "lib/basho/region.rb"
+    - "lib/basho/active_record/postal_auto_resolve.rb"
 
 Metrics/BlockLength:
   Exclude:

@@ -74,6 +74,25 @@ RSpec.describe Basho::Prefecture do
     end
   end
 
+  describe "#cities" do
+    it "所属する市区町村を返す" do
+      cities = described_class.find(13).cities
+      expect(cities).to be_an(Array)
+      expect(cities).to all(be_a(Basho::City))
+      expect(cities.first.prefecture_code).to eq(13)
+    end
+  end
+
+  describe "#capital" do
+    it "県庁所在地を返す" do
+      pref = described_class.find(13)
+      capital = pref.capital
+      expect(capital).to be_a(Basho::City)
+      expect(capital.capital?).to be true
+      expect(capital.code).to eq(pref.capital_code)
+    end
+  end
+
   describe "4種の都道府県タイプ" do
     it "都・道・府・県がある" do
       types = described_class.all.map(&:type).uniq

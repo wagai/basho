@@ -23,14 +23,11 @@ module Basho
         @all ||= Data::Loader.prefectures.map { |data| new(**data) }
       end
 
-      def find(code_or_options = nil, **options)
-        case code_or_options
-        when Integer
-          all.find { |pref| pref.code == code_or_options }
-        when Hash
-          find_by_options(code_or_options)
-        else
-          find_by_options(options) if options.any?
+      def find(code = nil, **options)
+        if code
+          all.find { |pref| pref.code == code }
+        elsif options.any?
+          find_by_options(options)
         end
       end
 
