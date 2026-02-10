@@ -116,8 +116,6 @@ city.prefecture       # => Prefecture
 ```ruby
 postal = Basho::PostalCode.find("154-0011")   # => PostalCode or nil
 postal = Basho::PostalCode.find("1540011")    # ハイフンなしも可
-
-postal = results.first
 postal.code              # => "1540011"
 postal.formatted_code    # => "154-0011"
 postal.prefecture_code   # => 13
@@ -130,7 +128,7 @@ postal.prefecture        # => Prefecture
 ### Region（地方区分）
 
 ```ruby
-Basho::Region.all                # 8地方
+Basho::Region.all                # 9地方
 Basho::Region.find("関東")       # 名前で検索
 
 region = Basho::Region.find("関東")
@@ -302,7 +300,7 @@ end
 | 都道府県 | 総務省 JIS X 0401 | ほぼ変わらない |
 | 市区町村 | 総務省 全国地方公共団体コード | 年に数回 |
 | 郵便番号 | 日本郵便 KEN_ALL.csv | 月次（GitHub Actions自動更新） |
-| 地方区分 | 8地方（ハードコード） | 変わらない |
+| 地方区分 | 9地方（ハードコード） | 変わらない |
 
 ## 開発
 

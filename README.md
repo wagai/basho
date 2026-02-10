@@ -128,7 +128,7 @@ postal.prefecture        # => Prefecture
 ### Region
 
 ```ruby
-Basho::Region.all                # 8 regions
+Basho::Region.all                # 9 regions
 Basho::Region.find("関東")       # Find by name
 
 region = Basho::Region.find("関東")
@@ -300,7 +300,7 @@ end
 | Prefectures | Ministry of Internal Affairs, JIS X 0401 | Rarely changes |
 | Cities | Ministry of Internal Affairs, Local Government Codes | A few times per year |
 | Postal codes | Japan Post KEN_ALL.csv | Monthly (auto-updated via GitHub Actions) |
-| Regions | 8 regions (hardcoded) | Never changes |
+| Regions | 9 regions (hardcoded) | Never changes |
 
 ## Development
 

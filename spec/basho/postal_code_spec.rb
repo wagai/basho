@@ -41,6 +41,11 @@ RSpec.describe Basho::PostalCode do
     it "存在しない郵便番号は空配列を返す" do
       expect(described_class.where("0000000")).to eq([])
     end
+
+    it "不正な形式は空配列を返す" do
+      expect(described_class.where("123")).to eq([])
+      expect(described_class.where("")).to eq([])
+    end
   end
 
   describe "#formatted_code" do

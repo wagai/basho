@@ -12,7 +12,7 @@ export default class extends Controller {
       return
     }
 
-    this.frameTarget.src = `${this.urlValue}?code=${code}`
+    this.frameTarget.src = `${this.urlValue}?code=${encodeURIComponent(code)}`
   }
 
   fill() {

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Basho
-  # Hotwire自動入力・カスケードセレクトを提供するRails Engine
+  # Hotwire郵便番号自動入力を提供するRails Engine
   class Engine < ::Rails::Engine
     isolate_namespace Basho
 
