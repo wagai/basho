@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-02-11
+
+### Changed
+
+- **BREAKING**: `PostalCode.find()` が配列ではなく単一の `PostalCode` または `nil` を返すように変更
+- **BREAKING**: カスケードセレクト機能を削除（Stimulusコントローラー、都道府県/市区町村JSON API、フォームヘルパー）
+- `auto_fill_controller.js` をTurboイベント駆動にシンプル化（デバウンス削除）
+
+### Added
+
+- `PostalCode.where()` - 配列で結果を返す検索メソッド
+- Engine initializerでフォームヘルパーを自動インクルード
+
+### Removed
+
+- `Basho::PrefecturesController` （都道府県/市区町村JSON API）
+- `basho_cascade_data` フォームヘルパーメソッド
+- `cascade_select_controller.js` Stimulusコントローラー
+- `/basho/prefectures` ルート
+
 ## [0.2.2] - 2026-02-09
 
 ### Fixed
@@ -50,6 +70,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Actions CI（Ruby 3.2/3.3/3.4）
 - 月次データ自動更新ワークフロー
 
+[0.3.0]: https://github.com/wagai/basho/releases/tag/v0.3.0
 [0.2.2]: https://github.com/wagai/basho/releases/tag/v0.2.2
 [0.2.1]: https://github.com/wagai/basho/releases/tag/v0.2.1
 [0.2.0]: https://github.com/wagai/basho/releases/tag/v0.2.0
