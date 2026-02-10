@@ -16,7 +16,7 @@ RSpec.describe Basho::Data::Loader do
       expect(data).to have_key(:name_en)
       expect(data).to have_key(:name_kana)
       expect(data).to have_key(:name_hiragana)
-      expect(data).to have_key(:region)
+      expect(data).to have_key(:region_name)
       expect(data).to have_key(:type)
       expect(data).to have_key(:capital_code)
     end

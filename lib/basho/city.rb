@@ -25,22 +25,11 @@ module Basho
       end
 
       def where(prefecture_code:)
-        cities_cache[prefecture_code] ||=
-          Data::Loader.cities(prefecture_code).map { |data| new(**data) }.freeze
+        Data::Loader.cities(prefecture_code).map { |data| new(**data) }
       end
 
       def valid_code?(code)
         CodeValidator.valid?(code)
-      end
-
-      def reset!
-        @cities_cache = nil
-      end
-
-      private
-
-      def cities_cache
-        @cities_cache ||= {}
       end
     end
   end

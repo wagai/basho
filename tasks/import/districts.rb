@@ -15,7 +15,7 @@ postal_city_names = Hash.new { |h, k| h[k] = Set.new }
 
 Dir.glob(File.join(POSTAL_DIR, "*.json")).each do |f|
   JSON.parse(File.read(f)).each do |entry|
-    postal_city_names[entry["prefecture_code"]] << entry["city"]
+    postal_city_names[entry["prefecture_code"]] << entry["city_name"]
   end
 end
 

@@ -32,14 +32,6 @@ RSpec.describe Basho::City do
   end
 
   describe ".where" do
-    after { described_class.reset! }
-
-    it "結果をキャッシュする" do
-      first_call = described_class.where(prefecture_code: 13)
-      second_call = described_class.where(prefecture_code: 13)
-      expect(first_call).to equal(second_call)
-    end
-
     it "都道府県コードで絞り込みできる" do
       cities = described_class.where(prefecture_code: 13)
       expect(cities).to be_an(Array)

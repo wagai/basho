@@ -2,10 +2,6 @@
 
 module Basho
   Prefecture = ::Data.define(:code, :name, :name_en, :name_kana, :name_hiragana, :region_name, :type, :capital_code) do
-    def initialize(region: nil, region_name: nil, **attrs)
-      super(region_name: region || region_name, **attrs)
-    end
-
     def region
       Region.find(region_name)
     end

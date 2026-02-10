@@ -27,24 +27,24 @@ RSpec.describe Basho::PostalCode do
 
   describe ".where" do
     it "配列を返す" do
-      results = described_class.where("1540011")
+      results = described_class.where(code: "1540011")
       expect(results).to be_an(Array)
       expect(results.size).to be >= 1
       expect(results.first.code).to eq("1540011")
     end
 
     it "同じ郵便番号に複数の町域がある場合がある" do
-      results = described_class.where("1000000")
+      results = described_class.where(code: "1000000")
       expect(results).to be_an(Array)
     end
 
     it "存在しない郵便番号は空配列を返す" do
-      expect(described_class.where("0000000")).to eq([])
+      expect(described_class.where(code: "0000000")).to eq([])
     end
 
     it "不正な形式は空配列を返す" do
-      expect(described_class.where("123")).to eq([])
-      expect(described_class.where("")).to eq([])
+      expect(described_class.where(code: "123")).to eq([])
+      expect(described_class.where(code: "")).to eq([])
     end
   end
 

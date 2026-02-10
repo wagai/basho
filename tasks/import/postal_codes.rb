@@ -52,7 +52,7 @@ CSV.foreach(INPUT_PATH, encoding: "Shift_JIS:UTF-8") do |row|
     continuation[postal_code] = {
       code: postal_code,
       prefecture_code: prefecture_code,
-      city: city_name,
+      city_name: city_name,
       town: town
     }
     next
@@ -79,7 +79,7 @@ end
 # 重複を除去してJSONに書き出し
 total = 0
 grouped.each do |prefix, entries|
-  unique = entries.uniq { |e| [e[:code], e[:city], e[:town]] }
+  unique = entries.uniq { |e| [e[:code], e[:city_name], e[:town]] }
   output_path = File.join(OUTPUT_DIR, "#{prefix}.json")
   File.write(output_path, JSON.generate(unique))
   total += unique.size
