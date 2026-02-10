@@ -4,8 +4,7 @@
     "prefecture_code": 27,
     "name": "大阪市",
     "capital": true,
-    "name_kana": "オオサカシ",
-    "district": "東"
+    "name_kana": "オオサカシ"
   },
   {
     "code": "271021",
@@ -425,7 +424,7 @@
     "prefecture_code": 27,
     "name": "四條畷市",
     "capital": false,
-    "name_kana": "シジヨウナワテシ"
+    "name_kana": "シジョウナワテシ"
   },
   {
     "code": "272302",

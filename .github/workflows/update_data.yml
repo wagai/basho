@@ -22,21 +22,24 @@ jobs:
           ruby-version: "3.4"
           bundler-cache: true
 
-      - name: 市区町村データ更新
-        run: |
-          gem install jp_local_gov
-          ruby tasks/import/cities.rb
-
-      - name: 郵便番号データ更新
+      - name: KEN_ALL.CSVダウンロード
         run: |
           curl -sL -o /tmp/ken_all.zip "https://www.post.japanpost.jp/zipcode/dl/kogaki/zip/ken_all.zip"
           unzip -o /tmp/ken_all.zip -d /tmp/ken_all
-          ruby tasks/import/postal_codes.rb
+
+      - name: 市区町村データ更新
+        run: ruby tasks/import/cities.rb
+
+      - name: 郵便番号データ更新
+        run: ruby tasks/import/postal_codes.rb
 
       - name: 変更チェック・PR作成
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           if git diff --quiet data/; then
             echo "データ変更なし"
             exit 0

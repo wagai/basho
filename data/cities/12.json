@@ -345,7 +345,7 @@
     "prefecture_code": 12,
     "name": "九十九里町",
     "capital": false,
-    "name_kana": "クジユウクリマチ",
+    "name_kana": "クジュウクリマチ",
     "district": "山武郡"
   },
   {
@@ -425,7 +425,7 @@
     "prefecture_code": 12,
     "name": "御宿町",
     "capital": false,
-    "name_kana": "オンジユクマチ",
+    "name_kana": "オンジュクマチ",
     "district": "夷隅郡"
   },
   {
@@ -433,7 +433,7 @@
     "prefecture_code": 12,
     "name": "鋸南町",
     "capital": false,
-    "name_kana": "キヨナンマチ",
+    "name_kana": "キョナンマチ",
     "district": "安房郡"
   }
 ]

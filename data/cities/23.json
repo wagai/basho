@@ -4,8 +4,7 @@
     "prefecture_code": 23,
     "name": "名古屋市",
     "capital": true,
-    "name_kana": "ナゴヤシ",
-    "district": "北"
+    "name_kana": "ナゴヤシ"
   },
   {
     "code": "231011",
