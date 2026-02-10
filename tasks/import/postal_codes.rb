@@ -32,22 +32,25 @@ CSV.foreach(INPUT_PATH, encoding: "Shift_JIS:UTF-8") do |row|
   city_name = row[7]
   town = row[8]
 
-  # 「以下に掲載がない場合」は空にする
+  # 特殊な町域名は空にする
   town = "" if town == "以下に掲載がない場合"
+  town = "" if town.end_with?("の次に番地がくる場合")
 
-  # 括弧で始まる行は前の行の続き（複数行にまたがる町域名）
-  if (town.start_with?("（") || (continuation[postal_code] && !town.include?("）"))) && continuation[postal_code]
+  # 複数行にまたがる町域名の結合
+  if continuation[postal_code]
     continuation[postal_code][:town] += town
-    if town.include?("）")
-      # 括弧が閉じたので完了
-      entry = continuation.delete(postal_code)
-      prefix = postal_code[0..2]
-      grouped[prefix] << entry
+    unless town.include?("）")
+      next # まだ閉じ括弧が来ていない、継続
     end
+
+    # 括弧が閉じたので完了
+    entry = continuation.delete(postal_code)
+    prefix = postal_code[0..2]
+    grouped[prefix] << entry
     next
   end
 
-  # 括弧が開いて閉じていない場合
+  # 括弧が開いて閉じていない場合、継続行として保持
   if town.include?("（") && !town.include?("）")
     continuation[postal_code] = {
       code: postal_code,
@@ -65,7 +68,7 @@ CSV.foreach(INPUT_PATH, encoding: "Shift_JIS:UTF-8") do |row|
   grouped[prefix] << {
     code: postal_code,
     prefecture_code: prefecture_code,
-    city: city_name,
+    city_name: city_name,
     town: town
   }
 end
