@@ -25,7 +25,7 @@ module Basho
           code = send(column_name)
           return nil unless code
 
-          postal = Basho::PostalCode.find(code).first
+          postal = Basho::PostalCode.find(code)
           return nil unless postal
 
           "#{postal.prefecture_name}#{postal.city_name}#{postal.town}"

@@ -20,6 +20,10 @@ module Basho
 
     class << self
       def find(code)
+        where(code).first
+      end
+
+      def where(code)
         normalized = code.to_s.delete("-")
         return [] unless normalized.match?(/\A\d{7}\z/)
 

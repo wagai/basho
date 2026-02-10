@@ -52,7 +52,7 @@ module Basho
         normalized = code.to_s.delete("-")
         return nil unless normalized.match?(/\A\d{7}\z/)
 
-        Basho::PostalCode.find(normalized).first
+        Basho::PostalCode.find(normalized)
       end
 
       def resolve_value(postal, key)
