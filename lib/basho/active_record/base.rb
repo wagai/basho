@@ -22,8 +22,20 @@ module Basho
       def basho(column)
         column_name = column.to_s
 
-        define_method(:city) { (c = send(column_name)) && Basho::City.find(c) }
-        define_method(:prefecture) { city&.prefecture }
+        if Basho.db?
+          belongs_to :basho_city,
+                     class_name: "Basho::DB::City",
+                     foreign_key: column_name,
+                     primary_key: "code",
+                     optional: true
+
+          define_method(:city) { basho_city }
+          define_method(:prefecture) { basho_city&.prefecture }
+        else
+          define_method(:city) { (c = send(column_name)) && Basho::City.find(c) }
+          define_method(:prefecture) { city&.prefecture }
+        end
+
         define_method(:full_address) do
           pref = prefecture
           cty = city
