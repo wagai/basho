@@ -197,13 +197,28 @@ shop.prefecture   # => Basho::Prefecture
 shop.full_address # => "東京都千代田区"
 ```
 
-`basho :column` defines three instance methods:
+`basho :column` defines three instance methods and a scope:
 
 | Method | Return value |
 |--------|-------------|
 | `city` | `Basho::City` found by the column value |
 | `prefecture` | `Basho::Prefecture` via `city.prefecture` |
 | `full_address` | `"#{prefecture.name}#{city.name}"` or `nil` |
+| `with_basho` | Scope that preloads city and prefecture (N+1 prevention) |
+
+#### N+1 Prevention
+
+Use the `with_basho` scope when loading multiple records that access `city` or `prefecture`:
+
+```ruby
+# Without: N+1 queries (1 + N×2)
+Shop.all.each { |s| s.full_address }
+
+# With: 3 queries total
+Shop.with_basho.each { |s| s.full_address }
+```
+
+`with_basho` works in both memory and DB mode. In memory mode it is a no-op; in DB mode it eager-loads the associations. This means you can add it before switching to DB mode -- no code changes needed later.
 
 ### Get an address string from a postal code
 

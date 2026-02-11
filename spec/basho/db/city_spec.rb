@@ -86,4 +86,96 @@ RSpec.describe Basho::DB::City do
       expect(city.full_name).to eq("千代田区")
     end
   end
+
+  # ── 廃止・合併 ──────────────────────────────────
+
+  describe "廃止・合併" do
+    let(:city_a) { described_class.find("011002") }  # 札幌市
+    let(:city_b) { described_class.find("131016") }  # 千代田区
+    let(:city_c) { described_class.find("271004") }  # 大阪市
+
+    after do
+      described_class
+        .where(code: %w[011002 131016 271004])
+        .update_all(deprecated_at: nil, successor_code: nil)
+    end
+
+    describe ".active / .deprecated" do
+      before { city_a.update_columns(deprecated_at: Time.current) }
+
+      it ".active は廃止でないレコードのみ返す" do
+        expect(described_class.active.pluck(:code)).not_to include(city_a.code)
+        expect(described_class.active).to all(have_attributes(deprecated_at: nil))
+      end
+
+      it ".deprecated は廃止レコードのみ返す" do
+        expect(described_class.deprecated.pluck(:code)).to eq([city_a.code])
+      end
+
+      it "active + deprecated = 全レコード（補完性）" do
+        total = described_class.count
+        expect(described_class.active.count + described_class.deprecated.count).to eq(total)
+      end
+    end
+
+    describe "#deprecated? / #active?" do
+      it "deprecated_at なし → active かつ not deprecated" do
+        expect(city_a).to be_active
+        expect(city_a).not_to be_deprecated
+      end
+
+      it "deprecated_at あり → deprecated かつ not active" do
+        city_a.update_columns(deprecated_at: Time.current)
+        expect(city_a).to be_deprecated
+        expect(city_a).not_to be_active
+      end
+    end
+
+    describe "#successor" do
+      it "successor_code がある場合、合併先を返す" do
+        city_a.update_columns(successor_code: city_b.code)
+        expect(city_a.successor).to eq(city_b)
+      end
+
+      it "successor_code が nil なら nil" do
+        expect(city_a.successor).to be_nil
+      end
+
+      it "存在しない successor_code なら nil" do
+        city_a.update_columns(successor_code: "999999")
+        expect(city_a.successor).to be_nil
+      end
+    end
+
+    describe "#current" do
+      it "successor なし → 自身を返す" do
+        expect(city_a.current).to eq(city_a)
+      end
+
+      it "チェーン A→B→C → 終端 C を返す" do
+        city_a.update_columns(successor_code: city_b.code)
+        city_b.update_columns(successor_code: city_c.code)
+        expect(city_a.current).to eq(city_c)
+      end
+
+      it "中間から辿っても終端に到達する（B→C）" do
+        city_a.update_columns(successor_code: city_b.code)
+        city_b.update_columns(successor_code: city_c.code)
+        expect(city_b.current).to eq(city_c)
+      end
+
+      it "ループ A→B→A → 無限ループせず停止する" do
+        city_a.update_columns(successor_code: city_b.code)
+        city_b.update_columns(successor_code: city_a.code)
+
+        expect { city_a.current }.not_to raise_error
+        expect([city_a, city_b]).to include(city_a.current)
+      end
+
+      it "存在しない successor_code → 自身を返す" do
+        city_a.update_columns(successor_code: "999999")
+        expect(city_a.current).to eq(city_a)
+      end
+    end
+  end
 end

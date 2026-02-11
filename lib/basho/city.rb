@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module Basho
+  MAX_SUCCESSOR_DEPTH = 10
   # 市区町村を表すイミュータブルなデータクラス。
   #
   # DBバックエンドが有効な場合、クラスメソッドは自動的に {DB::City} 経由で検索する。
@@ -57,7 +58,7 @@ module Basho
     end
 
     # 合併チェーンをたどり、現行の市区町村を返す。
-    # アクティブ市区町村は即座に自身を返す。ループ検出付き。
+    # アクティブ市区町村は即座に自身を返す。ループ検出・深度制限付き。
     #
     # @return [City]
     def current
@@ -66,6 +67,8 @@ module Basho
       city = self
       seen = Set.new
       while city.successor_code && seen.add?(city.successor_code)
+        break if seen.size > MAX_SUCCESSOR_DEPTH
+
         next_city = City.find(city.successor_code)
         break unless next_city
 

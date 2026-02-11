@@ -197,13 +197,28 @@ shop.prefecture   # => Basho::Prefecture
 shop.full_address # => "東京都千代田区"
 ```
 
-`basho :column`は3つのインスタンスメソッドを定義します:
+`basho :column`は3つのインスタンスメソッドとスコープを定義します:
 
 | メソッド | 戻り値 |
 |---------|--------|
 | `city` | カラム値で検索した`Basho::City` |
 | `prefecture` | `city.prefecture`経由の`Basho::Prefecture` |
 | `full_address` | `"#{prefecture.name}#{city.name}"` または `nil` |
+| `with_basho` | city・prefectureをプリロードするスコープ（N+1防止） |
+
+#### N+1防止
+
+複数レコードで`city`や`prefecture`にアクセスする場合は`with_basho`スコープを使います:
+
+```ruby
+# なし: N+1クエリ（1 + N×2）
+Shop.all.each { |s| s.full_address }
+
+# あり: 合計3クエリ
+Shop.with_basho.each { |s| s.full_address }
+```
+
+`with_basho`はメモリモード・DBモード両方で動きます。メモリモードではno-op、DBモードではアソシエーションをeager loadします。DB切り替え前から書いておけば、切り替え後にコード変更は不要です。
 
 ### 郵便番号から住所文字列を取得
 

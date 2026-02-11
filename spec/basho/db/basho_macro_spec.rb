@@ -2,9 +2,11 @@
 
 require "rails_helper"
 require "support/db_setup"
+require "support/query_counter"
 
 RSpec.describe "bashoマクロ（DBモード）", :db do
   include_context "db_setup"
+  include QueryCounter
 
   before(:all) do
     ActiveRecord::Schema.define do
@@ -13,16 +15,15 @@ RSpec.describe "bashoマクロ（DBモード）", :db do
       end
     end
 
-    # DBモードを強制してモデル定義
     Basho.db = true
 
-    # テスト用ダミーモデル
     Object.send(:remove_const, :DummyShop) if defined?(DummyShop)
-    Object.const_set(:DummyShop, Class.new(ActiveRecord::Base) {
+    Object.const_set(:DummyShop, Class.new(ActiveRecord::Base) do
       self.table_name = "dummy_shops"
       include Basho
+
       basho :city_code
-    })
+    end)
   end
 
   after(:all) do
@@ -31,13 +32,24 @@ RSpec.describe "bashoマクロ（DBモード）", :db do
     end
   end
 
-  describe "belongs_to :basho_city" do
-    it "アソシエーションが定義される" do
+  describe "アソシエーション定義" do
+    it "belongs_to :basho_city が定義される" do
       reflection = DummyShop.reflect_on_association(:basho_city)
       expect(reflection).to be_present
       expect(reflection.macro).to eq(:belongs_to)
       expect(reflection.class_name).to eq("Basho::DB::City")
       expect(reflection.foreign_key).to eq("city_code")
+    end
+
+    it "has_one :basho_prefecture が定義される" do
+      reflection = DummyShop.reflect_on_association(:basho_prefecture)
+      expect(reflection).to be_present
+      expect(reflection.macro).to eq(:has_one)
+      expect(reflection.source_reflection.name).to eq(:prefecture)
+    end
+
+    it "scope :with_basho が定義される" do
+      expect(DummyShop).to respond_to(:with_basho)
     end
   end
 
@@ -79,7 +91,7 @@ RSpec.describe "bashoマクロ（DBモード）", :db do
     end
   end
 
-  describe "includes（N+1防止）" do
+  describe "N+1パフォーマンス検証" do
     before do
       DummyShop.delete_all
       DummyShop.create!(city_code: "131016") # 千代田区
@@ -87,24 +99,39 @@ RSpec.describe "bashoマクロ（DBモード）", :db do
       DummyShop.create!(city_code: "271276") # 堺市堺区
     end
 
-    it "includes(:basho_city)でプリロードできる" do
-      shops = DummyShop.includes(:basho_city).to_a
-      expect(shops.size).to eq(3)
-
-      # プリロード済みなので追加クエリが発生しない
-      shops.each do |shop|
-        expect(shop.city).to be_a(Basho::DB::City)
-      end
+    it "includesなしではcityアクセスで追加クエリが発生する" do
+      shops = DummyShop.all.to_a
+      queries = count_queries { shops.each(&:city) }
+      expect(queries).to be >= shops.size
     end
 
-    it "includes(basho_city: :prefecture)で2段プリロードできる" do
-      shops = DummyShop.includes(basho_city: :prefecture).to_a
-      expect(shops.size).to eq(3)
+    it "includes(:basho_city)でcityアクセスの追加クエリが0になる" do
+      shops = DummyShop.includes(:basho_city).to_a
+      queries = count_queries { shops.each(&:city) }
+      expect(queries).to eq(0)
+    end
 
-      # プリロード済みなので追加クエリが発生しない
-      shops.each do |shop|
-        expect(shop.prefecture).to be_a(Basho::DB::Prefecture)
+    it "includes(basho_city: :prefecture)でprefectureアクセスの追加クエリが0になる" do
+      shops = DummyShop.includes(basho_city: :prefecture).to_a
+      queries = count_queries { shops.each(&:prefecture) }
+      expect(queries).to eq(0)
+    end
+
+    it "with_bashoでcity+prefectureアクセスの追加クエリが0になる" do
+      shops = DummyShop.with_basho.to_a
+      queries = count_queries do
+        shops.each do |shop|
+          shop.city
+          shop.prefecture
+        end
       end
+      expect(queries).to eq(0)
+    end
+
+    it "includes(:basho_prefecture)でprefecture直接プリロードの追加クエリが0になる" do
+      shops = DummyShop.includes(:basho_prefecture).to_a
+      queries = count_queries { shops.each(&:prefecture) }
+      expect(queries).to eq(0)
     end
   end
 end

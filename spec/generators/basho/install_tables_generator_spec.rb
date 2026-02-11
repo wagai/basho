@@ -38,5 +38,11 @@ RSpec.describe Basho::Generators::InstallTablesGenerator do
         "add_foreign_key :basho_cities, :basho_prefectures, column: :prefecture_code, primary_key: :code"
       )
     end
+
+    it "cities テーブルに廃止管理カラムを定義する" do
+      content = migration_content("create_basho_cities")
+      expect(content).to include("t.datetime :deprecated_at")
+      expect(content).to include("t.string :successor_code, limit: 6")
+    end
   end
 end

@@ -24,6 +24,8 @@ RSpec.shared_context "db_setup" do
           t.string :name_kana, null: false
           t.string :district
           t.boolean :capital, null: false, default: false
+          t.datetime :deprecated_at
+          t.string :successor_code, limit: 6
         end
       end
     end

@@ -15,32 +15,19 @@ module Basho
     #     basho_postal :postal_code, prefecture: :pref_name, city: :city_name
     #   end
     module Base
-      # 自治体コードカラムから +city+, +prefecture+, +full_address+ メソッドを定義する。
+      # 自治体コードカラムから +city+, +prefecture+, +full_address+ メソッドと
+      # +with_basho+ スコープを定義する。
+      #
+      # DBモードでは +belongs_to :basho_city+ と +has_one :basho_prefecture+ を追加し、
+      # +with_basho+ スコープでN+1クエリを防止する。
+      # メモリモードでは +with_basho+ はno-op（+all+）となる。
       #
       # @param column [Symbol, String] 6桁自治体コードを格納するカラム名
       # @return [void]
       def basho(column)
         column_name = column.to_s
-
-        if Basho.db?
-          belongs_to :basho_city,
-                     class_name: "Basho::DB::City",
-                     foreign_key: column_name,
-                     primary_key: "code",
-                     optional: true
-
-          define_method(:city) { basho_city }
-          define_method(:prefecture) { basho_city&.prefecture }
-        else
-          define_method(:city) { (c = send(column_name)) && Basho::City.find(c) }
-          define_method(:prefecture) { city&.prefecture }
-        end
-
-        define_method(:full_address) do
-          pref = prefecture
-          cty = city
-          "#{pref.name}#{cty.name}" if pref && cty
-        end
+        Basho.db? ? basho_db_mode(column_name) : basho_memory_mode(column_name)
+        basho_define_full_address
       end
 
       # 郵便番号カラムから +postal_address+ メソッドを定義する。
@@ -68,6 +55,57 @@ module Basho
         end
 
         PostalAutoResolve.install(self, column_name, mappings) if mappings.any?
+      end
+
+      private
+
+      # @private DBモードのアソシエーションとスコープを定義する。
+      def basho_db_mode(column_name)
+        basho_db_associations(column_name)
+        scope :with_basho, -> { includes(basho_city: :prefecture) }
+        basho_db_methods
+      end
+
+      # @private DBモードのアソシエーションを定義する。
+      def basho_db_associations(column_name)
+        belongs_to :basho_city,
+                   class_name: "Basho::DB::City",
+                   foreign_key: column_name,
+                   primary_key: "code",
+                   optional: true
+
+        has_one :basho_prefecture,
+                through: :basho_city,
+                source: :prefecture
+      end
+
+      # @private DBモードのインスタンスメソッドを定義する。
+      def basho_db_methods
+        define_method(:city) { basho_city }
+        define_method(:prefecture) do
+          if association(:basho_prefecture).loaded?
+            basho_prefecture
+          else
+            basho_city&.prefecture
+          end
+        end
+      end
+
+      # @private メモリモードのスコープ・メソッドを定義する。
+      def basho_memory_mode(column_name)
+        scope(:with_basho, -> { all }) if respond_to?(:scope)
+
+        define_method(:city) { (c = send(column_name)) && Basho::City.find(c) }
+        define_method(:prefecture) { city&.prefecture }
+      end
+
+      # @private full_addressメソッドを定義する。
+      def basho_define_full_address
+        define_method(:full_address) do
+          pref = prefecture
+          cty = city
+          "#{pref.name}#{cty.name}" if pref && cty
+        end
       end
     end
   end

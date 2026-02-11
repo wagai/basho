@@ -19,6 +19,20 @@ module Basho
       app.config.assets.paths << root.join("app/assets/javascripts") if app.config.respond_to?(:assets)
     end
 
+    initializer "basho.seed_freshness_check" do
+      config.after_initialize do
+        next unless Basho.db?
+        next if Basho::DB.seed_fresh?
+
+        Rails.logger.warn(
+          "[basho] DBのアクティブな市区町村件数がgemのデータと一致しません。" \
+          "`rails basho:seed` を実行してください"
+        )
+      rescue ::ActiveRecord::ActiveRecordError
+        # DB未接続・マイグレーション前は無視
+      end
+    end
+
     rake_tasks do
       load File.expand_path("../tasks/basho.rake", __dir__)
     end
