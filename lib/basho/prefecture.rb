@@ -16,31 +16,30 @@ module Basho
 
     class << self
       def all
-        @all ||= Data::Loader.prefectures.map { |data| new(**data) }
+        return DB::Prefecture.all.to_a if Basho.db?
+
+        @all ||= Data::Loader.prefectures.map { |data| new(**data) }.freeze
       end
 
       def find(code = nil, **options)
-        if code
-          all.find { |pref| pref.code == code }
-        elsif options.any?
-          find_by_options(options)
-        end
+        attrs = code.nil? ? options : { code: code }
+        return if attrs.empty?
+
+        key, value = attrs.first
+        return DB::Prefecture.find_by(key => value) if Basho.db?
+
+        all.find { |pref| pref.public_send(key) == value }
       end
 
       def where(region: nil)
         return all unless region
+        return DB::Prefecture.where(region_name: region).to_a if Basho.db?
 
-        all.select { |pref| pref.region&.name == region }
+        all.select { |pref| pref.region_name == region }
       end
 
-      private
-
-      def find_by_options(options)
-        if options[:name]
-          all.find { |pref| pref.name == options[:name] }
-        elsif options[:name_en]
-          all.find { |pref| pref.name_en == options[:name_en] }
-        end
+      def reset_cache!
+        remove_instance_variable(:@all) if defined?(@all)
       end
     end
   end

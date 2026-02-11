@@ -18,6 +18,7 @@ Basho solves all of these.
 ## Features
 
 - **No DB migrations** -- All data is bundled as JSON. Just `gem install` and go
+- **Optional DB backend** -- Generate tables for JOINs and foreign keys. The API auto-switches transparently
 - **Framework-agnostic** -- Works with plain Ruby, Sinatra, Rails API-only, or any Ruby app
 - **ActiveRecord integration** -- `include Basho` + a one-line macro for automatic postal code to address resolution on save
 - **Hotwire-ready** -- Built-in Rails Engine with postal code auto-fill via Turbo Frame + Stimulus
@@ -387,6 +388,76 @@ class Shop < ApplicationRecord
   basho_postal :postal_code, city_code: :city_code, town: :town
 end
 ```
+
+## DB Backend (Optional)
+
+By default, Basho loads all data from bundled JSON files -- no database needed. If you need JOINs, foreign key constraints, or want to reference `basho_prefectures` / `basho_cities` from your own tables, you can optionally generate DB tables.
+
+### Setup
+
+```bash
+rails generate basho:install_tables
+rails db:migrate
+rails basho:seed
+```
+
+This creates two tables:
+
+| Table | Primary Key | Rows |
+|-------|------------|------|
+| `basho_prefectures` | `code` (integer) | 47 |
+| `basho_cities` | `code` (string, 6-digit) | ~1,900 |
+
+### Transparent Auto-switching
+
+Once the tables exist, the public API (`Basho::Prefecture.find`, `Basho::City.where`, etc.) automatically uses the DB backend. **No code changes required.**
+
+```ruby
+# Works exactly the same whether DB tables exist or not
+Basho::Prefecture.find(13).name           # => "東京都"
+Basho::City.find("131016").full_name      # => "千代田区"
+Basho::City.where(prefecture_code: 13)    # => Array
+```
+
+Detection happens once on first access via `Basho.db?` and is cached for the process lifetime.
+
+### Foreign Keys from Your Tables
+
+```ruby
+# Your app migration
+add_foreign_key :shops, :basho_cities, column: :city_code, primary_key: :code
+add_foreign_key :shops, :basho_prefectures, column: :prefecture_code, primary_key: :code
+```
+
+### Direct DB Model Access
+
+When you need ActiveRecord features (JOINs, scopes, eager loading), use the DB models directly:
+
+```ruby
+# JOINs
+Basho::DB::City.joins(:prefecture).where(basho_prefectures: { region_name: "関東" })
+
+# Eager loading
+Basho::DB::Prefecture.includes(:cities).find(13)
+
+# Associations
+prefecture = Basho::DB::Prefecture.find(13)
+prefecture.cities    # => ActiveRecord::Relation
+prefecture.capital   # => Basho::DB::City
+```
+
+### Re-seeding
+
+`basho:seed` is idempotent. Run it again after updating the gem to refresh the data:
+
+```bash
+rails basho:seed
+```
+
+### Notes
+
+- Postal codes are **not** included in the DB tables (120k+ rows, updated monthly). They are always served from bundled JSON files.
+- `Basho.db?` is thread-safe and cached. Use `Basho.reset_db_cache!` if you need to re-detect (e.g. after running migrations in a test).
 
 ## Data Sources
 

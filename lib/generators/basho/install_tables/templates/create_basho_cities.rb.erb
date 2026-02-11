@@ -1,0 +1,15 @@
+class CreateBashoCities < ActiveRecord::Migration[<%= ActiveRecord::Migration.current_version %>]
+  def change
+    create_table :basho_cities, id: false do |t|
+      t.string :code, limit: 6, null: false, primary_key: true
+      t.integer :prefecture_code, null: false
+      t.string :name, null: false
+      t.string :name_kana, null: false
+      t.string :district
+      t.boolean :capital, null: false, default: false
+    end
+
+    add_index :basho_cities, :prefecture_code
+    add_foreign_key :basho_cities, :basho_prefectures, column: :prefecture_code, primary_key: :code
+  end
+end

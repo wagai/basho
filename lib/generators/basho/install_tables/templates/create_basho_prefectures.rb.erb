@@ -1,0 +1,14 @@
+class CreateBashoPrefectures < ActiveRecord::Migration[<%= ActiveRecord::Migration.current_version %>]
+  def change
+    create_table :basho_prefectures, id: false do |t|
+      t.integer :code, null: false, primary_key: true
+      t.string :name, null: false
+      t.string :name_en, null: false
+      t.string :name_kana, null: false
+      t.string :name_hiragana, null: false
+      t.string :region_name, null: false
+      t.string :prefecture_type, null: false
+      t.string :capital_code, limit: 6
+    end
+  end
+end

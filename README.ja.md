@@ -18,6 +18,7 @@ Bashoはこれらをまとめて解決します。
 ## 特徴
 
 - **DBマイグレーション不要** -- 全データをJSON同梱。`gem install`だけで使える
+- **オプションDBバックエンド** -- テーブル生成でJOINや外部キー制約に対応。APIは自動で切り替わる
 - **フレームワーク非依存** -- 素のRuby、Sinatra、Rails API only、どこでも動く
 - **ActiveRecord統合** -- `include Basho` + 1行のマクロで郵便番号→住所の自動保存
 - **Hotwire対応** -- Turbo Frame + Stimulusによる郵便番号自動入力をビルトインEngine提供
@@ -387,6 +388,76 @@ class Shop < ApplicationRecord
   basho_postal :postal_code, city_code: :city_code, town: :town
 end
 ```
+
+## DBバックエンド（オプション）
+
+デフォルトではBashoは同梱のJSONファイルからデータを読み込みます。DB不要です。JOINや外部キー制約が必要な場合、または自前のテーブルから`basho_prefectures` / `basho_cities`を参照したい場合は、オプションでDBテーブルを生成できます。
+
+### セットアップ
+
+```bash
+rails generate basho:install_tables
+rails db:migrate
+rails basho:seed
+```
+
+2つのテーブルが作成されます:
+
+| テーブル | 主キー | 件数 |
+|---------|--------|------|
+| `basho_prefectures` | `code` (integer) | 47 |
+| `basho_cities` | `code` (string, 6桁) | 約1,900 |
+
+### 透過的な自動切り替え
+
+テーブルが存在すれば、公開API（`Basho::Prefecture.find`、`Basho::City.where`等）は自動的にDBバックエンドを使います。**コード変更は不要です。**
+
+```ruby
+# DBテーブルの有無に関わらず同じコードで動く
+Basho::Prefecture.find(13).name           # => "東京都"
+Basho::City.find("131016").full_name      # => "千代田区"
+Basho::City.where(prefecture_code: 13)    # => Array
+```
+
+検出は初回アクセス時に1度だけ行われ、プロセスの生存期間中キャッシュされます。
+
+### 自前テーブルからの外部キー
+
+```ruby
+# アプリ側のマイグレーション
+add_foreign_key :shops, :basho_cities, column: :city_code, primary_key: :code
+add_foreign_key :shops, :basho_prefectures, column: :prefecture_code, primary_key: :code
+```
+
+### DBモデルの直接利用
+
+ActiveRecordの機能（JOIN、スコープ、eager loading）が必要な場合は、DBモデルを直接使います:
+
+```ruby
+# JOIN
+Basho::DB::City.joins(:prefecture).where(basho_prefectures: { region_name: "関東" })
+
+# Eager loading
+Basho::DB::Prefecture.includes(:cities).find(13)
+
+# アソシエーション
+prefecture = Basho::DB::Prefecture.find(13)
+prefecture.cities    # => ActiveRecord::Relation
+prefecture.capital   # => Basho::DB::City
+```
+
+### 再シード
+
+`basho:seed`は冪等です。gem更新後に再実行すればデータが更新されます:
+
+```bash
+rails basho:seed
+```
+
+### 補足
+
+- 郵便番号はDBテーブルに**含まれません**（12万件以上、月次更新のため）。常にJSONファイルから提供されます。
+- `Basho.db?`はスレッドセーフでキャッシュされます。再検出が必要な場合（テスト中のマイグレーション後など）は`Basho.reset_db_cache!`を使ってください。
 
 ## データソース
 

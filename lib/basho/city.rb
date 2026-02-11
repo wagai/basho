@@ -19,12 +19,15 @@ module Basho
     class << self
       def find(code)
         return nil unless code.is_a?(String) && code.size == 6
+        return DB::City.find_by(code: code) if Basho.db?
 
-        prefecture_code = code[0..1].to_i
-        where(prefecture_code: prefecture_code).find { |city| city.code == code }
+        pref_code = code[0..1].to_i
+        where(prefecture_code: pref_code).find { |city| city.code == code }
       end
 
       def where(prefecture_code:)
+        return DB::City.where(prefecture_code: prefecture_code).to_a if Basho.db?
+
         Data::Loader.cities(prefecture_code).map { |data| new(**data) }
       end
 

@@ -15,3 +15,6 @@ gem "actionpack", ">= 7.0"
 gem "railties", ">= 7.0"
 
 gem "rubocop", "~> 1.21"
+
+gem "activerecord", ">= 7.0"
+gem "sqlite3"

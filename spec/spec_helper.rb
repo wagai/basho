@@ -12,4 +12,13 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  # DB自動切り替えテスト以外はメモリバックエンドを強制
+  config.before(:each) do
+    Basho.db = false unless self.class.metadata[:db]
+  end
+
+  config.after(:each) do
+    Basho.reset_db_cache!
+  end
 end

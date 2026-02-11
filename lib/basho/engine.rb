@@ -18,5 +18,9 @@ module Basho
     initializer "basho.assets" do |app|
       app.config.assets.paths << root.join("app/assets/javascripts") if app.config.respond_to?(:assets)
     end
+
+    rake_tasks do
+      load File.expand_path("../../tasks/basho.rake", __dir__)
+    end
   end
 end
