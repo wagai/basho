@@ -235,7 +235,7 @@ shop.postal_address # => "東京都世田谷区上馬"
 
 ### Auto-save address columns from a postal code
 
-When you pass mapping options to `basho_postal`, it registers a `before_save` callback that auto-fills address columns whenever the postal code column changes.
+When you pass mapping options to `basho_postal`, it registers a `before_validation` callback that auto-fills address columns whenever the postal code column changes. Resolving in `before_validation` lets your other callbacks and validations see the resolved address.
 
 ```ruby
 class User < ApplicationRecord

@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 2026-05-06
+
+### Changed (BREAKING)
+
+- `basho_postal` のマッピングオプション指定時の住所自動解決を `before_save` から
+  `before_validation` に変更。validation の前に住所が解決されるため、validation や
+  他の `before_validation` callback から解決済みの住所を参照できる。
+  既存ユーザーで `before_save` のタイミングに依存していた場合は要見直し。
+
 ## [0.5.0] - 2026-02-11
 
 ### Added

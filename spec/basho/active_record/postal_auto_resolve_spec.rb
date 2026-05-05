@@ -21,18 +21,18 @@ module MockActiveRecord
     @changes[attr.to_s] = true
   end
 
-  def run_before_save
-    self.class.before_save_callbacks.each { |cb| instance_eval(&cb) }
+  def run_before_validation
+    self.class.before_validation_callbacks.each { |cb| instance_eval(&cb) }
   end
 end
 
 module MockCallbacks
-  def before_save_callbacks
-    @before_save_callbacks ||= []
+  def before_validation_callbacks
+    @before_validation_callbacks ||= []
   end
 
-  def before_save(&block)
-    before_save_callbacks << block
+  def before_validation(&block)
+    before_validation_callbacks << block
   end
 end
 
@@ -46,7 +46,7 @@ RSpec.describe Basho::ActiveRecord::PostalAutoResolve do
     end
   end
 
-  describe "有効な郵便番号でbefore_save" do
+  describe "有効な郵便番号でbefore_validation" do
     let(:model_class) do
       build_model_class do
         basho_postal :postal_code, prefecture: :pref_name, city: :city_name, town: :town_name
@@ -56,7 +56,7 @@ RSpec.describe Basho::ActiveRecord::PostalAutoResolve do
     it "都道府県・市区町村・町域を自動入力する" do
       record = model_class.new(postal_code: "1540011")
       record.mark_changed("postal_code")
-      record.run_before_save
+      record.run_before_validation
 
       expect(record.pref_name).to eq("東京都")
       expect(record.city_name).to eq("世田谷区")
@@ -73,7 +73,7 @@ RSpec.describe Basho::ActiveRecord::PostalAutoResolve do
 
     it "カラムを更新しない" do
       record = model_class.new(postal_code: "1540011", pref_name: "既存値")
-      record.run_before_save
+      record.run_before_validation
 
       expect(record.pref_name).to eq("既存値")
     end
@@ -89,7 +89,7 @@ RSpec.describe Basho::ActiveRecord::PostalAutoResolve do
     it "カラムにnilを設定する" do
       record = model_class.new(postal_code: nil)
       record.mark_changed("postal_code")
-      record.run_before_save
+      record.run_before_validation
 
       expect(record.pref_name).to be_nil
       expect(record.city_name).to be_nil
@@ -107,7 +107,7 @@ RSpec.describe Basho::ActiveRecord::PostalAutoResolve do
     it "カラムにnilを設定する" do
       record = model_class.new(postal_code: "0000000")
       record.mark_changed("postal_code")
-      record.run_before_save
+      record.run_before_validation
 
       expect(record.pref_name).to be_nil
       expect(record.city_name).to be_nil
@@ -125,7 +125,7 @@ RSpec.describe Basho::ActiveRecord::PostalAutoResolve do
     it "指定されたカラムだけ更新する" do
       record = model_class.new(postal_code: "1540011")
       record.mark_changed("postal_code")
-      record.run_before_save
+      record.run_before_validation
 
       expect(record.pref_name).to eq("東京都")
       expect(record.city_name).to be_nil
@@ -143,7 +143,7 @@ RSpec.describe Basho::ActiveRecord::PostalAutoResolve do
     it "都道府県コードと市区町村コードを保存する" do
       record = model_class.new(postal_code: "1540011")
       record.mark_changed("postal_code")
-      record.run_before_save
+      record.run_before_validation
 
       expect(record.pref_code).to eq(13)
       expect(record.cty_code).to be_a(String)
@@ -153,7 +153,7 @@ RSpec.describe Basho::ActiveRecord::PostalAutoResolve do
     it "nilの郵便番号ではnilを設定する" do
       record = model_class.new(postal_code: nil)
       record.mark_changed("postal_code")
-      record.run_before_save
+      record.run_before_validation
 
       expect(record.pref_code).to be_nil
       expect(record.cty_code).to be_nil
@@ -162,24 +162,24 @@ RSpec.describe Basho::ActiveRecord::PostalAutoResolve do
     it "郡のある町村でも正しくcity_codeを解決する" do
       record = model_class.new(postal_code: "3703502") # 北群馬郡榛東村
       record.mark_changed("postal_code")
-      record.run_before_save
+      record.run_before_validation
 
       expect(record.pref_code).to eq(10)
       expect(record.cty_code).to eq("103446")
     end
   end
 
-  describe "before_save非対応クラス" do
+  describe "before_validation非対応クラス" do
     it "Basho::Errorを発生させる" do
       expect do
         build_model_class do
           class << self
-            undef_method :before_save
+            undef_method :before_validation
           end
 
           basho_postal :postal_code, prefecture: :pref_name
         end
-      end.to raise_error(Basho::Error, /does not support before_save/)
+      end.to raise_error(Basho::Error, /does not support before_validation/)
     end
   end
 
@@ -195,8 +195,8 @@ RSpec.describe Basho::ActiveRecord::PostalAutoResolve do
       expect(record.postal_address).to eq("東京都世田谷区上馬")
     end
 
-    it "before_saveコールバックは登録されない" do
-      expect(model_class.before_save_callbacks).to be_empty
+    it "before_validationコールバックは登録されない" do
+      expect(model_class.before_validation_callbacks).to be_empty
     end
   end
 end

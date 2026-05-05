@@ -235,7 +235,7 @@ shop.postal_address # => "東京都世田谷区上馬"
 
 ### 郵便番号から住所カラムを自動保存
 
-`basho_postal`にマッピングオプションを渡すと、`before_save`コールバックを登録し、郵便番号カラムの変更時に住所カラムを自動入力します。
+`basho_postal`にマッピングオプションを渡すと、`before_validation`コールバックを登録し、郵便番号カラムの変更時に住所カラムを自動入力します。validation 前に解決されるので、他の `before_validation` callback や validation が解決済みの住所を参照できます。
 
 ```ruby
 class User < ApplicationRecord

@@ -2,8 +2,11 @@
 
 module Basho
   module ActiveRecord
-    # 郵便番号変更時に +before_save+ で住所カラムを自動解決する。
+    # 郵便番号変更時に +before_validation+ で住所カラムを自動解決する。
     # {Base#basho_postal} のマッピングオプション指定時に使用される。
+    #
+    # validation の前に住所が解決されるため、validation や他の before_validation
+    # callback が解決済みの住所を参照できる。
     #
     # @api private
     module PostalAutoResolve
@@ -12,21 +15,21 @@ module Basho
 
       module_function
 
-      # モデルに +before_save+ コールバックを登録する。
+      # モデルに +before_validation+ コールバックを登録する。
       #
       # @param model_class [Class] ActiveRecordモデルクラス
       # @param postal_column [String] 郵便番号カラム名
       # @param mappings [Hash] マッピング設定
       # @return [void]
       def install(model_class, postal_column, mappings)
-        unless model_class.respond_to?(:before_save)
-          raise Basho::Error, "#{model_class} does not support before_save callbacks"
+        unless model_class.respond_to?(:before_validation)
+          raise Basho::Error, "#{model_class} does not support before_validation callbacks"
         end
 
         postal_col = postal_column.to_s
         resolved = mappings.slice(*MAPPING_KEYS).transform_values(&:to_s).freeze
 
-        model_class.before_save do
+        model_class.before_validation do
           next unless will_save_change_to_attribute?(postal_col)
 
           postal = Basho::PostalCode.find(send(postal_col))
