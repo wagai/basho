@@ -46,8 +46,16 @@ jobs:
           fi
 
           BRANCH="data-update-$(date +%Y%m)"
-          git checkout -b "$BRANCH"
+          # 既存リモートブランチを取得（あれば）して強制リセット、なければ新規作成
+          git fetch origin "$BRANCH" --no-tags || true
+          git checkout -B "$BRANCH"
           git add data/
           git commit -m "chore: 月次データ更新 $(date +%Y-%m)"
-          git push origin "$BRANCH"
-          gh pr create --title "chore: 月次データ更新 $(date +%Y-%m)" --body "自動生成されたデータ更新PR"
+          git push --force-with-lease origin "$BRANCH"
+
+          # 既存 PR があれば skip、なければ作成
+          if [ -z "$(gh pr list --head "$BRANCH" --json number --jq '.[0].number')" ]; then
+            gh pr create --title "chore: 月次データ更新 $(date +%Y-%m)" --body "自動生成されたデータ更新PR"
+          else
+            echo "既存 PR があるためスキップ"
+          fi
