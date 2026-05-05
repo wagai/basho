@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.1] - 2026-05-06
+
+### Changed
+
+- 郵便番号データを 2026 年 5 月版に更新（KEN_ALL.CSV）。
+  - 石狩市の合併特例法に基づく地域自治区「厚田区」「浜益区」が 2026/3/31 に
+    設置期限を迎え、4/1 から「区」を抜いた表記に変更されたことを反映。
+  - 関連: 北海道・東京・長野・山梨・岐阜・大阪・奈良・石川・福島・宮城の
+    一部町域名の整理。
+
 ## [0.6.0] - 2026-05-06
 
 ### Changed (BREAKING)
